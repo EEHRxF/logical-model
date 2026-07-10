@@ -2,10 +2,10 @@ Logical: EHDSEndpoint
 Title: "Endpoint model"
 Description: "EHDSEndpoint means a structured set of data elements describing the technical details of a connection point for electronic services."
 
-* identifier 1..* Identifier "Identifier for the endpoint"
+* identifier 1..* Identifier "Identifier for the endpoint."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
-* status 1..1 CodeableConcept "Status of the endpoint (e.g. active, limited)."
+* status 1..1 CodeableConcept "Status of the endpoint, e.g. active, limited."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
   * ^binding.description = "HL7 Endpoint Status"
@@ -13,6 +13,8 @@ Description: "EHDSEndpoint means a structured set of data elements describing th
 * connectionType 1..* CodeableConcept "A coded value that represents the technical details of the usage of this endpoint, such as what WSDLs should be used in what way."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
+  * ^binding.description = "HL7 Endpoint Connection Type"
+  * ^binding.strength = #required
 * name 0..1 string "A friendly name that this endpoint can be referred to with."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)

@@ -3,47 +3,65 @@ Parent: EHDSDataSet
 Title: "Medication use model"
 Description: "EHDSMedicationUse means a structured set of data elements describing a use of a single medicinal product as part of a medication summary."
 
-* header // Obligations derived from EHDSDataSet
-  * identifier
+* header
+  * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * author[x]
-    * insert Full(#SHOULD)
-    * insert Basic(#SHOULD)
-    * ^definition = "The author of the medication use statement."
-  * date
-    * insert Full(#SHOULD)
-    * insert Basic(#SHOULD)
-  * status // TODO note that status is SHALL-SHALL for this table.
-    * ^short = "Status of the medication use statement (e.g. recorded)."
-    * ^definition = "Status of the medication use statement (e.g. recorded)."
+  * status 1..1
+  * status only CodeableConcept
+  * status ^short = "Status of the medicinal product use statement, e.g. 'recorded'."
+    * insert Basic(#SHALL)
     * ^binding.description = "HL7 Medication Status Codes"
-    * ^binding.strength = #required
-    * ^requirements = "eHN PS Guideline, MyHealth@EU, ISO IPS"
-
-//* treatmentStatus 0..1 CodeableConcept "The current status of taking the medicine (e.g. taking, on-hold, stopped)."
-//* changeType 0..* CodeableConcept "Medication use's change type in a medication summary (e.g. 'added', 'removed', 'altered'). Relevant at the time of discharge or other alteration of the active medications' list."
 * medication 1..1 EHDSMedication "Describes the medicinal product."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-* reason[x] 0..* CodeableConcept or string "Reason for the use of the medication (typically diagnosis, or a procedure)."
+* reason[x] 0..* CodeableConcept or string "Reason for the use of the medicinal product (typically diagnosis, or a procedure)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
+  * ^binding.description = "SNOMED GPS (preferred), ICD-10, Orphacode"
   * ^binding.strength = #required
-* dosageInstructions 1..1 EHDSDosage "Details of how medication is/was taken or should be taken."
+* dosageInstructions 1..1 EHDSDosage "Details of how medicinal product is/was taken or should be taken."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-* dateAsserted 0..1 dateTime "Date and optionally time when the medication use statemenet was asserted."  //TODO This is the same as header.date - the descriptions don't allow differentiation.
+* dateAsserted 0..1 dateTime "Date and optionally time when the medication-use statement was asserted."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-* periodOfUse 0..1 Period "Period when the patient took, is taking or is expected to take the medication."
+* periodOfUse 0..1 Period "Period when the patient took, is taking or is expected to take the medicinal product."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-* derivedFrom[x] 0..* EHDSMedicationPrescription or EHDSMedicationDispense or EHDSMedicationAdministration "Prescriptions, dispenses or administrations that are the basis of this medication use statement."
+* derivedFrom[x] 0..* EHDSMedicationPrescription or EHDSMedication or EHDSMedicationAdministration "Prescriptions, dispenses or administrations that are the basis of this medicinal product use statement."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-* note 0..1 string "Additional information about the medication use statement."
+* note 0..1 string "Additional information about the medicinal product use statement"
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
 
+// Obligations propagated from parent models.
+* header
+  // from EHDSDataSet
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.author[x]
+  // from EHDSDataSet
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.date
+  // from EHDSDataSet
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.identifier
+  // from EHDSDataSet
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.language
+  // from EHDSDataSet
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.status
+  // from EHDSDataSet
+  * insert Full(#SHALL)
+* header.subject
+  // from EHDSDataSet
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+// End of obligations propagated from parent models.

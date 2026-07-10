@@ -11,7 +11,7 @@ Description: "EHDSDevice means a structured set of data elements describing a me
 * manufacturer 0..1 string "Name of device manufacturer. If the manufacturer code is included in an identifier, manufacturer must correspond to that code."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-* manufactureDate 0..1 dateTime "The date and time when the device was manufactured."
+* manufactureDate 0..1 dateTime "Date and optionally time when the device was manufactured."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
 * expiryDate 0..1 dateTime "The date and time beyond which this device is no longer valid or should not be used (if applicable)."
@@ -32,16 +32,18 @@ Description: "EHDSDevice means a structured set of data elements describing a me
   * type 1..1 CodeableConcept "The type of name, e.g. UDI Label name, user friendly name."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
+    * ^binding.description = "HL7 Device name type"
+    * ^binding.strength = #required
 * modelNumber 0..1 string "The manufacturer's model number for the device."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
 * version 1..* string "The actual design of the device and/or software version running on the device."
-  * insert Full(#SHALL)
+  * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
 * type 0..* CodeableConcept "Device type."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT (preferred), EMDN"
+  * ^binding.description = "SNOMED GPS (preferred), EMDN"
   * ^binding.strength = #required
 * note 0..1 string "Device note and/or comment."
   * insert Full(#SHOULD)

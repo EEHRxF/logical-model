@@ -30,8 +30,8 @@ Description: """EHDSAddress means the structured set of data elements identifyin
 * postalCode 0..1 string "Postal code."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-* country 0..1 CodeableConcept "Country name and country code."
+* country 1..1 CodeableConcept "Country name and country code."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-  * ^binding.description =  "ISO 3166-1 alpha-2"
+  * ^binding.description = "ISO 3166-1 alpha-2"
   * ^binding.strength = #required

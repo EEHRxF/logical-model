@@ -1,21 +1,56 @@
 Logical: EHDSImagingReport
-Title: "Imaging report model"
 Parent: EHDSDocument
-Description: """Imaging report reflects the observations and interpretations of one or more imaging studies, contains elements such as the reason why the study is requested, relevant contextual medical information, the modality used to acquire images and its settings, procedures and body localisations that were used, a description of the observations and findings, exposure information, conclusion and advice."""
+Title: "Imaging report model"
+Description: "Imaging report model."
 
-* header ^short = "Imaging report header."
-  * status //TODO the binding in the table is wrong, not changed
-  * documentType
-    * ^short = "Type of document (e.g. 18748-4 Diagnostic imaging study)."
-    * ^definition = "Type of document (e.g. 18748-4 Diagnostic imaging study)."
-  * documentTitle
-    * ^short = "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can contain further information."
-    * ^definition = "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can contain further information."
-  * eventCategory
-    * ^short = "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
-    * ^definition = "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
-      * ^binding.description = "DICOM CID 33 Modality (preferred), SNOMED CT"
-      * ^binding.strength = #required
+* header
+  * identifier 1..*
+  * identifier only Identifier
+  * identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+  * date 1..1
+  * date only dateTime
+  * date ^short = "Date and optionally time of authoring/issuing"
+  * status
+    * ^binding.description = "HL7 Imaging Study Status"
+  * language 0..1
+  * language only CodeableConcept
+  * language ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
+    * insert Full(#SHALL)
+  * documentType 1..1
+  * documentType only CodeableConcept
+  * documentType ^short = "Type of document (e.g. 18748-4 Diagnostic imaging study)."
+    * insert Basic(#SHOULD)
+  * documentTitle 1..1
+  * documentTitle only string
+  * documentTitle ^short = "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can contain further information."
+    * insert Basic(#SHOULD)
+  * period 0..1
+  * period only Period
+  * period ^short = "Time of service (imaging study) that is being documented."
+    * insert Full(#SHALL)
+  * version
+    * insert Basic(#SHOULD)
+  * attestation
+    * insert Full(#SHALL)
+    * dateTime 1..1
+    * dateTime only dateTime
+    * dateTime ^short = "Date and time of the approval of the document by the attester"
+  * legalAuthentication 0..*
+  * legalAuthentication only Base
+  * legalAuthentication ^short = "Document legal authentication details"
+    * insert Basic(#SHOULD)
+    * legalAuthenticator[x]
+      * insert Basic(#SHOULD)
+    * dateTime 1..1
+    * dateTime only dateTime
+    * dateTime ^short = "Date and time when the document was authorised"
+  * eventCategory 0..*
+  * eventCategory only CodeableConcept
+  * eventCategory ^short = "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
+    * ^binding.description = "DICOM CID 33 Modality (preferred), SNOMED GPS"
+  * serviceSpecialty 0..*
+  * serviceSpecialty only CodeableConcept
+  * serviceSpecialty ^short = "Additional details about where the content was created (e.g. clinical specialty)"
   * accessionNumber 0..* Identifier "Accession number - an identifier, managed by the RIS at the local level, which usually uniquely identifies an imaging procedure request, and links it to imaging study and related imaging report."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
@@ -24,7 +59,7 @@ Description: """Imaging report reflects the observations and interpretations of 
     * insert Basic(#SHOULD)
 * body 0..1 Base "Imaging report structured body."
   * insert Full(#SHALL)
-  * insert Basic(#SHOULD) //TODO This is SHALL for other reports.
+  * insert Basic(#SHOULD)
   * orderInformation 0..* Base "Order to which this imaging report is linked."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -40,12 +75,12 @@ Description: """Imaging report reflects the observations and interpretations of 
     * orderReason[x] 0..* CodeableConcept or EHDSCondition or EHDSObservation or string "An explanation or justification for why this service is being requested."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
-      * ^binding.description = "SNOMED CT (preferred), ICD-10"
+      * ^binding.description = "SNOMED GPS (preferred), ICD-10"
       * ^binding.strength = #required
     * clinicalQuestion 0..1 string "Specification of clinical question (goal of the investigation) to be answered by the imaging investigation."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
-  * supportingInformation 0..1 Base "Additional clinical information about the patient or specimen that may affect service delivery or interpretation (additional types of information may be allowed in implementations)." """This information includes diagnosis, clinical findings and other observations. This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the metal implants present in patient's body."""
+  * supportingInformation 0..1 Base "This information includes diagnosis, clinical findings and other observations. This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the metal implants present in patient's body."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
     * observation 0..* EHDSObservation "Clinical findings and other observations (e.g., height and weight of the patient)."
@@ -58,17 +93,15 @@ Description: """Imaging report reflects the observations and interpretations of 
       * insert Full(#SHOULD)
     * device 0..* EHDSDeviceUse "List of implants or devices that affect the course of the examination or its interpretation (e.g. metal implants)."
       * insert Full(#SHOULD)
-    * pregnancyStatus 0..1 EHDSCurrentPregnancyStatus "Pregnancy status when the imaging examination was performed (e.g., pregnant, not pregnant, unknown)."
+    * pregnancyStatus 0..1 EHDSCurrentPregnancyStatus "Pregnancy status when the imaging examination was performed, e.g., pregnant, not pregnant, unknown."
       * insert Full(#SHOULD)
   * specimen 0..* EHDSSpecimen "Specimen information."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-    * ^comment = "A specimen (not attached to a body) can be used for diagnostic, forensic and medical research purposes."
   * exposureInformation 0..1 Base "Information on total exposure during the imaging investigation to ionising radiation."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-    * ^comment = "This information is required by regulations in several EU countries."
-    * summary 0..1 string "Summary information about the exposure to ionising radiation."
+    * summary 0..1 string "Summary information about the exposure to ionised radiation."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
     * structuredDose 0..* Base "Structured representation of the exposure."
@@ -77,6 +110,8 @@ Description: """Imaging report reflects the observations and interpretations of 
       * doseQuantity 0..1 Quantity "Ionised radiation received during the imaging investigation."
         * insert Full(#SHOULD)
         * insert Basic(#SHOULD)
+        * ^binding.description = "UCUM for units"
+        * ^binding.strength = #required
       * doseModality 0..1 CodeableConcept "Imaging modality used during imaging investigation (DICOM CID029)."
         * insert Full(#SHOULD)
         * insert Basic(#SHOULD)
@@ -108,7 +143,7 @@ Description: """Imaging report reflects the observations and interpretations of 
     * adverseReaction 0..* EHDSAllergyIntolerance "Adverse reaction manifested during imaging investigation."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
-    * result[x] 0..* EHDSObservation or string "Imaging report result data."
+    * results[x] 0..* EHDSObservation or string "Imaging report result data."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
     * conclusion 0..1 Base "A concise and clinically contextualised summary including interpretation/impression of the diagnostic report."
@@ -126,7 +161,7 @@ Description: """Imaging report reflects the observations and interpretations of 
     * description 1..1 string "Narrative description of the recommended activities including additional investigation, medication etc."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
-    * carePlan 0..* EHDSCarePlan "A complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plan."
+    * carePlan 0..* EHDSCarePlan "A complex and structured information about recommended goals, activities and objectives in the form of one or more formal care plan to be implemented after this imaging investigation."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
   * comparisonStudy 0..* EHDSImagingReport "Documentation (reference) of a prior Imaging Report to which the current images were compared."
@@ -135,6 +170,89 @@ Description: """Imaging report reflects the observations and interpretations of 
 * dicomStudyMetadata 0..* EHDSImagingStudy "Metadata of the DICOM study. A study comprises a set of series, each of which includes a set of Service-Object Pair Instances (SOP Instances - images or other data) acquired or produced in a common context. A series is of only one modality (e.g. X-ray, CT, MR, ultrasound), but a study may have multiple series of different modalities."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-* attachments 0..* EHDSAttachment "Report attachments"
+* attachments 0..* EHDSAttachment "Report attachments."
   * insert Full(#SHALL)
   * insert Basic(#SHALL)
+
+// Obligations propagated from parent models.
+* header
+  // from EHDSDataSet
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.attestation
+  // from EHDSDocument
+  * insert Basic(#SHOULD)
+* header.attestation.attester[x]
+  // from EHDSDocument
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.attestation.dateTime
+  // from EHDSDocument
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.author[x]
+  // from EHDSDocument
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.countryOfOrigin
+  // from EHDSDocument
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.custodian
+  // from EHDSDocument
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.date
+  // from EHDSDocument
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.documentTitle
+  // from EHDSDocument
+  * insert Full(#SHALL)
+* header.documentType
+  // from EHDSDocument
+  * insert Full(#SHALL)
+* header.eventCategory
+  // from EHDSDocument
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.identifier
+  // from EHDSDocument
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.language
+  // from EHDSDataSet
+  * insert Basic(#SHOULD)
+* header.legalAuthentication
+  // from EHDSDocument
+  * insert Full(#SHALL)
+* header.legalAuthentication.dateTime
+  // from EHDSDocument
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.legalAuthentication.legalAuthenticator[x]
+  // from EHDSDocument
+  * insert Full(#SHALL)
+* header.period
+  // from EHDSDocument
+  * insert Basic(#SHOULD)
+* header.serviceSpecialty
+  // from EHDSDocument
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.status
+  // from EHDSDataSet, EHDSDocument
+  * insert Basic(#SHALL)
+  * insert Full(#SHALL)
+* header.subject
+  // from EHDSDataSet
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.version
+  // from EHDSDocument
+  * insert Full(#SHALL)
+* presentedForm
+  // from EHDSDocument
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+// End of obligations propagated from parent models.

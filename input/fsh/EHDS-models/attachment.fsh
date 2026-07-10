@@ -1,17 +1,16 @@
 Logical: EHDSAttachment
-//Id: EHDSattachment
 Title: "Attachment model"
 Description: "EHDSAttachment means a structured set of data elements describing additional content, in a format identifiable by a MIME type, including images, clinical reports, or other documents."
 
 * contentType 0..1 CodeableConcept "Mime type of the content, with charset etc."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "BCP 13"
+  * ^binding.description = "BCP-13"
   * ^binding.strength = #required
-* language 0..1 CodeableConcept "Human language of the content"
+* language 0..1 CodeableConcept "Human language of the content."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "BCP 47"
+  * ^binding.description = "BCP-47"
   * ^binding.strength = #required
 * data 0..1 base64Binary "The actual data of the attachment - a sequence of bytes, base64 encoded."
   * insert Full(#SHALL)

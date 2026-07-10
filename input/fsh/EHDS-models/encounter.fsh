@@ -3,22 +3,14 @@ Parent: EHDSDataSet
 Title: "Encounter model"
 Description: "EHDSEncounter means a structured set of data elements describing a patient's interaction with a healthcare service, but excluding the tracking of broader episodes of care (e.g., a maternity episode from first antenatal visit through delivery and postnatal follow-up) extending beyond individual encounters."
 
-
-* header // Obligations derived from the EHDSDataSet
-  * identifier
+* header
+  * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * author[x]
-    * insert Full(#SHOULD)
-    * insert Basic(#SHOULD)
-    * ^definition = "Author (typically a health professional) who is responsible for this encounter."
-  * date
-    * insert Full(#SHOULD)
-    * insert Basic(#SHOULD)
-  * status 
-    * ^short = "Status of the encounter (e.g. discharged, discontinued, completed)."
-    * ^definition = "Status of the encounter (e.g. discharged, discontinued, completed)."
-
+  * status 1..1
+  * status only CodeableConcept
+  * status ^short = "Status of the encounter (e.g. discharged, discontinued, completed)."
+    * ^binding.description = "HL7 Encounter Status"
 * priority 0..1 CodeableConcept "Indicates the urgency of the encounter (e.g. urgent, routine)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -44,7 +36,7 @@ Description: "EHDSEncounter means a structured set of data elements describing a
 * reason[x] 0..* CodeableConcept or EHDSCondition or EHDSProcedure or EHDSObservation or string "Reason for admission, e.g. problem, procedure or finding."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode"
+  * ^binding.description = "SNOMED GPS (preferred), ICD-10, Orphacode"
   * ^binding.strength = #required
 * admission 0..1 Base "Details about the admission to a healthcare service."
   * insert Full(#SHOULD)
@@ -60,7 +52,7 @@ Description: "EHDSEncounter means a structured set of data elements describing a
 * dischargeDiagnosis[x] 0..* CodeableConcept or EHDSCondition "The diagnoses at the time of discharge."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED CT (preferred), ICD-10, Orphacode" 
+  * ^binding.description = "SNOMED GPS (preferred), ICD-10, Orphacode"
   * ^binding.strength = #required
 * dischargeDestination 0..1 Base "Location or organisation to which the patient is going after discharge."
   * insert Full(#SHOULD)
@@ -68,9 +60,8 @@ Description: "EHDSEncounter means a structured set of data elements describing a
   * type 0..1 CodeableConcept "Type of location (e.g. home, hospital, nursing home, etc.)."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-    * ^binding.description = "HL7 Discharge Disposition" 
+    * ^binding.description = "HL7 Discharge Disposition"
     * ^binding.strength = #required
-    // TODO This is example level binding in FHIR, will we keep those?
   * location[x] 0..1 EHDSOrganisation or string "The location or organisation (including contact details)."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
@@ -86,6 +77,37 @@ Description: "EHDSEncounter means a structured set of data elements describing a
 * subEncounter 0..* EHDSEncounter "Reference to encounters that are considered parts of this encounter."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-* note 0..1 string "Free text notes by the health professional."
+* note 0..1 string "Free text notes by the health professional"
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
+
+// Obligations propagated from parent models.
+* header
+  // from EHDSDataSet
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+* header.author[x]
+  // from EHDSDataSet
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.date
+  // from EHDSDataSet
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.identifier
+  // from EHDSDataSet
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.language
+  // from EHDSDataSet
+  * insert Full(#SHOULD)
+  * insert Basic(#SHOULD)
+* header.status
+  // from EHDSDataSet
+  * insert Full(#SHALL)
+  * insert Basic(#SHOULD)
+* header.subject
+  // from EHDSDataSet
+  * insert Full(#SHALL)
+  * insert Basic(#SHALL)
+// End of obligations propagated from parent models.
