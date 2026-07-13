@@ -1,7 +1,7 @@
 RuleSet: Full(strength)
 * ^extension[$obligation][+].extension[code].valueCode = {strength}:process
-* ^extension[$obligation][=].extension[actor].valueCanonical = Canonical(actor-full)
+* ^extension[$obligation][=].extension[actor].valueCanonical = $actor-full
 
 RuleSet: Basic(strength)
 * ^extension[$obligation][+].extension[code].valueCode = {strength}:process
-* ^extension[$obligation][=].extension[actor].valueCanonical = Canonical(actor-basic)
+* ^extension[$obligation][=].extension[actor].valueCanonical = $actor-basic

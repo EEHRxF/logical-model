@@ -3,8 +3,6 @@ Parent: EHDSDataSet
 Title: "Electronic prescription model"
 Description: "Electronic prescription model."
 
-* header 1..1
-* header only Base
 * header ^short = "Prescription header."
   * subject 1..1
   * subject only EHDSPatient
@@ -14,7 +12,8 @@ Description: "Electronic prescription model."
   * identifier ^short = "Business identifier(s) for the prescription."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
-  * author 1..* EHDSHealthProfessional "Author of the document."
+  * author[x] 1..*
+  * author[x] only EHDSHealthProfessional //"Author of the document."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
   * date 1..1
@@ -116,7 +115,7 @@ Description: "Electronic prescription model."
     * insert Basic(#SHOULD)
 
 // Elements inherited from the parent model but not present in the source table.
-* header.author[x] 0..0
+//* header.author[x] 0..0
 * header.patientInsertedData 0..0
 
 // Obligations propagated from parent models.
