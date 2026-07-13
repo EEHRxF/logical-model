@@ -7,7 +7,7 @@ Description: "Model for observation performed by laboratory."
   * status
     * insert Basic(#SHALL)
   * directSubject[x] 0..1
-  * directSubject[x] only EHDSPatient or EHDSLocation or EHDSDevice or string
+  * directSubject[x] only EHDSPatient or EHDSLocation or EHDSDevice or string or EHDSProcedure
   * directSubject[x] ^short = "The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location, or another person."
 * type 1..1
 * type only CodeableConcept
