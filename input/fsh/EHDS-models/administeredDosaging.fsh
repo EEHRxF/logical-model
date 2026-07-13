@@ -14,7 +14,7 @@ Description: """EHDSAdministeredDosage means the structured set of data elements
   * asNeeded 0..0
 
 // Obligations propagated from parent models.
-* dosageDetails
+/* * dosageDetails
   // from EHDSDosage
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -46,3 +46,4 @@ Description: """EHDSAdministeredDosage means the structured set of data elements
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
 // End of obligations propagated from parent models.
+ */

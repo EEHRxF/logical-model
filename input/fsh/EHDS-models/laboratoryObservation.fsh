@@ -92,7 +92,7 @@ Description: "Model for observation performed by laboratory."
 * component.result.certainty 0..0
 
 // Obligations propagated from parent models.
-* bodySite
+/* * bodySite
   // from EHDSObservation
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
@@ -155,43 +155,43 @@ Description: "Model for observation performed by laboratory."
   * insert Basic(#SHOULD)
 * header
   // from EHDSDataSet
-  * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  //* insert Full(#SHALL)
+  //* insert Basic(#SHALL)
 * header.author[x]
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+  //* insert Full(#SHOULD)
+  //* insert Basic(#SHOULD)
 * header.date
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+  //* insert Full(#SHOULD)
+  //* insert Basic(#SHOULD)
 * header.directSubject[x]
   // from EHDSObservation
-  * insert Full(#SHALL)
-  * insert Basic(#SHOULD)
+  //* insert Full(#SHALL)
+  //* insert Basic(#SHOULD)
 * header.identifier
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+  //* insert Full(#SHOULD)
+  //* insert Basic(#SHOULD)
 * header.language
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+  //* insert Full(#SHOULD)
+  //* insert Basic(#SHOULD)
 * header.patientInsertedData
   // from EHDSDataSet
-  * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  //* insert Full(#SHALL)
+  //* insert Basic(#SHALL)
 * header.status
   // from EHDSDataSet
-  * insert Full(#SHALL)
+  //* insert Full(#SHALL)
 * header.subject
   // from EHDSDataSet
-  * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  //* insert Full(#SHALL)
+  //* insert Basic(#SHALL)
 * interpretation
   // from EHDSObservation
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+  //* insert Full(#SHOULD)
+  //* insert Basic(#SHOULD)
 * method
   // from EHDSObservation
   * insert Full(#SHOULD)
@@ -268,3 +268,4 @@ Description: "Model for observation performed by laboratory."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
 // End of obligations propagated from parent models.
+ */
