@@ -41,8 +41,6 @@ Description: "Model for observation performed by laboratory."
   * result 1..1
   * result only Base
   * result ^short = "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."
-    * value[x]
-      * ^binding.description = "UCUM for units"
     * uncertainty 0..1 Base "Measurement uncertainty information about the observation result."
       * insert Full(#SHOULD)
       * insert Basic(#SHOULD)
