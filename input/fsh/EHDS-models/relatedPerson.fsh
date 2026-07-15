@@ -8,7 +8,7 @@ Description: "EHDSRelatedPerson means a structured set of data elements describi
   * type 1..1 CodeableConcept "Description of identifier."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-    * ^binding.description = "HL7 Identifier Type, extended with the following:NI (national unique identifier)HI (health identifier)HIN (health insurance number)SS (social security identifier)REGPID (regional person identifier)REGION (region identifier)"
+    * ^binding.description = "HL7 Identifier Type, extended with the following: NI (national unique identifier), HI (health identifier), HIN (health insurance number), SS (social security identifier), REGPID (regional person identifier), REGION (region identifier)"
     * ^binding.strength = #required
   * value 1..1 string "The value that is unique."
     * insert Full(#SHOULD)
