@@ -59,7 +59,7 @@ Description: "EHDSMedication means a structured set of data elements describing 
         * insert Basic(#SHOULD)
         * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
         * ^binding.strength = #required
-      * basisOfStrengthSubstance 0..1 CodeableConcept "Active substance that the strength refers to, especially when different from.item.strength.substance."
+      * basisOfStrengthSubstance 0..1 CodeableConcept "Active substance that the strength refers to, especially when different from .item.strength.substance."
         * insert Full(#SHOULD)
         * insert Basic(#SHOULD)
         * ^binding.description = "EMA SPOR SMS"
@@ -77,7 +77,7 @@ Description: "EHDSMedication means a structured set of data elements describing 
   * amount 0..1 Quantity "Number of such items in this medicinal product (e.g. 5 vials in the package). The combined amount of all items will be considered to be the total package size."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-    * ^binding.description = "UCUM for units of measureEDQM Standard Terms for units of presentation"
+    * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
     * ^binding.strength = #required
   * packageType 0..1 CodeableConcept "Type of package of the medicinal product item."
     * insert Full(#SHOULD)
@@ -108,7 +108,7 @@ Description: "EHDSMedication means a structured set of data elements describing 
   * value[x] 0..1 boolean or CodeableConcept or string or Quantity or dateTime or integer or decimal or Ratio "Description of the characteristic value."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-    * ^binding.description = "National coding system"
+    * ^binding.description = "National coding system, UCUM for units of measure"
     * ^binding.strength = #required
 * batch 0..1 Base "Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request."
   * insert Full(#SHOULD)
