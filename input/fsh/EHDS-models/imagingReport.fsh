@@ -4,52 +4,32 @@ Title: "Imaging report model"
 Description: "Imaging report model."
 
 * header
-  * identifier 1..*
-  * identifier only Identifier
   * identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
-  * date 1..1
-  * date only dateTime
+  * author[x]
+    * insert Basic(#SHOULD)
   * date ^short = "Date and optionally time of authoring/issuing"
   * status
     * ^binding.description = "HL7 Imaging Study Status"
-  * language 0..1
-  * language only CodeableConcept
   * language ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
     * insert Full(#SHALL)
-  * documentType 1..1
-  * documentType only CodeableConcept
   * documentType ^short = "Type of document (e.g. 18748-4 Diagnostic imaging study)."
     * insert Basic(#SHOULD)
-  * documentTitle 1..1
-  * documentTitle only string
   * documentTitle ^short = "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can contain further information."
     * insert Basic(#SHOULD)
-  * period 0..1
-  * period only Period
   * period ^short = "Time of service (imaging study) that is being documented."
     * insert Full(#SHALL)
   * version
     * insert Basic(#SHOULD)
   * attestation
     * insert Full(#SHALL)
-    * dateTime 1..1
-    * dateTime only dateTime
     * dateTime ^short = "Date and time of the approval of the document by the attester"
-  * legalAuthentication 0..*
-  * legalAuthentication only Base
   * legalAuthentication ^short = "Document legal authentication details"
     * insert Basic(#SHOULD)
     * legalAuthenticator[x]
       * insert Basic(#SHOULD)
-    * dateTime 1..1
-    * dateTime only dateTime
     * dateTime ^short = "Date and time when the document was authorised"
-  * eventCategory 0..*
-  * eventCategory only CodeableConcept
   * eventCategory ^short = "Categorisation of the event covered by the document (e.g. imaging study types, body regions, modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
     * ^binding.description = "DICOM CID 33 Modality (preferred), SNOMED GPS"
-  * serviceSpecialty 0..*
-  * serviceSpecialty only CodeableConcept
   * serviceSpecialty ^short = "Additional details about where the content was created (e.g. clinical specialty)"
   * accessionNumber 0..* Identifier "Accession number - an identifier, managed by the RIS at the local level, which usually uniquely identifies an imaging procedure request, and links it to imaging study and related imaging report."
     * insert Full(#SHALL)
@@ -193,7 +173,7 @@ Description: "Imaging report model."
 * header.author[x]
   // from EHDSDocument
   * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+  //* insert Basic(#SHALL)
 * header.countryOfOrigin
   // from EHDSDocument
   * insert Full(#SHOULD)
