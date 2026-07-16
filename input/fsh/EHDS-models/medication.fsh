@@ -72,8 +72,10 @@ Description: "EHDSMedication means a structured set of data elements describing 
   * containedQuantity 0..1 Ratio "Packaged item quantity per one item (3 ml / 1 vial)"
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-    * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
-    * ^binding.strength = #required
+    * denominator 0..1 Quantity "Quantity in the denominator."
+      * code 0..1 code "Coded form of the denominator unit."
+        * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
+        * ^binding.strength = #required
   * amount 0..1 Quantity "Number of such items in this medicinal product (e.g. 5 vials in the package). The combined amount of all items will be considered to be the total package size."
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
