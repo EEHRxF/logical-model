@@ -1,6 +1,6 @@
 Logical: EHDSImagingStudy
 Parent: EHDSDataSet
-Title: "Imaging study model"
+Title: "Imaging study model."
 Description: "EHDSImagingStudy means the structured set of data elements for facilitating the exchange of imaging studies. Its goal is to enable the exchange of imaging studies regardless of whether the corresponding imaging report is available. It contains metadata that includes the endpoint where the imaging study is located. EHDSImagingStudy may be represented using DICOM KOS and/or HL7 FHIR, depending on the implementation guide."
 
 * header
