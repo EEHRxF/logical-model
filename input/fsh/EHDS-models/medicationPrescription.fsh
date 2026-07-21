@@ -1,7 +1,7 @@
 Logical: EHDSMedicationPrescription
 Parent: EHDSDataSet
 Title: "Electronic prescription model"
-Description: "Electronic prescription model."
+Description: "Electronic prescription."
 
 * header ^short = "Prescription header."
   * subject 1..1
@@ -21,8 +21,6 @@ Description: "Electronic prescription model."
   * date ^short = "Time of issuing (signing) the prescription by prescriber."
     * insert Full(#SHALL)
     * insert Basic(#SHALL)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Status of authorisation for dispensing the prescription items. For a multiple-item prescription, this conveys the aggregate status of the entire prescription. In case of a single-item prescription, prescriptionItem.status shall be the same as header.status."
     * insert Basic(#SHALL)
     * ^binding.description = "HL7 Medication Request Status"
