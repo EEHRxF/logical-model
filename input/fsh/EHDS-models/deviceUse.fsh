@@ -7,8 +7,6 @@ Description: "EHDSDeviceUse means a structured set of data elements describing t
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Current status of the device usage, e.g. active, completed, etc."
     * ^binding.description = "HL7 Device Use Statement Status"
 * periodOfUse 0..1 Period "The period of time during which the device was implanted in the patient or the external device was in use."
