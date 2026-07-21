@@ -17,7 +17,7 @@ Description: "EHDSDocument means a structured set of data elements common all he
     * ^short = "Date of finalising/issuing the document."
     // * insert Full(#SHALL)
     // * insert Basic(#SHALL)
-  * status 1..1
+  * status
     * ^short = "Status of the document."
     // * insert Basic(#SHALL)
     * ^binding.description = "HL7 Composition Status"
