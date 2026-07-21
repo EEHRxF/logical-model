@@ -7,8 +7,6 @@ Description: "EHDSPregnancyHistory means a structured set of data elements descr
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Status of this observation."
     * ^binding.description = "HL7 Observation Status"
 * endDate 0..1 dateTime "The end date of the pregnancy."
