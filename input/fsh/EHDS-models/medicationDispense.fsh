@@ -1,7 +1,7 @@
 Logical: EHDSMedicationDispense
 Parent: EHDSDataSet
-Title: "Medication dispense model"
-Description: "Medication dispense model."
+Title: "Medication dispense model."
+Description: "Electronic dispensation."
 
 * header 1..1
 * header only Base
@@ -17,8 +17,6 @@ Description: "Medication dispense model."
   * date only dateTime
   * date ^short = "Date and time of issuing the dispense record."
     * insert Full(#SHALL)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "The status of the dispense, e.g. completed, declined, entered-in-error."
     * insert Basic(#SHALL)
     * ^binding.description = "HL7 Medication Dispense Status Codes"
