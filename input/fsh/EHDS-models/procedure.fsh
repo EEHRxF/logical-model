@@ -7,8 +7,6 @@ Description: "EHDSProcedure means a structured set of data elements describing a
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Status of the procedure, e.g. completed, on hold, stopped."
     * ^binding.description = "HL7 Event Status"
 * code 1..1 CodeableConcept "Concept code and display name identifying the type of procedure."
