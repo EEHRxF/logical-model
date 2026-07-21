@@ -7,8 +7,6 @@ Description: "EHDSCurrentPregnancyStatus means a structured set of data elements
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Status of the condition."
     * ^binding.description = "HL7 Observation Status"
 * currentPregnancyStatus 1..1 CodeableConcept "Pregnancy status of the patient, e.g. pregnant, not pregnant, possible pregnancy."
