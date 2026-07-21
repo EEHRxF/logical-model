@@ -1,7 +1,7 @@
 Logical: EHDSDischargeReport
 Parent: EHDSDocument
 Title: "Discharge report model"
-Description: "Discharge report model."
+Description: "Discharge report."
 
 * header 1..1
 * header only Base
