@@ -1,7 +1,7 @@
 Logical: EHDSMedicalTestResultAndReport
 Parent: EHDSDocument
 Title: "Medical test result and report model"
-Description: "Medical test result and report model."
+Description: "Medical test results, including laboratory and other diagnostic results and related reports."
 
 * header
   * date 1..1
