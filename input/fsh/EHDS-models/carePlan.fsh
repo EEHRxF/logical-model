@@ -11,7 +11,7 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status // TODO: not in the table, but inherited with obligations from EHDSDataSet anyway.
+  * status // TODO: inherited with obligations from EHDSDataSet, will be re-introduced in the next version.
     * ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
     * ^binding.description = "HL7 Request Status"
     * ^binding.strength = #required
@@ -30,20 +30,20 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS (preferred), ICD-10, Orphacode"
   * ^binding.strength = #required
-* activity[x] 0..* Base "The details of the proposed activity represented in a specific resource."
+* activity[x] 0..* CodeableConcept or string "The details of the proposed activity represented in a specific resource."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * activityCodeableConcept 0..1 CodeableConcept "A code that identifies the activity type."
-    * ^binding.description = "SNOMED GPS"
-    * ^binding.strength = #required
-  * activityReferenceString 0..1 string "A text that identifies the activity type."
-* goal[x] 0..* Base "Describes the intended objective of carrying out the care plan."
+  // * activityCodeableConcept 0..1 CodeableConcept "A code that identifies the activity type."
+  * ^binding.description = "SNOMED GPS"
+  * ^binding.strength = #required
+  // * activityReferenceString 0..1 string "A text that identifies the activity type."
+* goal[x] 0..* CodeableConcept or string "Describes the intended objective of carrying out the care plan."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
-  * goalCodeableConcept 0..1 CodeableConcept "A code describing the goal."
-    * ^binding.description = "National code systems"
-    * ^binding.strength = #required
-  * goalString 0..1 string "A text describing the goal."
+  // * goalCodeableConcept 0..1 CodeableConcept "A code describing the goal."
+  * ^binding.description = "National code systems"
+  * ^binding.strength = #required
+  // * goalString 0..1 string "A text describing the goal."
 
 // Obligations propagated from parent models.
 * header
