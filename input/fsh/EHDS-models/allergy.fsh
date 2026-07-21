@@ -7,8 +7,6 @@ Description: "EHDSAllergyIntolerance means a structured set of data elements des
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Current status of the allergy or intolerance, for example, whether it is active, inactive, or resolved.."
     * ^binding.description = "HL7 AllergyIntolerance Clinical Status Codes"
     * ^binding.strength = #required

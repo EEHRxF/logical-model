@@ -12,7 +12,7 @@ Description: """EHDSAlert means a structured set of data elements describing a c
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status 1..1
+  * status
     * ^short = "Current status of the alert."
     * ^definition = """Current status of the alert, indicates whether this alert is active and needs to be displayed to a user, or whether it is no longer needed."""
     * ^binding.description = "HL7 Flag Status"
