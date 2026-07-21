@@ -7,8 +7,6 @@ Description: "EHDSMedicationUse means a structured set of data elements describi
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Status of the medicinal product use statement, e.g. 'recorded'."
     * insert Basic(#SHALL)
     * ^binding.description = "HL7 Medication Status Codes"
@@ -29,7 +27,7 @@ Description: "EHDSMedicationUse means a structured set of data elements describi
 * periodOfUse 0..1 Period "Period when the patient took, is taking or is expected to take the medicinal product."
   * insert Full(#SHALL)
   * insert Basic(#SHOULD)
-* derivedFrom[x] 0..* EHDSMedicationPrescription or EHDSMedication or EHDSMedicationAdministration "Prescriptions, dispenses or administrations that are the basis of this medicinal product use statement."
+* derivedFrom[x] 0..* EHDSMedicationPrescription or EHDSMedicationDispense or EHDSMedicationAdministration "Prescriptions, dispenses or administrations that are the basis of this medicinal product use statement."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
 * note 0..1 string "Additional information about the medicinal product use statement"
