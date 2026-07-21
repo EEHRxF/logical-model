@@ -7,8 +7,6 @@ Description: "EHDSEncounter means a structured set of data elements describing a
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Status of the encounter (e.g. discharged, discontinued, completed)."
     * ^binding.description = "HL7 Encounter Status"
 * priority 0..1 CodeableConcept "Indicates the urgency of the encounter (e.g. urgent, routine)."
