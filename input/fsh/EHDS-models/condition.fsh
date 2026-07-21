@@ -4,8 +4,6 @@ Title: "Condition model"
 Description: "EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis."
 
 * header
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Status of the condition/problem, e.g. active, resolved, inactive, etc."
     * ^binding.description = "HL7 Condition Clinical Status Codes"
 * code 1..1 CodeableConcept "Code identifying the condition, problem or diagnosis."
@@ -24,7 +22,7 @@ Description: "EHDSCondition means a structured set of data elements describing a
   * insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS"
   * ^binding.strength = #required
-* resolutionCircumstances 0..1 string "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment, etc.)..."
+* resolutionCircumstances 0..1 string "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment, etc.)."
   * insert Full(#SHOULD)
   * insert Basic(#SHOULD)
 * severity 0..1 CodeableConcept "A subjective assessment of the severity of the condition."
