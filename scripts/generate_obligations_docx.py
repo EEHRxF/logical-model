@@ -89,6 +89,12 @@ class LogicalModel:
 
 
 @dataclass
+class ModelMetadata:
+    title: str = ""
+    description: str = ""
+
+
+@dataclass
 class Actor:
     id: str
     url: str
@@ -256,6 +262,42 @@ def unquote(value: str) -> str:
     if value.startswith('"') and value.endswith('"'):
         return sanitize_text(value[1:-1])
     return sanitize_text(value)
+
+
+def parse_fsh_model_metadata(path: Path) -> tuple[str, ModelMetadata] | None:
+    logical_name = ""
+    title = ""
+    description = ""
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
+        stripped = raw_line.strip()
+        if stripped.startswith("Logical:"):
+            logical_name = stripped.split(":", 1)[1].strip()
+            continue
+        if stripped.startswith("Title:"):
+            title = unquote(stripped.split(":", 1)[1])
+            continue
+        if stripped.startswith("Description:"):
+            description = unquote(stripped.split(":", 1)[1])
+            continue
+    if not logical_name:
+        return None
+    return logical_name, ModelMetadata(title=title, description=description)
+
+
+def load_fsh_model_metadata(input_path: Path) -> dict[str, ModelMetadata]:
+    if not input_path.exists():
+        return {}
+    if input_path.is_file():
+        files = [input_path] if input_path.suffix.lower() == ".fsh" else []
+    else:
+        files = sorted(input_path.glob("*.fsh"))
+    result: dict[str, ModelMetadata] = {}
+    for file_path in files:
+        parsed = parse_fsh_model_metadata(file_path)
+        if parsed is not None:
+            logical_name, metadata = parsed
+            result[logical_name] = metadata
+    return result
 
 
 def read_aliases(paths: Iterable[Path]) -> dict[str, str]:
@@ -618,12 +660,20 @@ def element_obligations(
         for extension in element.get("extension", []) or []
         if extension.get("url") == OBLIGATION_URL
     ]
-    prefer_first_actor_value = any(
-        sum(child.get("url") == "code" for child in extension.get("extension", []) or []) > 1
-        for extension in obligation_extensions
-    )
+
+    def obligation_key(entry: ObligationEntry) -> str:
+        return entry.code.split(":", 1)[1] if ":" in entry.code else entry.code
+
+    def replace_same_key(entries: list[ObligationEntry], entry: ObligationEntry) -> None:
+        key = obligation_key(entry)
+        for index, existing in enumerate(entries):
+            if obligation_key(existing) == key:
+                entries[index] = entry
+                return
+        entries.append(entry)
 
     for extension in obligation_extensions:
+        extension_result: dict[str, list[ObligationEntry]] = {}
         children = extension.get("extension", []) or []
         codes = [
             sanitize_text(child.get("valueCode", ""))
@@ -646,13 +696,16 @@ def element_obligations(
         for index, actor_url in enumerate(actor_urls):
             if actor_url not in actors_by_url:
                 raise SystemExit(f"Obligation on {definition_name} refers to unknown actor {actor_url}")
-            if prefer_first_actor_value and actor_url in result:
-                continue
             code = codes[0] if len(codes) == 1 else codes[index] if index < len(codes) else ""
             entry = ObligationEntry(code=code, documentation=documentation)
-            entries = result.setdefault(actor_url, [])
-            if entry not in entries:
-                entries.append(entry)
+            replace_same_key(extension_result.setdefault(actor_url, []), entry)
+        for actor_url, entries in extension_result.items():
+            target_entries = result.setdefault(actor_url, [])
+            existing_keys = {obligation_key(entry) for entry in target_entries}
+            for entry in entries:
+                if obligation_key(entry) not in existing_keys:
+                    target_entries.append(entry)
+                    existing_keys.add(obligation_key(entry))
     return result
 
 
@@ -694,11 +747,16 @@ def parse_structure_obligations(
     path: Path,
     repository: StructureDefinitionRepository,
     actors: list[Actor],
+    fsh_metadata_by_name: dict[str, ModelMetadata] | None = None,
 ) -> LogicalModel | None:
     definition = json.loads(path.read_text(encoding="utf-8"))
     if definition.get("resourceType") != "StructureDefinition" or definition.get("kind") != "logical":
         return None
 
+    logical_name = definition.get("id") or definition.get("name") or path.stem
+    fsh_metadata = (fsh_metadata_by_name or {}).get(logical_name, ModelMetadata())
+    model_title = fsh_metadata.title or sanitize_text(definition.get("title", ""))
+    model_description = fsh_metadata.description or sanitize_text(definition.get("description", ""))
     actors_by_url = {actor.url: actor for actor in actors}
     resolved_elements = resolve_structure_elements(definition, repository)
     obligations_by_key = resolve_structure_obligations(definition, repository, actors_by_url)
@@ -718,10 +776,8 @@ def parse_structure_obligations(
         rows.append(
             ObligationRow(
                 level=0 if not key else key.count(".") + 1,
-                name=(definition.get("id") or definition.get("name") or path.stem)
-                if not key
-                else sanitize_text(key.rsplit(".", 1)[-1]),
-                description=sentence_text(element.get("short") or element.get("definition") or "")
+                name=logical_name if not key else sanitize_text(key.rsplit(".", 1)[-1]),
+                description=sentence_text(model_title or element.get("short") or element.get("definition") or "")
                 if not key
                 else sanitize_text(element.get("short") or element.get("definition") or ""),
                 data_type=format_parent_data_type(definition.get("baseDefinition", ""))
@@ -738,10 +794,10 @@ def parse_structure_obligations(
     if not rows:
         return None
     return LogicalModel(
-        logical_name=definition.get("id") or definition.get("name") or path.stem,
+        logical_name=logical_name,
         parent=definition.get("baseDefinition", ""),
-        title=sanitize_text(definition.get("title", "")),
-        description=sanitize_text(definition.get("description", "")),
+        title=model_title,
+        description=model_description,
         elements=rows,
     )
 
@@ -1100,9 +1156,10 @@ def main() -> int:
     input_format = selected_files[0].suffix.lower() if selected_files else ""
     if input_format == ".json":
         repository = build_structure_definition_repository(context_files)
+        fsh_metadata_by_name = load_fsh_model_metadata(project_dir / "input/fsh/EHDS-models")
         models = []
         for file_path in selected_files:
-            model = parse_structure_obligations(file_path, repository, actors)
+            model = parse_structure_obligations(file_path, repository, actors, fsh_metadata_by_name)
             if model is not None:
                 models.append(model)
     else:

@@ -19,6 +19,19 @@ from docx.oxml.ns import qn
 CHANGED_FILL = "FFF2CC"
 OUTPUT_ONLY_FILL = "F4CCCC"
 REFERENCE_ONLY_FILL = "DDEBF7"
+APOSTROPHE_TRANSLATION = str.maketrans(
+    {
+        "\u0060": "'",
+        "\u00b4": "'",
+        "\u02bc": "'",
+        "\u2018": "'",
+        "\u2019": "'",
+        "\u201a": "'",
+        "\u201b": "'",
+        "\u2032": "'",
+        "\uff07": "'",
+    }
+)
 
 
 @dataclass
@@ -30,7 +43,7 @@ class TableData:
 
 
 def normalize(value: str) -> str:
-    return value.replace("\u200b", "").strip()
+    return value.translate(APOSTROPHE_TRANSLATION).replace("\u200b", "").strip()
 
 
 def normalized_header(value: str) -> str:
