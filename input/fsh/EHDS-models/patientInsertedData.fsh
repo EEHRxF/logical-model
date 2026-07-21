@@ -1,4 +1,5 @@
 Logical: EHDSPatientInsertedData
+// TODO: Derive from EHDSDatSet
 Title: "Patient-inserted data model"
 Description: "Patient-inserted data model."
 
