@@ -7,8 +7,6 @@ Description: "EHDSImmunisation means a structured set of data elements describin
   * patientInsertedData
     * insert Full(#SHOULD)
     * insert Basic(#SHOULD)
-  * status 1..1
-  * status only CodeableConcept
   * status ^short = "Status of the immunisation event, e.g., completed, not-done."
     * ^binding.description = "HL7 Immunization Status Codes"
 * diseaseOrAgentTargeted 0..* CodeableConcept "Disease or agent that the vaccination provides protection against."
