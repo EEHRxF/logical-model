@@ -1,7 +1,7 @@
 Logical: EHDSImagingReport
 Parent: EHDSDocument
-Title: "Imaging report model"
-Description: "Imaging report model."
+Title: "Imaging report model."
+Description: "Imaging report."
 
 * header
   * identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
@@ -123,7 +123,7 @@ Description: "Imaging report model."
     * adverseReaction 0..* EHDSAllergyIntolerance "Adverse reaction manifested during imaging investigation."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
-    * results[x] 0..* EHDSObservation or string "Imaging report result data."
+    * result[x] 0..* EHDSObservation or string "Imaging report result data."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
     * conclusion 0..1 Base "A concise and clinically contextualised summary including interpretation/impression of the diagnostic report."
