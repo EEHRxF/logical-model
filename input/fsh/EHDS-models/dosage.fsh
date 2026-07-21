@@ -30,7 +30,7 @@ Description: "EHDSDosage means a structured set of data elements describing the 
   * repeat 0..1 Base "Repetition of the administration."
     * insert Full(#SHALL)
     * insert Basic(#SHOULD)
-    * bounds[x] 0..1 Quantity or Period "Time bounds for the treatment (current dosage scheme), Quantity contains a number of time units (e.g. 10 days), Period contains start and end date (e.g. 05.08.2023 - 10.08.2023), Range."
+    * bounds[x] 0..1 Quantity or Period "Time bounds for the treatment (current dosage scheme), Quantity contains a number of time units (e.g. 10 days), Period contains start and end date (e.g. 05.08.2023 - 10.08.2023)."
       * insert Full(#SHALL)
       * insert Basic(#SHOULD)
     * duration 0..1 Quantity "Duration of administration (e.g. '5 minutes', '1 hour')."
