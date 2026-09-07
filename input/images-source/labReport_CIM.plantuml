@@ -1,7 +1,7 @@
 @startmindmap
 skinparam topurl StructureDefinition-
 
-* **[[EHDSMedicalTestResultAndReport.html EHDSMedicalTestResultAndReport]]**
+* **[[EHDSMedicalTestReport.html EHDSMedicalTestReport]]**
 ** Header
 ***_ Subject
 ***_ Identifier

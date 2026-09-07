@@ -4,50 +4,50 @@ Title: "Pregnancy history model"
 Description: "EHDSPregnancyHistory means a structured set of data elements describing a single past pregnancy."
 
 * header
-  * patientInsertedData
-    * insert Full(#SHOULD)
-    * insert Basic(#SHOULD)
+   //* patientInsertedData
+     //* insert Full(#SHOULD)
+     //* insert Basic(#SHOULD)
   * status ^short = "Status of this observation."
     * ^binding.description = "HL7 Observation Status"
 * endDate 0..1 dateTime "The end date of the pregnancy."
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 * outcome 0..1 CodeableConcept "The outcome of the pregnancy."
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS"
   * ^binding.strength = #required
 * note 0..1 string "Free text notes by the health professional."
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 
 // Obligations propagated from parent models.
 * header
   // from EHDSDataSet
-  * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+   //* insert Full(#SHALL)
+   //* insert Basic(#SHALL)
 * header.author[x]
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 * header.date
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 * header.identifier
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 * header.language
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
-  * insert Full(#SHALL)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHALL)
+   //* insert Basic(#SHOULD)
 * header.subject
   // from EHDSDataSet
-  * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+   //* insert Full(#SHALL)
+   //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.

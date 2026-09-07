@@ -14,53 +14,53 @@ Description: "EHDSMedicationAdministration means a structured set of data elemen
   * status
     * ^binding.description = "HL7 Medication Administration Status Codes"
 * medication 1..1 EHDSMedication "Administered medicinal product."
-  * insert Full(#SHALL)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHALL)
+   //* insert Basic(#SHOULD)
 * occurrence[x] 1..1 dateTime or Period "Specific date/time or interval of time during which the administration took place (or did not take place)."
-  * insert Full(#SHALL)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHALL)
+   //* insert Basic(#SHOULD)
 * reason[x] 0..* CodeableConcept or EHDSCondition or EHDSObservation "Condition or observation that supports why the medicinal product was administered."
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS (preferred), ICD-10, Orphacode"
   * ^binding.strength = #required
-* dosageInstructions 0..1 EHDSAdministeredDosage "Details of how medicinal product was taken/administered."
-  * insert Full(#SHALL)
-  * insert Basic(#SHOULD)
+* dosage 0..1 EHDSAdministeredDosage "Details of how medicinal product was taken/administered."
+   //* insert Full(#SHALL)
+   //* insert Basic(#SHOULD)
 * note 0..1 string "Textual information about the administration."
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 
 // Elements inherited from the parent model but not present in the source table.
-* header.patientInsertedData 0..0
+//* header.patientInsertedData 0..0
 
 // Obligations propagated from parent models.
 * header
   // from EHDSDataSet
-  * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+   //* insert Full(#SHALL)
+   //* insert Basic(#SHALL)
 * header.author[x]
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 * header.date
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 * header.identifier
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 * header.language
   // from EHDSDataSet
-  * insert Full(#SHOULD)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHOULD)
+   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
-  * insert Full(#SHALL)
-  * insert Basic(#SHOULD)
+   //* insert Full(#SHALL)
+   //* insert Basic(#SHOULD)
 * header.subject
   // from EHDSDataSet
-  * insert Full(#SHALL)
-  * insert Basic(#SHALL)
+   //* insert Full(#SHALL)
+   //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.

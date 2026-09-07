@@ -2,7 +2,7 @@
 
 #### Medical Test Results
 
-Medical test results are communicated using [EHDSObservation model](StructureDefinition-EHDSObservation.html). This model is shared by all medical test results, and it is sufficient for communicating laboratory test results in non-laboratory context. 
+Medical test results are communicated using [EHDSObservation model](StructureDefinition-EHDSObservation.html). This model is shared by all medical test results, and it is sufficient for communicating laboratory test results in non-laboratory context.
 
 In specific laboratory context [EHDSLaboratoryObservation model](StructureDefinition-EHDSLaboratoryObservation.html) is used - it is a derivation from EHDSObservation and adds specific elements.
 
@@ -16,7 +16,7 @@ Medical test result report could be divided into several parts: document header,
 
 
 ### Detail EHDS information models for medical test (incl laboratory) report
-- [Medical Test Result Report](StructureDefinition-EHDSMedicalTestResultAndReport.html)
+- [Medical Test Result Report](StructureDefinition-EHDSMedicalTestReport.html)
 - [Laboratory Observation](StructureDefinition-EHDSLaboratoryObservation.html)
 
 

@@ -201,11 +201,11 @@ groups:
       - StructureDefinition/EHDSPatientSummary
       - StructureDefinition/EHDSMedicationPrescription
       - StructureDefinition/EHDSMedicationDispense
-      - StructureDefinition/EHDSMedicalTestResultAndReport
+      - StructureDefinition/EHDSMedicalTestReport
       - StructureDefinition/EHDSImagingReport
       - StructureDefinition/EHDSImagingStudy
       - StructureDefinition/EHDSDischargeReport
-      - StructureDefinition/EHDSPatientInsertedData
+#      - StructureDefinition/EHDSPatientInsertedData
 
   EHDSCommonLogicalModels:
     name: EHDS Common Logical Models
