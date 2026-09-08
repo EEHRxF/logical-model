@@ -12,6 +12,9 @@ Description: "Model for observation performed by laboratory."
 * type 1..1
 * type only CodeableConcept
 * type ^short = "Observation type."
+  * ^binding.description = "SNOMED GPS, LOINC, NPU"
+  * ^binding.strength = #required
+
 * result
   /*
   * uncertainty 0..1 Base "Measurement uncertainty information about the observation result."
@@ -38,6 +41,8 @@ Description: "Model for observation performed by laboratory."
   * type 1..1
   * type only CodeableConcept
   * type ^short = "Type of the component observation."
+    * ^binding.description = "SNOMED GPS, LOINC, NPU"
+    * ^binding.strength = #required
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
   * result 1..1

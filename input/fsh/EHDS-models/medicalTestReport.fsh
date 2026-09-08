@@ -100,7 +100,7 @@ Description: "Medical test results, including laboratory and other diagnostic re
    //* insert Basic(#SHALL)
 
 // Elements inherited from the parent model but not present in the source table.
-* header.countryOfOrigin 0..0
+//* header.countryOfOrigin 0..0
 
 // Obligations propagated from parent models.
 * header

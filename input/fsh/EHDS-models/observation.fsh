@@ -15,7 +15,7 @@ Description: "EHDSObservation means a structured set of data elements describing
 * type 1..1 CodeableConcept "Observation type that indicates what was observed."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED GPS (preferred), LOINC, NPU"
+  * ^binding.description = "SNOMED GPS, LOINC"
   * ^binding.strength = #required
 * originalName 0..1 string "Original (conventional) name of the observation as used in the local laboratory or clinical system."
    //* insert Full(#SHOULD)
@@ -109,7 +109,7 @@ Description: "EHDSObservation means a structured set of data elements describing
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * type 1..1 CodeableConcept "Type of the component observation"
-    * ^binding.description = "SNOMED GPS (preferred), LOINC, NPU"
+    * ^binding.description = "SNOMED GPS, LOINC"
     * ^binding.strength = #required
   * originalName 0..1 string "Original (user-friendly) name of the observation as used in the local laboratory or clinical system."
      //* insert Full(#SHOULD)

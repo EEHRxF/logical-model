@@ -91,7 +91,7 @@ Description: "Electronic prescription."
        //* insert Basic(#SHOULD)
       * ^binding.description = "SNOMED GPS"
       * ^binding.strength = #required
-  * numberOfRepeats 0..1 integer "Number of refills authorised - how many times the prescription item can be dispensed in addition to the original dispense. The default value is 0."
+  * numberOfRepeats 0..1 integer "Number of refills authorised - how many times the prescription item can be dispensed in addition to the original dispense. If the element is missing, no repeats are authorised."
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
   * minimumDispenseInterval 0..1 Quantity "Minimum dispense interval. If a prescription allows for repeated dispensations, the interval between dispensations shall be stated here."

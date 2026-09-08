@@ -2,11 +2,16 @@ Logical: EHDSMedication
 Title: "Medication model"
 Description: "EHDSMedication means a structured set of data elements describing a medicinal product."
 
+* identifyingCode 0..* CodeableConcept "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions. For the Identifier variant, use an EMA PMS ID or an identifier from a national identification system."
+  * ^binding.description = "SNOMED GPS, EMA PMS ID or a national coding system"
+  * ^binding.strength = #required
+/*
 * identifyingCode[x] 0..* CodeableConcept or Identifier "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions. For the Identifier variant, use an EMA PMS ID or an identifier from a national identification system."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
 * identifyingCode[x] ^binding.description = "SNOMED GPS or a national coding"
 * identifyingCode[x] ^binding.strength = #required
+*/
 * classification 0..* CodeableConcept "Anatomical therapeutic chemical classification or another classification (e.g. narcotic/psychotropic; orphan drug)."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)

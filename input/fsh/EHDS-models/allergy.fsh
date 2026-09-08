@@ -13,7 +13,7 @@ Description: "EHDSAllergyIntolerance means a structured set of data elements des
 * agentOrAllergen 1..1 CodeableConcept "Code that identifies the allergy or intolerance."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-  * ^binding.description = "EMA SPOR SMS (preferred for medication), SNOMED GPS (preferred for other cases)"
+  * ^binding.description = "EMA SPOR SMS (preferred for medication), SNOMED GPS (for medication groupings), SNOMED GPS (preferred for other cases)"
   * ^binding.strength = #required
   * ^comment = "Code for an allergy or intolerance statement (either a positive or a negated/excluded statement). This may be a code for a substance or pharmaceutical product that is considered to be responsible for the adverse reaction risk (e.g., Latex), an allergy or intolerance condition (e.g., Latex allergy), or a negated/excluded code for a specific substance or class (e.g., No latex allergy). It must be clinically safe to only process the 'code' and ignore the 'reaction.substance'."
 * note 0..1 string "Free text notes by the health professional."

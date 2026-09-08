@@ -34,7 +34,7 @@ Description: "Imaging report."
   * accessionNumber 0..* Identifier "Accession number - an identifier, managed by the RIS at the local level, which usually uniquely identifies an imaging procedure request, and links it to imaging study and related imaging report."
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
-  * intendedRecipient[x] 0..* EHDSPatient or EHDSRelatedPerson or EHDSHealthProfessional or EHDSOrganisation "Information recipient (intended recipient of the report, additional recipients might be identified by the ordering party, e.g. GP, other specialist), if applicable."
+  * intendedRecipient[x] 0..* EHDSPatient or EHDSRelatedPerson or EHDSHealthProfessional or EHDSOrganisation "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals)."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
 * body 0..1 Base "Imaging report structured body."
