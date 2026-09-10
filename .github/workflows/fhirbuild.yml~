@@ -7,11 +7,11 @@
 
 name: FHIR_CI_BUILD
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events for any main branch
   push:
-    branches-ignore:    
+    branches-ignore:
       - 'gh-pages'
   pull_request:
 
@@ -19,5 +19,5 @@ on:
 
 jobs:
   # This workflow contains a single job called "build"
-  call_build: 
+  call_build:
     uses: WorldHealthOrganization/smart-base/.github/workflows/fhirbuild.yml@main

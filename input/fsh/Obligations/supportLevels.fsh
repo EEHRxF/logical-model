@@ -6,7 +6,7 @@ Alias: $actor-basic = https://ehds.eu/specifications/fhir/actor-basic
 Instance: actor-full
 InstanceOf: ActorDefinition
 Title: "Full"
-Description: """Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures."""
+Description: """Support that enables the exchange of personal electronic health data with the focus on structured content representation."""
 Usage: #example
 * url = $actor-full
 * name = "Full"
@@ -16,7 +16,7 @@ Usage: #example
 Instance: actor-basic
 InstanceOf: ActorDefinition
 Title: "Basic"
-Description: """Support that enables the exchange of personal electronic health data with the focus on structured content representation."""
+Description: """Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures."""
 Usage: #example
 * url = $actor-basic
 * name = "Basic"

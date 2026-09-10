@@ -4,7 +4,7 @@ name: EHDSModels
 title: EHDS Logical Information Models
 description: EHDS Logical Information Models
 status: draft # draft | active | retired | unknown
-version: 0.1.0
+version: 0.3.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2026+
 releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -20,6 +20,7 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 # dependencies:
+#   hl7.fhir.uv.extensions: 5.3.0
 #   hl7.fhir.us.core: 3.1.0
 #   hl7.fhir.us.mcode:
 #     id: mcode
@@ -200,10 +201,11 @@ groups:
       - StructureDefinition/EHDSPatientSummary
       - StructureDefinition/EHDSMedicationPrescription
       - StructureDefinition/EHDSMedicationDispense
-      - StructureDefinition/EHDSMedicalTestResultAndReport
+      - StructureDefinition/EHDSMedicalTestReport
       - StructureDefinition/EHDSImagingReport
       - StructureDefinition/EHDSImagingStudy
       - StructureDefinition/EHDSDischargeReport
+#      - StructureDefinition/EHDSPatientInsertedData
 
   EHDSCommonLogicalModels:
     name: EHDS Common Logical Models
@@ -242,7 +244,7 @@ groups:
       - StructureDefinition/EHDSSpecimen
       - StructureDefinition/EHDSTelecom
       - StructureDefinition/EHDSTravelHistory
-      
+
 
   EHDSMetadataModels:
     name: EHDS Metadata Models
@@ -253,12 +255,12 @@ groups:
 
   EHDSSupportLevels:
     name: Support Levels
-    description: Support levels for obligations defined as ActorDefinitions. 
+    description: Support levels for obligations defined as ActorDefinitions.
     resources:
       - ActorDefinition/actor-full
       - ActorDefinition/actor-basic
 
-#      
+#
 #
 #
 # The ImplementationGuide resource defines several other properties

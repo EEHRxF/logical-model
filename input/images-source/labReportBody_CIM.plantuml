@@ -1,6 +1,6 @@
 @startmindmap
 skinparam topurl StructureDefinition-
-* [[EHDSLaboratoryReport.html Laboratory Report Body]]
+* [[EHDSMedicalTestReport.html Medical Test Result And Report Body]]
 ** Order information
 ***_ Order Id
 ***_ Order date and time
