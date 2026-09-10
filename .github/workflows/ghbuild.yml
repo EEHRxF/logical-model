@@ -73,60 +73,30 @@ jobs:
             git push origin HEAD:main
           fi
 
-  build_tables:
+  build_word_document:
+    name: Generate logical model Word document
     needs: call_build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
-        with:
-          ref: 'gh-pages'
 
-      - name: Install rust
-        uses: actions-rs/toolchain@v1
+      - name: Set up Python
+        uses: actions/setup-python@v6
         with:
-          toolchain: stable
-          override: true
+          python-version: '3.13'
 
-      - name: Install rust cache
-        uses: Swatinem/rust-cache@v2
+      - name: Install dependencies
+        run: python -m pip install python-docx
 
-      - name: Install Pandoc
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y pandoc
+      - name: Generate Word document
+        run: python scripts/generate_logical_model_docx.py
 
-      - name: Checkout table tool
-        uses: actions/checkout@v6
-        with:
-          repository: danka74/easy-tree
-          path: easy-tree
-          
-      - name: Checkout table tool
-        uses: actions/checkout@v6
-        with:
-          repository: danka74/fhir-generate
-          path: fhir-generate
-          
-      - name: Cache external tool
-        uses: actions/cache@v4
-        with:
-          path: fhir-generate/target
-          key: ${{ runner.os }}-fhir-generate-${{ hashFiles('fhir-generate/Cargo.lock') }}
-
-      - name: Build tables
-        run:  |
-          echo "$(basename ${{ github.ref }})"
-          cd fhir-generate
-          cargo build --release
-          ./target/release/fhir-generate table ../branches/$(basename ${{ github.ref }})/StructureDefinition*.json
-          pandoc *.md -o tables.docx --reference-doc=custom-reference.docx 
-          
       - name: Upload Word Document
         uses: actions/upload-artifact@v7
         with:
-          name: tables-word-doc
-          path: fhir-generate/tables.docx
+          name: logical-models.docx
+          path: out/logical-models.docx
           archive: false
 
           
