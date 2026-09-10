@@ -81,6 +81,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
+      - name: Checkout generated IG
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          path: generated-ig
+
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
@@ -90,7 +96,20 @@ jobs:
         run: python -m pip install python-docx
 
       - name: Generate Word document
-        run: python scripts/generate_logical_model_docx.py
+        run: |
+          published_ref="${GITHUB_REF##*/}"
+          branch_output="generated-ig/branches/${published_ref}"
+
+          if find "${branch_output}" -maxdepth 1 -type f \
+            -name 'StructureDefinition-*.json' -print -quit 2>/dev/null | grep -q .; then
+            input_path="${branch_output}"
+          else
+            input_path="generated-ig"
+          fi
+
+          python scripts/generate_logical_model_docx.py \
+            --input-path "${input_path}" \
+            --output out/logical-models.docx
 
       - name: Upload Word Document
         uses: actions/upload-artifact@v7
