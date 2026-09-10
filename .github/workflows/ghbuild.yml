@@ -5,7 +5,7 @@
 # 2021-06-18: publish default branches to / , other branches branches/<branch>
 # 2021-11-26: reusable workflow
 
-name: GH_PAGES_BUILD
+name: FHIR_IG_BUILD_AND_PUBLISH
   
 # Controls when the action will run. 
 on:
@@ -26,6 +26,52 @@ jobs:
   # This workflow contains a single job called "build"
   call_build: 
     uses: WorldHealthOrganization/smart-base/.github/workflows/ghbuild.yml@v1
+
+  publish_public:
+    name: Publish generated IG to eehrxf.github.io
+    needs: call_build
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    concurrency:
+      group: public-pages-deployment
+      cancel-in-progress: false
+    steps:
+      - name: Checkout generated IG
+        uses: actions/checkout@v6
+        with:
+          ref: gh-pages
+          path: generated-ig
+
+      - name: Checkout public Pages repository
+        uses: actions/checkout@v6
+        with:
+          repository: EEHRxF/eehrxf.github.io
+          ref: main
+          token: ${{ secrets.PAGES_DEPLOY_TOKEN }}
+          path: public-site
+
+      - name: Copy generated IG
+        run: |
+          mkdir -p public-site/logical-model
+          rsync -a --delete \
+            --exclude '.git' \
+            generated-ig/ \
+            public-site/logical-model/
+          touch public-site/.nojekyll
+
+      - name: Commit and publish
+        working-directory: public-site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add logical-model .nojekyll
+
+          if git diff --cached --quiet; then
+            echo "No publication changes"
+          else
+            git commit -m "Publish logical-model from ${GITHUB_SHA}"
+            git push origin HEAD:main
+          fi
 
   build_tables:
     needs: call_build
