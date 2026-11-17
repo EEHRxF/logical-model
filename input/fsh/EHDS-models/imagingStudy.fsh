@@ -15,7 +15,7 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
   * date ^short = "Date and optionally time when the imaging study representation or manifest was authored or issued, distinct from the date and time when the imaging study started."
      //* insert Full(#SHALL)
   * status
-    * ^short = "Where the source representation does not provide a reliable lifecycle status, unknown may be used. Status available shall only be used where availability has been established."
+    * ^short = "Status of the resource. Where the source representation does not provide a reliable lifecycle status, unknown may be used. Status available shall only be used where availability has been established."
     * ^binding.description = "HL7 Imaging Study Status"
 * presentedForm 0..* EHDSAttachment "PDF version of the imaging study to be used where DICOM version is not available."
    //* insert Full(#SHALL)
@@ -72,7 +72,8 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
   * numberOfInstances 0..1 integer "Number of series related instances."
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
-  * seriesEndpoint 0..1 EHDSEndpoint "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of information. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service."
+  * seriesEndpoint 0..1 EHDSEndpoint "Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of an imaging study. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service."
+  //"Series endpoint describing the technical details of a location that can be connected to for the delivery/retrieval of information. Sufficient information is required to ensure that a connection can be made securely, and appropriate data transmitted as defined by the endpoint owner. These may be locally hosted services, regional services, or national service."
      //* insert Full(#SHALL)
      //* insert Basic(#SHALL)
   * bodySite 0..1 EHDSBodyStructure "Body part examined."

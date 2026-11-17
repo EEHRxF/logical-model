@@ -34,7 +34,7 @@ Description: """EHDSAlert means a structured set of data elements describing a c
 * period 0..1 Period "Time period when alert is active. The period of time from the activation of the alert to inactivation of the alert. If the alert is active, the end of the period should be unspecified."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-//* sourceReference 0..* Resource "A reference to the resource the alert is about."
+* otherSupportingInformation 0..* string "A reference to the resource the alert is about."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 

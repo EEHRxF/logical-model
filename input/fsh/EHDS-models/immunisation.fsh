@@ -17,7 +17,7 @@ Description: "EHDSImmunisation means a structured set of data elements describin
 * vaccine 1..1 CodeableConcept "Type of immunisation."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED GPS, ATC"
+  * ^binding.description = "ATC, SNOMED GPS"
   * ^binding.strength = #required
 * administeredProduct 0..1 EHDSMedication "Administered medicinal product, including batch/lot details when necessary."
    //* insert Full(#SHOULD)

@@ -49,7 +49,7 @@ Description: "Electronic prescription."
   * statusReason[x] 0..1 CodeableConcept or string "Reason for the current status of prescription item, for example the reason why the prescription was cancelled or why the prescription was changed from previous."
      //* insert Full(#SHALL)
      //* insert Basic(#SHALL)
-    * ^binding.description = "HL7 Medication Request Status Reason"
+    * ^binding.description = "Not defined" //"HL7 Medication Request Status Reason"
     * ^binding.strength = #required
   * medication 1..1 EHDSMedication "Prescribed medicinal product."
      //* insert Full(#SHALL)

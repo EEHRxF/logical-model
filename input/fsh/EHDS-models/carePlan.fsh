@@ -25,7 +25,7 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
 * period 0..1 Period "Indicates when the plan did (or is intended to) come into effect and end."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* addresses[x] 0..* CodeableConcept or EHDSCondition "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan."
+* conditionAddressed[x] 0..* CodeableConcept or EHDSCondition "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS (preferred), ICD-10, Orphacode"

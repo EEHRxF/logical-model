@@ -17,6 +17,7 @@ Description: "EHDSDocument means a structured set of data elements common all he
     * ^short = "Date of finalising/issuing the document."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
+  * lastUpdate 0..1 dateTime "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time."
   * status
     * ^short = "Status of the document."
     //  //* insert Basic(#SHALL)
@@ -45,10 +46,10 @@ Description: "EHDSDocument means a structured set of data elements common all he
     * dateTime 1..1 dateTime "Date and time of the approval of the document by the attester."
       //  //* insert Full(#SHALL)
       //  //* insert Basic(#SHALL)
-  * legalAuthentication 0..* Base "Document legal authentication details."
+  * legalAuthentication 0..* Base "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
-    * legalAuthenticator[x] 1..1 EHDSHealthProfessional or EHDSOrganisation "The person or organisation taking responsibility for the content of the document."
+    * legalAuthenticator[x] 1..1 EHDSHealthProfessional or EHDSOrganisation "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician)."
       //  //* insert Full(#SHALL)
       //  //* insert Basic(#SHALL)
     * dateTime 1..1 dateTime "Date and time when the document was authenticated."
@@ -57,7 +58,7 @@ Description: "EHDSDocument means a structured set of data elements common all he
   * eventCategory 0..* CodeableConcept "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
     //  //* insert Full(#SHOULD)
     //  //* insert Basic(#SHOULD)
-    * ^binding.description = "LOINC, SNOMED GPS, DICOM CID 33 Modality"
+    * ^binding.description = "SNOMED GPS, LOINC, DICOM CID 33 Modality"
     * ^binding.strength = #required
   * serviceSpecialty 0..* CodeableConcept "Additional details about where the content was created (e.g. clinical specialty)."
     //  //* insert Full(#SHOULD)

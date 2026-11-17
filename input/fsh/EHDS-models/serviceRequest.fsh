@@ -15,7 +15,7 @@ Description: "EHDSServiceRequest means a structured set of data elements describ
 * code 0..1 CodeableConcept "A code and name that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that has been requested."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED GPS (preferred), LOINC, NPU, SNOMED GPS"
+  * ^binding.description = "SNOMED GPS (preferred), LOINC, NPU"
   * ^binding.strength = #required
 * quantity 0..1 Quantity "Number of requested services of the same type."
    //* insert Full(#SHOULD)
