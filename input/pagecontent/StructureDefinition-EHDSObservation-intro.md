@@ -1,4 +1,4 @@
-## Scope and Usage
+### Scope and Usage
 
 **Observation** is one of the most complex and versatile structures in the logical model. It is designed to cover many different types of observations across a wide range of use cases, from sharing simple findings (e.g. skin color or pulse rate) to representing complex laboratory and medical test results.
 

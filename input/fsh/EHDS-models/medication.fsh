@@ -2,7 +2,7 @@ Logical: EHDSMedication
 Title: "Medication model"
 Description: "EHDSMedication means a structured set of data elements describing a medicinal product."
 
-* identifyingCode 0..* CodeableConcept "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions. For the Identifier variant, use an EMA PMS ID or an identifier from a national identification system."
+* identifyingCode 0..* CodeableConcept "An identifier or a code for the product (virtual product, branded product, or package). If several identifiers are specified, they shall not have conflicting meanings or very different granularities. An identifier might not exist e.g. for substance-based prescriptions."
   * ^binding.description = "SNOMED GPS, EMA PMS ID or a national coding system"
   * ^binding.strength = #required
 /*
@@ -117,7 +117,7 @@ Description: "EHDSMedication means a structured set of data elements describing 
   * value[x] 0..1 boolean or CodeableConcept or string or Quantity or dateTime or integer or decimal or Ratio "Description of the characteristic value."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
-    * ^binding.description = "Not defined, UCUM for units of measure"
+    * ^binding.description = "UCUM for units of measure"
     * ^binding.strength = #required
 * batch 0..1 Base "Batch information of a medicinal product. Typically recorded during dispense or administration, rarely known or relevant for a prescription/request."
    //* insert Full(#SHOULD)

@@ -6,7 +6,7 @@ Description: "EHDSObservation means a structured set of data elements describing
 * header
   * status
     * ^binding.description = "HL7 Observation Status"
-  * directSubject[x] 0..1 EHDSPatient or EHDSLocation or EHDSDevice or string "The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations."
+  * directSubject[x] 0..1 EHDSPatient or EHDSLocation or EHDSDevice or EHDSProcedure or string "The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations."
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
 * observationDate[x] 1..1 dateTime or Period "Clinically relevant time or time period for the observation."
@@ -15,7 +15,7 @@ Description: "EHDSObservation means a structured set of data elements describing
 * type 1..1 CodeableConcept "Observation type that indicates what was observed."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-  * ^binding.description = "SNOMED GPS, LOINC"
+  * ^binding.description = "SNOMED GPS, LOINC, NPU"
   * ^binding.strength = #required
 * originalName 0..1 string "Original (conventional) name of the observation as used in the local laboratory or clinical system."
    //* insert Full(#SHOULD)
@@ -54,7 +54,7 @@ Description: "EHDSObservation means a structured set of data elements describing
     * type 0..1 CodeableConcept "Probability Distribution Type for uncertainty"
        //* insert Full(#SHOULD)
        //* insert Basic(#SHOULD)
-      * ^binding.description = "HL7 ProbabilityDistributionType"
+      * ^binding.description = "HL7 Probability Distribution Type"
       * ^binding.strength = #required
   * dataAbsentReason 0..1 CodeableConcept "Provides a reason why the expected value in the element Observation.result.value[x] is missing."
      //* insert Full(#SHOULD)
@@ -109,12 +109,12 @@ Description: "EHDSObservation means a structured set of data elements describing
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * type 1..1 CodeableConcept "Type of the component observation"
-    * ^binding.description = "SNOMED GPS, LOINC"
+    * ^binding.description = "SNOMED GPS, LOINC, NPU"
     * ^binding.strength = #required
   * originalName 0..1 string "Original (user-friendly) name of the observation as used in the local laboratory or clinical system."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
-  * result 1..1 Base "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement certainty. Content of the observation result will vary according to the type of the observation."
+  * result 1..1 Base "Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
     * value[x] 0..1 string or Quantity or Range or Ratio or CodeableConcept "Observation result value according to the type of observation."
@@ -131,7 +131,7 @@ Description: "EHDSObservation means a structured set of data elements describing
       * type 0..1 CodeableConcept "Probability distribution type for uncertainty"
          //* insert Full(#SHOULD)
          //* insert Basic(#SHOULD)
-        * ^binding.description = "HL7 ProbabilityDistributionType"
+        * ^binding.description = "HL7 Probability Distribution Type"
         * ^binding.strength = #required
     * dataAbsentReason 0..1 CodeableConcept "Provides a reason why the expected value in the element component.result.value[x] is missing."
        //* insert Full(#SHALL)

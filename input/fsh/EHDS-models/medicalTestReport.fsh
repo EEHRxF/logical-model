@@ -74,7 +74,7 @@ Description: "Medical test results, including laboratory and other diagnostic re
     * condition 0..* EHDSCondition "Condition that may influence the service or result interpretation."
        //* insert Full(#SHOULD)
        //* insert Basic(#SHOULD)
-    * medicationAdministration 0..* EHDSMedicationAdministration "Medication administered before ordering the service that may influence the service or result interpretation."
+    * medicationAdministration 0..* EHDSMedicationAdministration "Medication administered specifically in relation to this test."
        //* insert Full(#SHALL)
        //* insert Basic(#SHALL)
     * immunisation 0..* EHDSImmunisation "Immunisation history that may influence the service or result interpretation."
@@ -95,7 +95,7 @@ Description: "Medical test results, including laboratory and other diagnostic re
     * medicalTestResult[x] 0..* EHDSObservation or EHDSLaboratoryObservation "Observation details."
        //* insert Full(#SHALL)
        //* insert Basic(#SHOULD)
-* attachments 0..* EHDSAttachment "Report attachments."
+* attachment 0..* EHDSAttachment "Report attachment."
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 

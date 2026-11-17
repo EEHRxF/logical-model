@@ -12,7 +12,7 @@ Description: "EHDSTravelHistory means a structured set of data elements describi
   * date ^short = "Date and optionally time of authoring/issuing"
   * status ^short = "Status of the resource or document"
      //* insert Full(#SHOULD)
-    * ^binding.description = "To be specified" // TODO: Correct binding shall be added
+    * ^binding.description = "Not defined" // TODO: Correct binding shall be added
 * country 1..1 CodeableConcept "Country visited."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)

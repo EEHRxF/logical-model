@@ -21,6 +21,9 @@
 # Notes:
 #   The script resolves the `baseDefinition` chain using local JSON files from
 #   the same directory, so inherited elements are included in the output table.
+#   Descriptions come from the nearest ancestor that supplies a definition or
+#   short text (definition wins when both are supplied at that level).
+#   Elements with max=0 and all their descendants are omitted.
 
 from __future__ import annotations
 
@@ -160,10 +163,15 @@ def merge_elements(base_elements: list[dict], differential_elements: list[dict])
         key = element_merge_key(element)
         if key is None:
             continue
+        own_element = deepcopy(element)
+        if any((element.get(field) or "").strip() for field in ("definition", "short")):
+            # Keep the chosen text separate from the inherited FHIR fields:
+            # a local short must override an ancestor's longer definition.
+            own_element["_table_description"] = format_description(element)
         if key in merged_by_key:
-            merged_by_key[key].update(deepcopy(element))
+            merged_by_key[key].update(own_element)
         else:
-            merged_by_key[key] = deepcopy(element)
+            merged_by_key[key] = own_element
         diff_order.append(key)
 
     ordered_keys = stable_topological_order(base_order, diff_order)
@@ -300,6 +308,8 @@ def format_cardinality(element: dict) -> str:
 
 
 def format_description(element: dict) -> str:
+    if "_table_description" in element:
+        return element["_table_description"]
     definition = sanitize_text((element.get("definition") or "").strip())
     short = sanitize_text((element.get("short") or "").strip())
     return definition or short
@@ -319,11 +329,24 @@ def parse_structure_definition(path: Path, repository: StructureDefinitionReposi
 
     logical_name = definition.get("id") or definition.get("name") or path.stem
     resolved_elements = resolve_elements(definition, repository)
+    prohibited_keys = {
+        element_merge_key(element)
+        for element in resolved_elements
+        if element.get("max") == "0"
+    }
     rows: list[ElementRow] = []
 
     for element in resolved_elements:
         path_value = element.get("path", "")
         if not path_value or "." not in path_value:
+            continue
+        # Inherited paths may have different model roots. Compare relative
+        # paths and inspect the element itself and all its ancestors,
+        # independently of element order.
+        ancestor = element_merge_key(element)
+        while ancestor and ancestor not in prohibited_keys:
+            ancestor = parent_key(ancestor)
+        if ancestor in prohibited_keys or "" in prohibited_keys:
             continue
         level, name = path_level_and_name(path_value)
         rows.append(
