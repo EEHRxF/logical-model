@@ -7,7 +7,7 @@ Description: """EHDSAddress means the structured set of data elements identifyin
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Address Use"
   * ^binding.strength = #required
-* type 0..1 CodeableConcept "Distinguishes between physical addresses (those that can be visited) and mailing addresses. Most addresses are both."
+* type 0..1 CodeableConcept "Distinguishes between physical addresses (those that may be visited) and mailing addresses. Most addresses are both."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Address Type"
@@ -21,7 +21,7 @@ Description: """EHDSAddress means the structured set of data elements identifyin
 * houseNumber 0..1 string "House number."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* postBox 0..1 string "Post box."
+* postBox 0..1 string "Postbox."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * city 0..1 string "City."

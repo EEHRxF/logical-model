@@ -2,7 +2,7 @@ Logical: EHDSSpecimen
 Title: "Specimen model"
 Description: "EHDSSpecimen means a structured set of data elements describing a sample collected."
 
-* identifier 1..* Identifier "An identifier of the specimen which is unique within in a defined scope."
+* identifier 1..* Identifier "An identifier of the specimen which is unique within a defined scope."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
 * status 0..1 CodeableConcept "Availability of the specimen."
@@ -15,13 +15,13 @@ Description: "EHDSSpecimen means a structured set of data elements describing a 
    //* insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS"
   * ^binding.strength = #required
-* specimenSource[x] 0..1 EHDSPatient or EHDSLocation or EHDSDevice "The source where the specimen came from. This may be from a patient, from a location (e.g., the source of an environmental sample), or from a device."
+* specimenSource[x] 0..1 EHDSPatient or EHDSLocation or EHDSDevice "The source where the specimen came from. This may be from a patient, from a location (e.g. the source of an environmental sample) or from a device."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
 * parentSpecimen 0..* EHDSSpecimen "Specimen from which this specimen originated."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-* request 0..* EHDSServiceRequest "Service request based on which the specimen was collected."
+* request 0..* EHDSServiceRequest "Service request on the basis of which the specimen was collected."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * collection 0..* Base "Collection details."
@@ -53,13 +53,13 @@ Description: "EHDSSpecimen means a structured set of data elements describing a 
 * container 0..* Base "The container holding the specimen."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-  * specimenQuantity 0..1 Quantity "Quantity of specimen within container,"
+  * specimenQuantity 0..1 Quantity "Quantity of specimen within the container."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
   * containerDevice 1..1 EHDSDevice "The device for the container holding the specimen."
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
-* condition 0..* CodeableConcept "State of the specimen. State of the specimen should be aligned with dataAbsentReason element of the Observation model."
+* condition 0..* CodeableConcept "State of the specimen. State of the specimen shall be aligned with the dataAbsentReason element of the Observation model."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Specimen Condition"

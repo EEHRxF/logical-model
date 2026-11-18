@@ -8,7 +8,7 @@ Description: "EHDSLocation means a structured set of data elements describing a 
 * name 0..1 string "Human-readable name of the location."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* description 0..1 string "Additional details about the location that could be displayed as further information to identify the location beyond its name."
+* description 0..1 string "Additional details about the location that may be displayed as further information to identify the location beyond its name."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * address 0..1 EHDSAddress "Physical location address."

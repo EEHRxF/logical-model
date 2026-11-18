@@ -4,13 +4,12 @@ Title: "Medication administration model"
 Description: "EHDSMedicationAdministration means a structured set of data elements describing a single instance of the administration of a medicinal product in the context of an imaging or laboratory procedure."
 
 * header
-  * identifier 0..*
   * identifier only Identifier
   * identifier ^short = "Business identifier for the object, unique within its system."
   * author[x] only EHDSHealthProfessional or EHDSOrganisation or EHDSDevice
   * date 0..1
   * date only dateTime
-  * date ^short = "Date and optionally time of authoring/issuing the resource."
+  * date ^short = "Date and optionally time of authoring/issuing."
   * status
     * ^binding.description = "HL7 Medication Administration Status Codes"
 * medication 1..1 EHDSMedication "Administered medicinal product."
@@ -51,10 +50,6 @@ Description: "EHDSMedicationAdministration means a structured set of data elemen
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -64,3 +59,6 @@ Description: "EHDSMedicationAdministration means a structured set of data elemen
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.author[x] ^short = "Author of the resource."

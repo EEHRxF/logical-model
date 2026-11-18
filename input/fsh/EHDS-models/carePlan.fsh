@@ -12,7 +12,7 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
   * status // TODO: inherited with obligations from EHDSDataSet, will be re-introduced in the next version.
-    * ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions, or is now a historical record."
+    * ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record."
     * ^binding.description = "HL7 Request Status"
     * ^binding.strength = #required
 
@@ -25,7 +25,7 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
 * period 0..1 Period "Indicates when the plan did (or is intended to) come into effect and end."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* conditionAddressed[x] 0..* CodeableConcept or EHDSCondition "Conditions/problems/concerns/diagnoses/etc whose management and/or mitigation are handled by this plan."
+* conditionAddressed[x] 0..* CodeableConcept or EHDSCondition "Conditions, problems, concerns, diagnoses, etc. whose management, mitigation or management and mitigation are handled by this plan."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS (preferred), ICD-10, Orphacode"
@@ -58,10 +58,6 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -71,3 +67,6 @@ Description: "EHDSCarePlan means a structured set of data elements describing th
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.author[x] ^short = "Author of the resource."

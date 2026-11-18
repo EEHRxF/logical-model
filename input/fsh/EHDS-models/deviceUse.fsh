@@ -7,7 +7,7 @@ Description: "EHDSDeviceUse means a structured set of data elements describing t
    //* patientInsertedData
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
-  * status ^short = "Current status of the device usage, e.g. active, completed, etc."
+  * status ^short = "Current status of the device usage, e.g. active, completed."
     * ^binding.description = "HL7 Device Use Statement Status"
 * periodOfUse 0..1 Period "The period of time during which the device was implanted in the patient or the external device was in use."
    //* insert Full(#SHOULD)
@@ -46,10 +46,6 @@ Description: "EHDSDeviceUse means a structured set of data elements describing t
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -59,3 +55,7 @@ Description: "EHDSDeviceUse means a structured set of data elements describing t
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."

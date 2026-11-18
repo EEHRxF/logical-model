@@ -6,5 +6,6 @@
         "activityBar.background": "#04360C",
         "titleBar.activeBackground": "#064B11",
         "titleBar.activeForeground": "#EFFEF1"
-    }
+    },
+    "commentTranslate.multiLineMerge": false
 }

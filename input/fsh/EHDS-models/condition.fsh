@@ -4,7 +4,7 @@ Title: "Condition model"
 Description: "EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis."
 
 * header
-  * status ^short = "Status of the condition/problem, e.g. active, resolved, inactive, etc."
+  * status ^short = "Status of the condition/problem, e.g. active, resolved, inactive."
     * ^binding.description = "HL7 Condition Clinical Status Codes"
 * code 1..1 CodeableConcept "Code identifying the condition, problem or diagnosis."
    //* insert Full(#SHALL)
@@ -17,12 +17,12 @@ Description: "EHDSCondition means a structured set of data elements describing a
 * endDate 0..1 dateTime "The date or estimated date that the condition resolved or went into remission."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* category 0..* CodeableConcept "Category of the problem (e.g. POA - present on admission, HAC - hospital acquired condition, and other categorisations)."
+* category 0..* CodeableConcept "Category of the problem (e.g. POA – present on admission, hospital-acquired condition (HAC) and other categorisations)."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS"
   * ^binding.strength = #required
-* resolutionCircumstances 0..1 string "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment, etc.)."
+* resolutionCircumstances 0..1 string "Describes the reason for which the status of the problem changed from current to inactive (e.g. surgical procedure, medical treatment)."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * severity 0..1 CodeableConcept "A subjective assessment of the severity of the condition."
@@ -33,20 +33,20 @@ Description: "EHDSCondition means a structured set of data elements describing a
 * bodySite 0..* EHDSBodyStructure "The anatomical location including laterality where this condition manifests itself."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* stage 0..* CodeableConcept "Stage/grade usually assessed formally using a specific staging/grading system (e.g., TNM, ICD-O, BI-RADS etc). Multiple assessment systems could be used."
+* stage 0..* CodeableConcept "Stage or grade, usually assessed formally using a specific staging, grading or classification system, such as Tumor, Node, Metastasis (TNM), International Classification of Diseases for Oncology (ICD-O) or Breast Imaging Reporting and Data Systems (BI-RADS). Multiple assessment systems may be used."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "Not defined"
   * ^binding.strength = #required
-* diagnosisAssertionStatus 0..1 CodeableConcept "Assertion about the certainty associated with a diagnosis. Diagnostic and/or clinical evidence of condition."
+* diagnosisAssertionStatus 0..1 CodeableConcept "Assertion about the certainty associated with a diagnosis. Evidence of condition (diagnostic, clinical or both)."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Condition Verification Status"
   * ^binding.strength = #required
-* specialistContact 0..* EHDSHealthProfessional "Health Professional who may be specifically related to the problem, as a preferred contact."
+* specialistContact 0..* EHDSHealthProfessional "Health professional who may be specifically related to the problem, as a preferred contact."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* externalResource 0..* uri "External Resource which may be specifically related to the problem, for example a link to a guideline on a specific a rare disease problem."
+* externalResource 0..* uri "External resource which may be specifically related to the problem, for example a link to a guideline on a specific rare disease problem."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * note 0..1 string "Free text note by the health professional."
@@ -70,10 +70,6 @@ Description: "EHDSCondition means a structured set of data elements describing a
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 //* header.patientInsertedData
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -87,3 +83,7 @@ Description: "EHDSCondition means a structured set of data elements describing a
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."

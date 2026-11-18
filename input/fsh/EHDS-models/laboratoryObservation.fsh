@@ -8,11 +8,11 @@ Description: "Model for observation performed by laboratory."
      //* insert Basic(#SHALL)
   * directSubject[x] 0..1
   * directSubject[x] only EHDSPatient or EHDSLocation or EHDSDevice or EHDSProcedure or string
-  * directSubject[x] ^short = "The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location, or another person."
+  * directSubject[x] ^short = "The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location or another person."
 * type 1..1
 * type only CodeableConcept
 * type ^short = "Observation type."
-  * ^binding.description = "SNOMED GPS, LOINC, NPU"
+  * ^binding.description = "SNOMED GPS, LOINC (preferred), NPU"
   * ^binding.strength = #required
 
 * result
@@ -40,8 +40,8 @@ Description: "Model for observation performed by laboratory."
 * component
   * type 1..1
   * type only CodeableConcept
-  * type ^short = "Type of the component observation."
-    * ^binding.description = "SNOMED GPS, LOINC, NPU"
+  * type ^short = "Type of component observation."
+    * ^binding.description = "SNOMED GPS, LOINC (preferred), NPU"
     * ^binding.strength = #required
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
@@ -176,10 +176,6 @@ Description: "Model for observation performed by laboratory."
   // from EHDSDataSet
   // //* insert Full(#SHOULD)
   // //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-  // //* insert Full(#SHOULD)
-  // //* insert Basic(#SHOULD)
 //* header.patientInsertedData
   // from EHDSDataSet
   // //* insert Full(#SHALL)
@@ -272,3 +268,13 @@ Description: "Model for observation performed by laboratory."
    //* insert Basic(#SHOULD)
 // End of obligations propagated from parent models.
  */
+
+// Element descriptions aligned with WP v5.
+* result.uncertainty ^short = "Measurement uncertainty information about the observation result."
+* component.result ^short = "Result of the observation including text, numeric, coded and other types of results of the measurement and measurement uncertainty. Content of the observation result may vary depending on the type of observation."
+* component.result.uncertainty ^short = "Measurement uncertainty information about the observation result."
+* component.referenceRange.appliesTo ^short = "Codes to indicate the target population this reference range applies to."
+
+// WP uses a different binding label here than in the parent Observation table.
+* result.uncertainty.type ^binding.description = "HL7 Probability Distribution Type"
+* component.result.uncertainty.type ^binding.description = "HL7 Probability Distribution Type"

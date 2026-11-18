@@ -17,13 +17,13 @@ Description: "EHDSProcedure means a structured set of data elements describing a
 * procedureDate[x] 0..1 dateTime or Period "Date and time of the procedure or interval of its performance."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-* performer 0..* EHDSHealthProfessional "Actors who performed the procedure (only main responsible actors expected)."
+* performer 0..* EHDSHealthProfessional "Actors who performed the procedure (only main responsible actors required)."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * bodySite 0..* EHDSBodyStructure "Target body site of the procedure."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* reason[x] 0..* CodeableConcept or EHDSCondition or EHDSObservation or EHDSProcedure "The reason the procedure was performed. This may be a concept from a terminology or a reference to a specific instance that describes the reason."
+* reason[x] 0..* CodeableConcept or EHDSCondition or EHDSObservation or EHDSProcedure "The reason for performing the procedure.This may be expressed as a coded concept or as a reference to a specific condition, observation or procedure that describes the reason."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS (preferred), ICD-10, Orphacode"
@@ -41,7 +41,7 @@ Description: "EHDSProcedure means a structured set of data elements describing a
 * deviceUsed 0..* EHDSDevice "Device used to perform the procedure."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* focalDevice 0..* EHDSDevice "Device that is implanted, removed, or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound-vac, etc.) as a focal portion of the Procedure."
+* focalDevice 0..* EHDSDevice "Device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound vac, etc.) as a focal portion of the procedure."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * note 0..1 string "Free text notes by the health professional."
@@ -65,10 +65,6 @@ Description: "EHDSProcedure means a structured set of data elements describing a
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -78,3 +74,7 @@ Description: "EHDSProcedure means a structured set of data elements describing a
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."

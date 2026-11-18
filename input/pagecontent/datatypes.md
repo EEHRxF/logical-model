@@ -2,26 +2,26 @@ EHDS models use FHIR data types for defining data types, but with less constrain
 
 ### Definitions of used data types
 
-| **Data type name**                       | **Data type description**                                                                                                                                                                                                                                                        |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Base                                           | A foundational data type that provides shared structure and characteristics for other data types. Carries no value itself.                                                                                                                                                             |
-| base64Binary                                   | A sequence of bytes encoded in base64 format.                                                                                                                                                                                                                                          |
-| boolean                                        | A binary value, either true or false.                                                                                                                                                                                                                                                  |
-| CodeableConcept                                | A coded data type used to designate data fields.                                                                                                                                                                                                                                       |
-| dateTime                                       | A date, time, or partial date (e.g. YYYY, YYYY-MM, YYYY-MM-DD, or YYYY-MM-DDThh:mm:ss+zz:zz). When hours and minutes are included, a time zone offset is required.                                                                                                                     |
-| decimal                                        | A numerical value consisting of a whole and a fractional part. Precision is determined by the use case.                                                                                                                                                                                |
-| EHDS[Name of the data group]                   | A reference to the EHDS common data groups as defined in Annex X.                                                                                                                                                                         |
-| Identifier                                     | A value that uniquely and unambiguously identifies an entity, coupled with its source system where applicable.                                                                                                                                                                         |
-| integer                                        | A whole number, positive or negative, as determined by the use case.                                                                                                                                                                                                                   |
-| integer64                                      | A signed 64-bit whole number ranging from -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807. Used where very large counts or time values are required.                                                                                                                          |
-| Period                                         | A time interval defined by two dateTime values representing the start and end points. Precision is determined by the use case.                                                                                                                                                         |
-| Quantity                                       | A numerical value, integer or decimal, accompanied by a unit of measure, preferably expressed as a coded concept.                                                                                                                                                                      |
-| Range                                          | An interval defined by a minimum and maximum Quantity (e.g. 2 mg–4 mg).                                                                                                                                                                                                               |
-| Ratio                                          | A relationship between two Quantity values expressed as a numerator and a denominator (e.g. 1 tablet per 4 hours).                                                                                                                                                                     |
-| string                                         | A sequence of Unicode characters.                                                                                                                                                                                                                                                      |
-| uri                                            | A Uniform Resource Identifier (URI) reference.                                                                                                                                                                                                                                         |
-| Narrative                                      | A human-readable XHTML summary of a resource, conveying its essential clinical and business information in a form safe to render independently of the resource's structured data. Its status indicates the relationship between the narrative content and the underlying encoded data. |
-| {:.table-bordered .table-striped .thead-light} |                                                                                                                                                                                                                                                                                        |
+| **Data type name** | **Data type description** |
+|---|---|
+| Base | A foundational data type that provides shared structure and characteristics for other data types. Carries no value itself. |
+| base64Binary | A sequence of bytes encoded in base64 format. |
+| boolean | A binary value, either true or false. |
+| CodeableConcept | A coded data type used to designate data fields. |
+| dateTime | A date, time or partial date (e.g. YYYY, YYYY-MM, YYYY-MM-DD, or YYYY-MM-DDThh:mm:ss+zz:zz). When hours and minutes are included, a time zone offset is required. |
+| decimal | A numerical value consisting of a whole and a fractional part. Precision is determined by the use case. |
+| EHDS[Name of the data group] | A reference to the EHDS common data groups determined in Annex X. |
+| Identifier | A value that uniquely and unambiguously identifies an entity, coupled with its source system where applicable. |
+| integer | A whole number, positive or negative, as determined by the use case. |
+| Period | A time interval determined by start date and time, or both. Either the start or the end may be unspecified, allowing for open-ended periods or deadlines. Precision is determined by the use case. |
+| Quantity | A numerical value, integer or decimal, accompanied by a unit of measure, preferably expressed as a coded concept. |
+| Range | An interval determined by a minimum and maximum Quantity. |
+| Ratio | A relationship between two Quantity values expressed as a numerator and a denominator. |
+| string | A sequence of Unicode characters. |
+| time | A time of day in the form hh:mm:ss, with an optional fractional second, without a date or time zone. |
+| uri | A URI reference. |
+| Narrative | A human-readable XHTML summary of a resource compliant with HL7 FHIR, conveying its essential clinical and business information in a form safe to render independently of the resource’s structured data. Its status indicates the relationship between the narrative content and the underlying encoded data. |
+{:.table-bordered .table-striped .thead-light}
 
 ### Reference or contained data
 

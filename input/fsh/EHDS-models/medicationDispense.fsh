@@ -15,27 +15,24 @@ Description: "Electronic dispensation."
      //* insert Full(#SHALL)
   * date 1..1
   * date only dateTime
-  * date ^short = "Date and time of issuing the dispense record."
+  * date ^short = "Date and time of issuance of the dispensation record."
      //* insert Full(#SHALL)
-  * status ^short = "The status of the dispense, e.g. completed, declined, entered-in-error."
+  * status ^short = "The status of the dispensation, e.g. completed, declined, entered-in-error."
      //* insert Basic(#SHALL)
     * ^binding.description = "HL7 Medication Dispense Status Codes"
-  * language 0..1
-  * language only CodeableConcept
-  * language ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
 * dispenseLocation 0..1 EHDSOrganisation "Location of dispense."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
 * receiver[x] 0..1 EHDSPatient or EHDSHealthProfessional or EHDSRelatedPerson "Identification of the person who received the dispensed medicinal products, especially when it was not the patient. When not present, it is assumed that the patient is the receiver."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-* relatedRequest 1..* Identifier "Identifier of the prescription item the dispense is related to."
+* relatedRequest 1..* Identifier "Identifier of the prescription item the dispensation is related to."
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
-* medication 1..1 EHDSMedication "Exact dispensed product. If multiple medicinal products are dispensed together, multiple dispense records should be created."
+* medication 1..1 EHDSMedication "Exact dispensed product. If multiple medicinal products are dispensed together, multiple dispensation records shall be created."
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
-* dispensedQuantity 1..1 Quantity "Number of dispensed packages if the package size is known, or number of smaller items/units, according to the medicinal product dispensed. A unit shall be provided."
+* dispensedQuantity 1..1 Quantity "Number of dispensed packages if the package size is known, or number of smaller items/units, depending on the medicinal product dispensed. A unit shall be provided."
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
   * ^binding.description = "UCUM for units of measurement, EDQM Standard Terms for units of presentation"
@@ -66,10 +63,6 @@ Description: "Electronic dispensation."
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -78,3 +71,6 @@ Description: "Electronic dispensation."
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.language ^short = "Language in which the document is written. Language is expressed by the IETF language tag."

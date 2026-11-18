@@ -17,10 +17,10 @@ Description: "EHDSCurrentPregnancyStatus means a structured set of data elements
 //* dateOfStatus 0..1 dateTime "Effective date of the current pregnancy status."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* expectedDateOfDelivery 0..1 dateTime "Date in which the woman is due to give birth. Year, day and month are required."
+* expectedDateOfDelivery 0..1 dateTime "Date on which the woman is due to give birth. Day, year and month are required."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-* gestationalAge 0..1 Quantity "Duration of the pregnancy (weeks and/or days) at the time of the observation."
+* gestationalAge 0..1 Quantity "Duration of the pregnancy (weeks, days or weeks and days) at the time of the observation."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "UCUM (units of measurement)"
@@ -46,10 +46,6 @@ Description: "EHDSCurrentPregnancyStatus means a structured set of data elements
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -59,3 +55,7 @@ Description: "EHDSCurrentPregnancyStatus means a structured set of data elements
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."

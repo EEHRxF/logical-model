@@ -7,14 +7,13 @@ Description: "Medical test results, including laboratory and other diagnostic re
   * date 1..1
   * date only dateTime
   * date ^short = "Date and optionally time of authoring/issuing."
-  * language
-     //* insert Full(#SHALL)
+  * documentCategory ^short = "Broad category of document (e.g. 11502-2 ‘Laboratory report’ or 70004-7 ‘Diagnostic study note’)."
   * documentType 1..1
   * documentType only CodeableConcept
-  * documentType ^short = "Type of document (e.g., 11502-2 'Laboratory report' or 18759-1 'Spirometry study')."
+  * documentType ^short = "Type of document (e.g. 18725-2 ‘Microbiology studies (set)’ or 18759-1 ‘Spirometry study’)."
   * documentTitle 1..1
   * documentTitle only string
-  * documentTitle ^short = "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: Medical test report'."
+  * documentTitle ^short = "Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Example: Medical test report."
      //* insert Basic(#SHOULD)
   * period
      //* insert Full(#SHALL)
@@ -26,26 +25,26 @@ Description: "Medical test results, including laboratory and other diagnostic re
   * legalAuthentication
     * legalAuthenticator[x] 1..1
     * legalAuthenticator[x] only EHDSHealthProfessional or EHDSOrganisation
-    * legalAuthenticator[x] ^short = "The person or organization taking responsibility for the content of the document."
+    * legalAuthenticator[x] ^short = "The person or organisation taking responsibility for the content of the document."
     * dateTime 1..1
     * dateTime only dateTime
     * dateTime ^short = "Date and time when the document was authorised."
   * eventCategory 0..*
   * eventCategory only CodeableConcept
-  * eventCategory ^short = "Categorisation of the event covered by the document (e.g. medical study types etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
+  * eventCategory ^short = "Categorisation of the event covered by the document (e.g. medical study types). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes."
      //* insert Full(#SHALL)
     * ^binding.description = "LOINC (preferred), SNOMED GPS"
   * serviceSpecialty
      //* insert Full(#SHALL)
   * custodian
      //* insert Full(#SHALL)
-* intendedRecipient[x] 0..* EHDSPatient or EHDSRelatedPerson or EHDSHealthProfessional or EHDSOrganisation or EHDSDevice "Information recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals)."
+* intendedRecipient[x] 0..* EHDSPatient or EHDSRelatedPerson or EHDSHealthProfessional or EHDSOrganisation or EHDSDevice "Details of the recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals)."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* body 0..1 Base "Medical test result and report structured body."
+* body 0..1 Base "Medical test result and report structured body. At least one of body or presentedForm shall be present."
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
-  * orderInformation 0..* Base "Order information"
+  * orderInformation 0..* Base "Order information."
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
     * orderId 1..* Identifier "An identifier of the medical test order."
@@ -65,7 +64,7 @@ Description: "Medical test results, including laboratory and other diagnostic re
     * clinicalQuestion 0..1 string "Specification of clinical question (goal of the investigation) to be answered by the medical test."
        //* insert Full(#SHALL)
        //* insert Basic(#SHALL)
-  * supportingInformation 0..1 Base "Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations. In medical test ordering these are typically referred to as 'ask at order entry questions (AOEs).' This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example, reporting the amount of inspired oxygen for blood gas measurements."
+  * supportingInformation 0..1 Base "Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnoses, clinical findings and other observations. In medical test ordering, it may include answers to questions asked at order entry (AOE), including observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHALL)
     * observation 0..* EHDSObservation "Clinical findings and other observations."
@@ -140,9 +139,6 @@ Description: "Medical test results, including laboratory and other diagnostic re
   // from EHDSDocument
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
-* header.language
-  // from EHDSDataSet
-   //* insert Basic(#SHOULD)
 * header.legalAuthentication
   // from EHDSDocument
    //* insert Full(#SHALL)
@@ -177,3 +173,9 @@ Description: "Medical test results, including laboratory and other diagnostic re
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.author[x] ^short = "Author of the document."
+* header.language ^short = "Language in which the resource is written. Language is expressed by the IETF language tag."
+* header.legalAuthentication ^short = "Document legal authentication details."
+* presentedForm ^short = "A narrative easy-to-read representation of the full dataset, e.g. PDF version of a document. At least one of body or presentedForm shall be present."

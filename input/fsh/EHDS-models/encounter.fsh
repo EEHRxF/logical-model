@@ -55,7 +55,7 @@ Description: "EHDSEncounter means a structured set of data elements describing a
 * dischargeDestination 0..1 Base "Location or organisation to which the patient is going after discharge."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-  * type 0..1 CodeableConcept "Type of location (e.g. home, hospital, nursing home, etc.)."
+  * type 0..1 CodeableConcept "Type of location (e.g. home, hospital, nursing home)."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
     * ^binding.description = "HL7 Discharge Disposition"
@@ -75,7 +75,7 @@ Description: "EHDSEncounter means a structured set of data elements describing a
 * subEncounter 0..* EHDSEncounter "Reference to encounters that are considered parts of this encounter."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* note 0..1 string "Free text notes by the health professional"
+* note 0..1 string "Free text notes by the health professional."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 
@@ -96,10 +96,6 @@ Description: "EHDSEncounter means a structured set of data elements describing a
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -109,3 +105,7 @@ Description: "EHDSEncounter means a structured set of data elements describing a
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."
