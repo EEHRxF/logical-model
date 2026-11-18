@@ -2,7 +2,7 @@ Logical: EHDSBodyStructure
 Title: "Body structure model"
 Description: "EHDSBodyStructure means a structured set of data elements describing an anatomical structure of a patient."
 
-* morphology 0..1 CodeableConcept "The kind of structure being represented by the body structure at BodyStructure.location. This can define both normal and abnormal morphologies."
+* morphology 0..1 CodeableConcept "The kind of structure being represented by the body structure at BodyStructure.location. This may define both normal and abnormal morphologies."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS"

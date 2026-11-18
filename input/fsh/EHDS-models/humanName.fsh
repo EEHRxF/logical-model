@@ -7,13 +7,13 @@ Description: "EHDSHumanName means a structured set of data elements describing t
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Name Use"
   * ^binding.strength = #required
-* text 0..1 string "The entire name as it should be displayed e.g. on an application UI."
+* text 0..1 string "The entire name as it shall be displayed, e.g. on an application UI."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* family 0..* string "The family name/surname/last name."
+* family 0..* string "The family name / surname / last name."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-* given 0..* string "The given name/first name."
+* given 0..* string "The given name / first name."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * prefix 0..* string "Name part that appears at the start of the name. Prefixes shall appear in the correct order for presenting the name."

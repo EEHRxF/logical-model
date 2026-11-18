@@ -34,7 +34,7 @@ Description: "EHDSAdvanceDirective means a documented expression of a patient's 
 * note 0..1 string "Textual description of the directive."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* attachment 0..1 EHDSAttachment "Source document, such as a PDF, with the advance directive and the patient's signature."
+* attachment 0..1 EHDSAttachment "Source document, such as a PDF, with the advance directive and the patient’s signature."
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 
@@ -43,10 +43,6 @@ Description: "EHDSAdvanceDirective means a documented expression of a patient's 
   // from EHDSDataSet
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 //* header.patientInsertedData
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -55,3 +51,7 @@ Description: "EHDSAdvanceDirective means a documented expression of a patient's 
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."

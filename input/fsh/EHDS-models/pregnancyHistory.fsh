@@ -38,10 +38,6 @@ Description: "EHDSPregnancyHistory means a structured set of data elements descr
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -51,3 +47,7 @@ Description: "EHDSPregnancyHistory means a structured set of data elements descr
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."

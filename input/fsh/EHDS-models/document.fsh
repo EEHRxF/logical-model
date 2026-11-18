@@ -10,57 +10,61 @@ Description: "EHDSDocument means a structured set of data elements common all he
     //  //* insert Basic(#SHALL)
   * author[x] 1..*
   * author[x] only EHDSHealthProfessional or EHDSOrganisation or EHDSDevice
-    * ^short = "Author of the document."
+    * ^short = "Information describing who authored the resource or document."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
   * date 1..1
     * ^short = "Date of finalising/issuing the document."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
-  * lastUpdate 0..1 dateTime "Date and time of the last system-level update to this document or resource (system update instant). This is technical metadata and does not represent a clinical event time."
+  * lastUpdate ^short = "Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."
   * status
     * ^short = "Status of the document."
     //  //* insert Basic(#SHALL)
     * ^binding.description = "HL7 Composition Status"
     * ^binding.strength = #required
-  * documentType 1..1 CodeableConcept "Type of document (e.g. 60591-5 Patient summary document)."
+  * documentCategory 1..1 CodeableConcept "Broad category of document (e.g. 11502-2 Laboratory report)."
+    * ^binding.description = "LOINC"
+    * ^binding.strength = #required
+  * documentType 1..1 CodeableConcept "Type of document (e.g. 18725-2 Microbiology studies (set))."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
     * ^binding.description = "LOINC"
     * ^binding.strength = #required
-  * documentTitle 1..1 string "Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Laboratory Result Report', 'Patient Summary of Jane Green 10.12.2024'."
+  * documentTitle 1..1 string "Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
   * period 0..1 Period "Time of service that is being documented."
     //  //* insert Full(#SHOULD)
     //  //* insert Basic(#SHOULD)
-  * version 1..1 string "Version of the document."
+  * version 1..1
+    * ^short = "Version of the document."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
-  * attestation 0..* Base "Document attestation details."
+  * attestation ^short = "Document attestation details."
     //  //* insert Full(#SHOULD)
     //  //* insert Basic(#SHOULD)
-    * attester[x] 1..1 EHDSHealthProfessional or EHDSDevice "Attester who validated the document."
+    * attester[x] ^short = "Attester who validated the document."
       //  //* insert Full(#SHALL)
       //  //* insert Basic(#SHALL)
-    * dateTime 1..1 dateTime "Date and time of the approval of the document by the attester."
+    * dateTime ^short = "Date and time of the approval of the document by the attester."
       //  //* insert Full(#SHALL)
       //  //* insert Basic(#SHALL)
-  * legalAuthentication 0..* Base "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability conformance under this profile."
+  * legalAuthentication 0..* Base "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
-    * legalAuthenticator[x] 1..1 EHDSHealthProfessional or EHDSOrganisation "The person or organisation taking responsibility for the medical content of the document. The legalAuthenticator can be different from the author and attester (e.g. author = junior doctor, attester = senior physician, legalAuthenticator = attending physician)."
+    * legalAuthenticator[x] 1..1 EHDSHealthProfessional or EHDSOrganisation "The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician)."
       //  //* insert Full(#SHALL)
       //  //* insert Basic(#SHALL)
-    * dateTime 1..1 dateTime "Date and time when the document was authenticated."
+    * dateTime 1..1 dateTime "Date and time when the document was authorised."
       //  //* insert Full(#SHALL)
       //  //* insert Basic(#SHALL)
-  * eventCategory 0..* CodeableConcept "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes."
+  * eventCategory 0..* CodeableConcept "Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes."
     //  //* insert Full(#SHOULD)
     //  //* insert Basic(#SHOULD)
     * ^binding.description = "SNOMED GPS, LOINC, DICOM CID 33 Modality"
     * ^binding.strength = #required
-  * serviceSpecialty 0..* CodeableConcept "Additional details about where the content was created (e.g. clinical specialty)."
+  * serviceSpecialty 0..* CodeableConcept "Additional details about where the content was created (e.g. clinical speciality)."
     //  //* insert Full(#SHOULD)
     //  //* insert Basic(#SHOULD)
     * ^binding.description = "SNOMED GPS"
@@ -97,10 +101,6 @@ Description: "EHDSDocument means a structured set of data elements common all he
 //   // from EHDSDataSet
 //    //* insert Full(#SHOULD)
 //    //* insert Basic(#SHOULD)
-// * header.language
-//   // from EHDSDataSet
-//    //* insert Full(#SHOULD)
-//    //* insert Basic(#SHOULD)
 // * header.status
 //   // from EHDSDataSet
 //    //* insert Full(#SHALL)
@@ -110,3 +110,6 @@ Description: "EHDSDocument means a structured set of data elements common all he
 //    //* insert Full(#SHALL)
 //    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.language ^short = "Language in which the document is written. Language is expressed by the IETF language tag."

@@ -5,10 +5,10 @@ Description: "EHDSRelatedPerson means a structured set of data elements describi
 * identifier 0..* Identifier "A stable identifier of the related person that is unique within a defined scope. In addition to the mandatory attributes listed below, other attributes compliant with the HL7 FHIR Identifier structure may be included."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-  * type 1..1 CodeableConcept "Description of identifier."
+  * type 1..1 CodeableConcept "Description of identifier consisting of HL7 identifier type extended with: NI (national unique identifier); HI (health identifier); HIN (health insurance number); SS (social security identifier); REGPID (regional person identifier); REGION (region identifier)."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
-    * ^binding.description = "HL7 Identifier Type, extended with the following: NI (national unique identifier), HI (health identifier), HIN (health insurance number), SS (social security identifier), REGPID (regional person identifier), REGION (region identifier)"
+    * ^binding.description = "HL7 Identifier Type with an appropriate extension"
     * ^binding.strength = #required
   * value 1..1 string "The value that is unique."
      //* insert Full(#SHOULD)
@@ -22,7 +22,7 @@ Description: "EHDSRelatedPerson means a structured set of data elements describi
 * subject 1..1 EHDSPatient "The patient in relation to whom the related person is defined."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-* relationship 0..1 CodeableConcept "Relationship between a patient and a contact person for that patient (e.g., relative, guardian or caring person)."
+* relationship 0..1 CodeableConcept "Relationship between a patient and a contact person for that patient (e.g. relative, guardian or caring person)."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Patient Relationship Type"

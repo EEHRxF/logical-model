@@ -5,7 +5,7 @@ Description: """EHDSAlert means a structured set of data elements describing a c
 
 * header
   * author[x]
-    * ^definition = "The author of the alert statement, i.e. the setter of the alert."
+    * ^definition = "Author of the resource."
 
   * subject
      //* insert Basic(#SHOULD)
@@ -14,7 +14,7 @@ Description: """EHDSAlert means a structured set of data elements describing a c
      //* insert Basic(#SHOULD)
   * status
     * ^short = "Current status of the alert."
-    * ^definition = """Current status of the alert, indicates whether this alert is active and needs to be displayed to a user, or whether it is no longer needed."""
+    * ^definition = "Current status of the alert."
     * ^binding.description = "HL7 Flag Status"
     * ^binding.strength = #required
 
@@ -31,10 +31,10 @@ Description: """EHDSAlert means a structured set of data elements describing a c
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Flag Priority Codes"
   * ^binding.strength = #required
-* period 0..1 Period "Time period when alert is active. The period of time from the activation of the alert to inactivation of the alert. If the alert is active, the end of the period should be unspecified."
+* period 0..1 Period "Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-* otherSupportingInformation 0..* string "A reference to the resource the alert is about."
+* sourceReference 0..* uri "A reference to the resource the alert is about."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 
@@ -55,10 +55,6 @@ Description: """EHDSAlert means a structured set of data elements describing a c
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -67,3 +63,6 @@ Description: """EHDSAlert means a structured set of data elements describing a c
   // from EHDSDataSet
    //* insert Full(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."

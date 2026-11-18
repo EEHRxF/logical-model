@@ -9,8 +9,8 @@ Description: "EHDSTravelHistory means a structured set of data elements describi
      //* insert Basic(#SHOULD)
   * date 0..1
   * date only dateTime
-  * date ^short = "Date and optionally time of authoring/issuing"
-  * status ^short = "Status of the resource or document"
+  * date ^short = "Date and optionally time of authoring/issuing."
+  * status ^short = "Status of the resource or document."
      //* insert Full(#SHOULD)
     * ^binding.description = "Not defined" // TODO: Correct binding shall be added
 * country 1..1 CodeableConcept "Country visited."
@@ -39,10 +39,6 @@ Description: "EHDSTravelHistory means a structured set of data elements describi
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Basic(#SHOULD)
@@ -51,3 +47,7 @@ Description: "EHDSTravelHistory means a structured set of data elements describi
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."

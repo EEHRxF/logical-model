@@ -7,7 +7,7 @@ Description: "EHDSImmunisation means a structured set of data elements describin
    //* patientInsertedData
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
-  * status ^short = "Status of the immunisation event, e.g., completed, not-done."
+  * status ^short = "Status of the immunisation event, e.g. completed, not done."
     * ^binding.description = "HL7 Immunization Status Codes"
 * diseaseOrAgentTargeted 0..* CodeableConcept "Disease or agent that the vaccination provides protection against."
    //* insert Full(#SHOULD)
@@ -17,9 +17,9 @@ Description: "EHDSImmunisation means a structured set of data elements describin
 * vaccine 1..1 CodeableConcept "Type of immunisation."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-  * ^binding.description = "ATC, SNOMED GPS"
+  * ^binding.description = "WHO ATC, SNOMED GPS (preferred)"
   * ^binding.strength = #required
-* administeredProduct 0..1 EHDSMedication "Administered medicinal product, including batch/lot details when necessary."
+* administeredProduct 0..1 EHDSMedication "Administered medicinal product, including batch/lot details"
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * administrationTime 1..1 dateTime "The date and optionally the exact time when the vaccination was administered."
@@ -52,10 +52,6 @@ Description: "EHDSImmunisation means a structured set of data elements describin
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -65,3 +61,7 @@ Description: "EHDSImmunisation means a structured set of data elements describin
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."

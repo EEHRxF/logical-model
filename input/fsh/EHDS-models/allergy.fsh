@@ -7,10 +7,10 @@ Description: "EHDSAllergyIntolerance means a structured set of data elements des
    //* patientInsertedData
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
-  * status ^short = "Current status of the allergy or intolerance, for example, whether it is active, inactive, or resolved.."
+  * status ^short = "Current status of the allergy or intolerance, for example whether it is active, inactive or resolved."
     * ^binding.description = "HL7 AllergyIntolerance Clinical Status Codes"
     * ^binding.strength = #required
-* agentOrAllergen 1..1 CodeableConcept "Code that identifies the allergy or intolerance."
+* agentOrAllergen 1..1 CodeableConcept "Code that identifies the substance, pharmaceutical product or group of medications the person is allergic or intolerant to."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
   * ^binding.description = "EMA SPOR SMS (preferred for medication), SNOMED GPS (for medication groupings), SNOMED GPS (preferred for other cases)"
@@ -24,7 +24,7 @@ Description: "EHDSAllergyIntolerance means a structured set of data elements des
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Allergy Intolerance Criticality"
   * ^binding.strength = #required
-* certainty 0..1 CodeableConcept "Assertion about the certainty associated with a propensity, or potential risk, of a reaction to the identified substance. Diagnostic and /or clinical evidence of condition."
+* certainty 0..1 CodeableConcept "Assertion about the certainty associated with a propensity, or potential risk, of a reaction to the identified substance. Evidence of condition (diagnostic, clinical or both)."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Allergy Intolerance Verification Status Codes"
@@ -32,12 +32,15 @@ Description: "EHDSAllergyIntolerance means a structured set of data elements des
 * onsetDate 0..1 dateTime "When allergy or intolerance was identified."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* endDate 0..1 dateTime "Date of resolution of the allergy or intolerance (e.g. when the clinician deemed there is no longer any need to track the underlying condition)."
+* endDate 0..1 dateTime "Date of resolution of the allergy or intolerance (e.g. when the clinician deemed that there is no longer any need to track the underlying condition)."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * reaction 0..* Base "Adverse reaction events linked to exposure to substance."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
+  * substance 0..1 CodeableConcept "Specific substance or pharmaceutical product considered responsible for the reaction episode in which the allergy or intolerance was detected."
+    * ^binding.description = "EMA SPOR SMS (preferred for medication), SNOMED GPS (for medication groupings), SNOMED GPS (preferred for other cases)"
+    * ^binding.strength = #required
   * manifestation 0..* CodeableConcept "Description of the clinical manifestation of the allergic reaction."
      //* insert Full(#SHALL)
      //* insert Basic(#SHOULD)
@@ -69,10 +72,6 @@ Description: "EHDSAllergyIntolerance means a structured set of data elements des
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -82,3 +81,7 @@ Description: "EHDSAllergyIntolerance means a structured set of data elements des
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."

@@ -12,7 +12,7 @@ Description: "EHDSServiceRequest means a structured set of data elements describ
 * description 0..1 string "Textual description of the requested service"
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* code 0..1 CodeableConcept "A code and name that identifies a particular service (i.e., procedure, diagnostic investigation, or panel of investigations) that has been requested."
+* code 0..1 CodeableConcept "A code and name that identifies a particular service (i.e. procedure, diagnostic investigation, or panel of investigations) that has been requested."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "SNOMED GPS (preferred), LOINC, NPU"
@@ -22,13 +22,13 @@ Description: "EHDSServiceRequest means a structured set of data elements describ
    //* insert Basic(#SHOULD)
   * ^binding.description = "UCUM"
   * ^binding.strength = #required
-* bodySite 0..* EHDSBodyStructure "Anatomic location and laterality where the procedure should be performed. This is the target site."
+* bodySite 0..* EHDSBodyStructure "Anatomic location and laterality where the procedure shall be performed. This is the target site."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 * reason[x] 0..* EHDSObservation or EHDSCondition or EHDSMedication or string "Reason why this service is being requested."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* priority 0..1 CodeableConcept "Indicates how quickly the request should be addressed with respect to other requests."
+* priority 0..1 CodeableConcept "Indicates how quickly the request shall be addressed with respect to other requests."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
   * ^binding.description = "HL7 Request Priority"
@@ -42,10 +42,10 @@ Description: "EHDSServiceRequest means a structured set of data elements describ
 * encounter 0..1 EHDSEncounter "The encounter that provides additional information about the healthcare context in which this request is made."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* occurrence[x] 0..1 dateTime or Period "Expected time of the service."
+* occurrence[x] 0..1 dateTime or Period "Required time of the service."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* patientInstructions 0..1 string "Patient or consumer-oriented instructions."
+* patientInstructions 0..1 string "Patient- or consumer-oriented instructions."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
 
@@ -66,10 +66,6 @@ Description: "EHDSServiceRequest means a structured set of data elements describ
   // from EHDSDataSet
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-* header.language
-  // from EHDSDataSet
-   //* insert Full(#SHOULD)
-   //* insert Basic(#SHOULD)
 * header.status
   // from EHDSDataSet
    //* insert Full(#SHALL)
@@ -79,3 +75,7 @@ Description: "EHDSServiceRequest means a structured set of data elements describ
    //* insert Full(#SHALL)
    //* insert Basic(#SHALL)
 // End of obligations propagated from parent models.
+
+// Element descriptions aligned with WP v5.
+* header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+* header.author[x] ^short = "Author of the resource."
