@@ -81,106 +81,154 @@ The restored key-image identifiers (finding 21), restored Ratio binding rules (f
 ### ⚪ Open findings
 
 **4.** ⚪ **[EHDSDataSet](../input/fsh/EHDS-models/dataSet.fsh) — Mandatory data-group identifier and author. OPEN CARDINALITY CONFLICT.** WP common metadata requires identifier and author[x] as `1..*`, while 17 individual data-group tables use `0..*`. The current model follows the parent EHDSDataSet requirement, producing 34 cardinality differences. **Open question:** which WP cardinalities are authoritative—the common parent requirement or the individual child-table definitions? A child cannot lower the current inherited minimum from 1 to 0, but this technical constraint does not prove that the parent’s minimum is the intended one. The current `1..*` values are retained pending clarification; these differences are not classified as resolved or approved intentional exceptions.
+**Aurora**: The cardinalities specified in the individual data-group tables (0..*) should be followed. The common EHDSDataSet and models should be aligned accordingly. Please note that from the WP Annex the EHDSDocument and EHDSDataSet are removed. 
 
 **5.** ⚪ **[EHDSDocument](../input/fsh/EHDS-models/document.fsh), [EHDSDataSet](../input/fsh/EHDS-models/dataSet.fsh) — Date and country omitted from common metadata. OPEN.** Common WP document metadata still omits date and countryOfOrigin, and common data-group metadata still omits date. The model retains them. clinicalEventTime[x] represents clinical applicability and does not replace the authoring/issuing date. The shared date and country metadata are retained because WP still includes them in individual category/data-group tables.
+**Aurora**: Retain in the logical models (EHDSDocument - date 1..1, CoO - 0..1) and (EHDSDataSet - date 0..1) 
 
 **25.** ⚪ **[EHDSCurrentPregnancyStatus](../input/fsh/EHDS-models/currentPregnancyStatus.fsh) — Gestational-age data type. OPEN.** CurrentPregnancyStatus.gestationalAge remains string in WP versus Quantity in the model, both `0..1`.
+**Aurora**: This is intentional, keep string. This is due to the fact that  gestational age may be expressed in weeks, days or a combination of both 
 
 **26.** ⚪ **[EHDSDosage](../input/fsh/EHDS-models/dosage.fsh), [EHDSAdministeredDosage](../input/fsh/EHDS-models/administeredDosaging.fsh) — Dose-and-rate cardinality and dose example. OPEN CARDINALITY CONFLICT.** WP EHDSDosage specifies dosageDetails.doseAndRate as `0..1`, while its derived AdministeredDosage table specifies `0..*`. The current model uses `0..1` in both, preserving valid inheritance. **Open question:** is the parent maximum of 1 correct, or should the parent permit repetition to accommodate the derived WP table? The derived model cannot widen the current parent maximum, but inheritance does not establish which WP definition is correct. The existing `0..1` setting is provisional pending clarification, not an approved intentional exception. The dose example already matches the literal WP wording “23 tablets”.
+**Aurora**: Use 0..* in both EHDSDosage and EHDSAdministeredDosage.
 
 **38.** ⚪ **[EHDSTravelHistory](../input/fsh/EHDS-models/travelHistory.fsh) — Undefined status binding. OPEN.** TravelHistory.header.status still has a blank WP binding versus Not defined in the model.
+**Aurora**: Add 'HL7 Observation Status' to the status. 
 
 **45.** ⚪ **Inherited common metadata absent from repeated WP tables — OPEN IN WP TABLES.** WP omits header.clinicalEventTime[x] in all 24 named models deriving from EHDSDataSet, and common EHDSDocument metadata also omits it. Twenty named data-group tables additionally omit inherited header.version, header.attestation with its two children, and header.lastUpdate, accounting for 100 further rows. Together these are 125 model-only occurrences. Four repeated document tables also omit header.lastUpdate (finding 6). These inherited fields are retained by agreement; the remaining common-versus-repeated WP table inconsistencies are not model-deletion tasks. resourceCategory scope and category inheritance are tracked separately as open finding 46.
+**Aurora**: Do not inherit the elements. **KONSTANTIN I NEED YOU TO CONFIRM.  **
 
 **46.** ⚪ **Resource category scope and inheritance — OPEN WP INTERPRETATION.** WP common metadata defines resourceCategory as CodeableConcept, `0..*`, with the binding supplied by the corresponding data group. Individual tables explicitly list category only for Condition and AdvanceDirective, both `0..* CodeableConcept` with SNOMED GPS binding. The current model defines those two fields independently and has no active category or resourceCategory in EHDSDataSet.
+**Aurora**: Remove resourceCategory from Data group metadata. **KONSTANTIN I NEED YOU TO CONFIRM.  **
 
 **Clarification required:** does the common meta-element require every applicable resource model to define or inherit a category field with a resource-specific binding, even where its individual table omits that field, or is category limited to the models that explicitly list it? If it is universal, WP also needs to clarify the shared placement and the binding for each affected model. Cardinality `0..*` permits omission of values in an instance; it does not by itself determine whether the element must be part of every model definition.
+**Aurora**: it is limited to the models that explicitly list it. 
 
 **Current disposition:** retain the present model pending clarification. Absence of category from other individual tables is not treated as proof that it must be absent from those models. The 197 field differences reflect the current mapping; potential additional category definitions are not counted until their intended scope is established. This finding is open, not an approved intentional exception or a resolved omission.
+**Aurora**: Absence of category from other individual tables IS TO BE TREATED AS PROOF THAT IT MUST BE ABSENT FROM THOSE MODELS. **KONSTANTIN I NEED YOU TO CONFIRM.**
 
 ### 🟡 Partly resolved findings
 
 **3.** 🟡 **[EHDSDataSet](../input/fsh/EHDS-models/dataSet.fsh) — New data-group metadata. PARTLY RESOLVED; CATEGORY SCOPE OPEN.** EHDSDataSet defines clinicalEventTime[x], version, attestation with mandatory attester[x] and dateTime, and lastUpdate with the WP types, cardinalities and descriptions. The separate header.resourceCategory declaration is commented out and category remains defined only in Condition and AdvanceDirective. Those two concrete definitions match their WP tables. **The general scope and inheritance of category remain open under finding 46**, so the common-metadata alignment is not considered fully resolved. These subsequent changes are verified in source and are not yet reflected in the compiled snapshot. Other repeated-table omissions are covered by finding 45.
+**Aurora**: The existing EHDSDataSet metadata elements should be retained. As clarified under finding 46, category should only be defined in the individual data-group models where explicitly specified in the Annex.
 
 **6.** 🟡 **[EHDSDocument](../input/fsh/EHDS-models/document.fsh) — Common metadata versus repeated document tables. PARTLY RESOLVED.** All legal-authentication descriptions now match the respective WP tables, including their common-versus-repeated wording differences. header.lastUpdate remains inherited into Patient Summary, Imaging Report, Medical Test Report and Discharge Report but is absent from their repeated WP tables. Inherited lastUpdate is retained by agreement; this remains a common-versus-repeated WP table inconsistency.
+**Aurora**: The lastUpdate element is defined in Annex III as technical metadata for searching and retrieval. It is not part of the individual document content models and therefore does not need to be inherited into their headers. **KONSTANTIN I NEED YOU TO CONFIRM.**
 
 **37.** 🟡 **[EHDSProcedure](../input/fsh/EHDS-models/procedure.fsh) — Reason binding omitted and performer wording strengthened. PARTLY RESOLVED.** Procedure reason and performer descriptions now match WP. reason[x] still has a blank WP binding versus SNOMED GPS (preferred), ICD-10, Orphacode in the model.
+**Aurora**: Please add SNOMED GPS (preferred), ICD-10, ORPHAcode as the binding requirement for EHDSProcedure.reason[x].
 
 ### 🔵 Intentional exceptions
 
 **2.** 🔵 **[EHDSDocument](../input/fsh/EHDS-models/document.fsh) — New document category. INTENTIONAL NAMING EXCEPTION.** The required LOINC-bound `documentCategory` exists in EHDSDocument and all four derived document models with the WP descriptions. WP Patient Summary alone spells it `DocumentCategory`; other WP document tables and the model use `documentCategory`. **Reason:** lower camel case keeps the same metadata field name across all document types. The capitalisation difference changes neither its meaning nor its representation.
+**Aurora**: change all to 'documentCategory'.
 
 **9.** 🔵 **[EHDSPatientSummary](../input/fsh/EHDS-models/patientSummary.fsh) — Additional empty-reason instructions. INTENTIONAL EXCEPTION.** All six emptyReason descriptions contain the WP instructions for information available only as unstructured text. WP uses `as text` for allergies but `as-text` for the other five sections. **Reason:** the model consistently uses `as-text` in all six sections, as requested, so the same absent-data situation is described with one value throughout Patient Summary. This remains the only description difference for corresponding fields.
+**Aurora**: Please change as text to 'as-text'.
 
 **11.** 🔵 **[EHDSMedicationPrescription](../input/fsh/EHDS-models/medicationPrescription.fsh) — Prescription issuing-time element renamed. INTENTIONAL NAMING EXCEPTION.** WP uses `header.dateTime` for prescription issuance; the model retains `header.date`. Types, cardinalities and descriptions match. **Reason:** `header.date` is inherited from EHDSDataSet and is used for the authoring/issuing timestamp throughout the shared metadata. Retaining that name preserves the common inherited field for prescriptions instead of introducing a differently named field with the same meaning.
+**Aurora**: Please change header.dateTime to header.date in EHDSMedicationPrescription. **KONSTANTIN I NEED YOU TO CONFIRM.**
 
 **13.** 🔵 **[EHDSMedicationDispense](../input/fsh/EHDS-models/medicationDispense.fsh) — Case-sensitive field names and stronger wording. INTENTIONAL NAMING EXCEPTION.** Dispensation descriptions now match WP and language is repeatable. WP uses `header.Status`, `header.Language`, `Medication` and `Note`; the model uses `header.status`, `header.language`, `medication` and `note`. **Reason:** the model follows lower camel case and retains the inherited status and language names from EHDSDataSet. Initial capitals in these WP rows do not indicate different data elements.
+**Aurora**: Please use lower camel case consistently in the Annex: header.status, header.language, medication and note.
 
 **15.** 🔵 **[EHDSImagingReport](../input/fsh/EHDS-models/imagingReport.fsh) — Result field name. INTENTIONAL NAMING EXCEPTION.** WP uses `body.examinationReport.results[x]`; the model uses `body.examinationReport.result[x]`. Corresponding types, cardinalities and descriptions match. **Reason:** the model retains the singular element name `result[x]`; repetition is expressed by cardinality. The plural WP spelling does not represent a different kind of result.
+**Aurora**: Please change body.examinationReport.results[x] to body.examinationReport.result[x].
 
 **21.** 🔵 **[EHDSImagingStudy](../input/fsh/EHDS-models/imagingStudy.fsh) — Key-image identifiers missing from WP. INTENTIONAL EXCEPTION.** The model retains active keyImage.seriesUID and keyImage.instanceUID, both Identifier, `1..*`, although WP omits them. **Reason:** keyImage needs identifiers for the referenced series and SOP instances so that the images flagged as significant can be identified unambiguously. A flag and a textual reason alone do not supply those references. Both identifiers are present in the current compiled model and Word tables.
+**Aurora**: Roll back and add the missing elements to the Annex (and keep in model). **KONSTANTIN I NEED YOU TO CONFIRM.**
 
 **22.** 🔵 **[EHDSDischargeReport](../input/fsh/EHDS-models/dischargeReport.fsh) — Model name and stronger narrative requirements. INTENTIONAL NAMING EXCEPTION.** Discharge Report element descriptions now match WP. The WP root name remains `DischargeReport`, versus `EHDSDischargeReport` in the model. **Reason:** the EHDS prefix identifies the model consistently with the other EHDS logical models. Omitting the prefix in this WP table does not denote a separate model. Root-name differences remain outside the field-difference totals.
+**Aurora**: Please change DischargeReport to EHDSDischargeReport in the Annex.
 
 **29.** 🔵 **[EHDSMedication](../input/fsh/EHDS-models/medication.fsh) — Quantity binding placement and unit binding on integer. INTENTIONAL EXCEPTION.** WP places UCUM/EDQM directly on item.containedQuantity (Ratio); the model retains explicit numerator and denominator rules, both with required UCUM/EDQM bindings. **Reason:** Ratio is not supported as a direct terminology-binding target in this model representation. The child rules are needed to express the unit bindings on its components; their omission from the WP table is not a reason to remove them. WP also binds UCUM to integer device.deviceQuantity; the model intentionally omits that binding because an integer carries only a count and has no unit/code component to bind. Both child rules and their bindings are present in the compiled model and Word tables.
+Aurora: Please retain the UCUM and EDQM bindings on the numerator and denominator of containedQuantity in the logical model. Can you clarify in the Annex their application to the components of the Ratio. Lets remove the UCUM binding from device.deviceQuantity. **KONSTANTIN I NEED YOU TO CONFIRM.**
 
 **33.** 🔵 **[EHDSObservation](../input/fsh/EHDS-models/observation.fsh), [EHDSLaboratoryObservation](../input/fsh/EHDS-models/laboratoryObservation.fsh) — Direct-subject alternatives. INTENTIONAL INHERITANCE EXCEPTION.** The model permits `EHDSProcedure` in `Observation.header.directSubject[x]`; WP Observation omits it, while WP LaboratoryObservation permits it. **Reason:** EHDSLaboratoryObservation derives from EHDSObservation. A derived model can restrict the inherited choice of types but cannot add a type excluded by the parent. EHDSObservation must therefore allow EHDSProcedure so that LaboratoryObservation can use the alternative required by its WP table. This difference preserves valid inheritance and the WP LaboratoryObservation content; it is not a request to remove EHDSProcedure from the model.
+Aurora: Please retain EHDSProcedure as an allowed type for EHDSObservation.header.directSubject[x]. **KONSTANTIN I NEED YOU TO CONFIRM THIS**
 
 **35.** 🔵 **[EHDSLaboratoryObservation](../input/fsh/EHDS-models/laboratoryObservation.fsh), [EHDSMedication](../input/fsh/EHDS-models/medication.fsh) — Capitalised Boolean types. INTENTIONAL EXCEPTION.** WP spells the type `Boolean` for LaboratoryObservation.accreditationStatus, LaboratoryObservation.pointOfCareTest and Medication.item.ingredient.isActive, while the model retains `boolean`. **Reason:** the WP data-type table itself defines the type as `boolean` with a lowercase b. The capitalised spelling in the three element rows is therefore an internal WP inconsistency. The model follows the spelling in the WP data-type table and the FHIR type name; no type change is required.
+**Aurora**: Please change 'Boolean' to 'boolea'n in the three affected Annex elements.
 
 **36.** 🔵 **[EHDSPatient](../input/fsh/EHDS-models/patient.fsh), [EHDSRelatedPerson](../input/fsh/EHDS-models/relatedPerson.fsh) — Identifier-type extension moved between columns. INTENTIONAL EXCEPTION.** Both identifier.type binding descriptions use HL7 Identifier Type with an appropriate extension. RelatedPerson now matches WP exactly; WP Patient still says only HL7 Identifier Type. **Reason:** both WP element descriptions explicitly describe identifier-type extensions. The shared binding wording makes that extension requirement explicit and consistent between Patient and RelatedPerson, while the individual codes remain listed in the element descriptions. The remaining Patient binding-label difference is intentional. Both binding descriptions are confirmed in the compiled models and Word tables.
+**Aurora**: Please change the binding requirement for EHDSPatient.identifier.type to “HL7 Identifier Type with an appropriate extension”, as in EHDSRelatedPerson and the element descriptions.
 
 **44.** 🔵 **[Data type table](../input/pagecontent/datatypes.md) — Annex reference mismatch. INTENTIONAL EXCEPTION.** The model documentation refers to Annex X for EHDS common data groups; the WP data-type definition incorrectly says Annex IX. **Reason:** the actual WP headings are “ANNEX IX – DISCHARGE REPORTS” and “ANNEX X – COMMON DATA GROUPS”. Annex X is therefore the correct destination. The documentation intentionally corrects this internal WP cross-reference error instead of copying it.
+**Aurora**: Please change the reference from Annex IX to Annex X in the EHDS common data group definition in Annex I. The common data groups are defined in Annex X. 
 
 ### ✅ Resolved findings
 
 **1.** ✅ **[EHDSDataSet](../input/fsh/EHDS-models/dataSet.fsh), [EHDSDocument](../input/fsh/EHDS-models/document.fsh), [EHDSAttachment](../input/fsh/EHDS-models/attachment.fsh) — Repeatable language. RESOLVED.** Language is repeatable (`0..*`) in EHDSDataSet and EHDSAttachment and is inherited by derived models. The differently cased `header.Language` in the WP dispensation table remains a naming issue under finding 13.
+**Aurora**: OK
 
 **7.** ✅ **[EHDSDocument](../input/fsh/EHDS-models/document.fsh) — Metadata description differences. RESOLVED.** Document metadata descriptions now match WP, including compliance, legal authenticator, authorisation time, author, language, lastUpdate and serviceSpecialty.
+**Aurora**: OK
 
 **8.** ✅ **[EHDSPatientSummary](../input/fsh/EHDS-models/patientSummary.fsh) — Six sections become optional. RESOLVED.** All six sections allergiesAndIntolerances, problems, medicationSummary, medicalDevicesAndImplants, procedures and immunisations are optional (`0..1`), matching WP.
+**Aurora**: OK
 
 **10.** ✅ **[EHDSPatientSummary](../input/fsh/EHDS-models/patientSummary.fsh) — Care-plan section renamed. RESOLVED IN FSH SOURCE.** The section is now carePlans (`0..1`) and its repeatable child is carePlan (`0..*`), matching WP. The narrative path is carePlans.generatedNarrative. Only names and resulting paths changed; types, cardinalities and descriptions are unchanged. This subsequent correction was checked directly in patientSummary.fsh; the compiled models and Word tables still contain the preceding names until the next build. SUSHI was not run.
+**Aurora**: OK
 
 **12.** ✅ **[EHDSMedicationPrescription](../input/fsh/EHDS-models/medicationPrescription.fsh) — Quantity scope and off-label instructions. RESOLVED.** quantityPrescribed is explicitly scoped to the individual prescription item. isOffLabelUse specifies true for off-label use, false otherwise, and true whenever a reason is supplied. Both descriptions match WP.
+**Aurora**: OK
 
 **14.** ✅ **[EHDSImagingReport](../input/fsh/EHDS-models/imagingReport.fsh) — Different status binding. RESOLVED.** header.status uses HL7 Composition Status, matching WP and the parent EHDSDocument model.
+**Aurora**: OK
 
 **16.** ✅ **[EHDSImagingReport](../input/fsh/EHDS-models/imagingReport.fsh), [EHDSMedicalTestReport](../input/fsh/EHDS-models/medicalTestReport.fsh), [EHDSDischargeReport](../input/fsh/EHDS-models/dischargeReport.fsh) — At least one representation is required. RESOLVED FOR DESCRIPTIONS.** Imaging Report, Medical Test Report and Discharge Report now include the WP requirement that at least one of body or presentedForm shall be present. This comparison covers the table descriptions, not executable validation invariants.
+**Aurora**: OK
 
 **17.** ✅ **[EHDSImagingStudy](../input/fsh/EHDS-models/imagingStudy.fsh) — Endpoint cardinalities. RESOLVED.** ImagingStudy.endpoint is `0..*` and series.seriesEndpoint is `1..*`, both EHDSEndpoint, matching WP. Their descriptions also match WP.
+Aurora: OK
 
 **18.** ✅ **[EHDSImagingStudy](../input/fsh/EHDS-models/imagingStudy.fsh) — Series and instance-count requirements. RESOLVED.** ImagingStudy.series is mandatory and repeatable (`1..*`), matching WP. Its description and the shall requirement in numberOfInstances also match WP.
+Aurora: OK
 
 **19.** ✅ **[EHDSImagingStudy](../input/fsh/EHDS-models/imagingStudy.fsh) — PDF fallback clarification. RESOLVED.** ImagingStudy.presentedForm now includes the WP clarification that PDF is a fallback and does not replace DICOM imaging-study exchange.
+Aurora: OK
 
 **20.** ✅ **[EHDSImagingStudy](../input/fsh/EHDS-models/imagingStudy.fsh) — Key-image flag binding corrected in WP. RESOLVED.** series.instanceInTheSeries.keyImage.flag uses DICOM PS3.16 CID 7010, matching WP and its comments 9–10.
+Aurora: OK
 
 **23.** ✅ **[EHDSAlert](../input/fsh/EHDS-models/alert.fsh) — Supporting reference renamed and retyped. RESOLVED.** Alert.sourceReference has type uri and cardinality `0..*`, replacing otherSupportingInformation of type string. Its name, type, cardinality and description match WP.
+Aurora: OK
 
 **24.** ✅ **[EHDSAllergyIntolerance](../input/fsh/EHDS-models/allergy.fsh) — New reaction substance and revised allergen meaning. RESOLVED.** reaction.substance is now present as CodeableConcept, `0..1`, with the WP description and required EMA SPOR SMS/SNOMED GPS binding. Descriptions of agentOrAllergen and the other existing allergy elements also match WP.
+Aurora: OK
 
 **27.** ✅ **[EHDSDosage](../input/fsh/EHDS-models/dosage.fsh), [EHDSAdministeredDosage](../input/fsh/EHDS-models/administeredDosaging.fsh) — Stronger dosage narrative requirements. RESOLVED.** Dosage narrative and eventTime descriptions now use the stronger WP requirements, including shall where stated in WP.
+Aurora: OK
 
 **28.** ✅ **[EHDSMedication](../input/fsh/EHDS-models/medication.fsh) — Identifier alternative restored. RESOLVED.** Medication.identifyingCode[x] allows CodeableConcept or Identifier with cardinality `0..*`. Its name, alternatives, description and terminology binding match WP.
+Aurora: OK
 
 **30.** ✅ **[EHDSMedication](../input/fsh/EHDS-models/medication.fsh) — Stronger product-description requirements. RESOLVED.** Medication descriptions now match WP, including doseForm, required active ingredients, package size and implementer-defined characteristic value sets.
+Aurora: OK
 
 **31.** ✅ **[EHDSImmunisation](../input/fsh/EHDS-models/immunisation.fsh) — Preferred vaccine terminology and batch detail. RESOLVED.** Immunisation.vaccine uses WHO ATC, SNOMED GPS (preferred), matching WP. The administeredProduct batch/lot description also matches WP. Binding strength remains required.
+Aurora: OK
 
 **32.** ✅ **[EHDSObservation](../input/fsh/EHDS-models/observation.fsh), [EHDSLaboratoryObservation](../input/fsh/EHDS-models/laboratoryObservation.fsh) — Preferred observation terminology. RESOLVED.** The binding descriptions for type and component.type in Observation and LaboratoryObservation read SNOMED GPS, LOINC (preferred), NPU, matching WP. LOINC is preferred within the permitted terminologies; binding strength remains required.
+Aurora: OK
 
 **34.** ✅ **[EHDSObservation](../input/fsh/EHDS-models/observation.fsh), [EHDSLaboratoryObservation](../input/fsh/EHDS-models/laboratoryObservation.fsh) — Uncertainty descriptions and binding names. RESOLVED.** Observation.result.uncertainty.type and component.result.uncertainty.type use the WP label HL7 ProbabilityDistributionType. LaboratoryObservation overrides those inherited descriptions with its own WP label HL7 Probability Distribution Type. Both tables match WP despite their different spelling. Uncertainty descriptions also match each respective table, including the WP certainty/uncertainty inconsistency; binding strength remains required.
+Aurora: OK
 
 **39.** ✅ **[EHDSEndpoint](../input/fsh/EHDS-models/endpoint.fsh) — Protocol meaning and required profiles. RESOLVED.** Endpoint connectionType and payload profile descriptions now match WP, including the required-profile wording.
+Aurora: OK
 
 **40.** ✅ **[EHDSDevice](../input/fsh/EHDS-models/device.fsh), [EHDSHumanName](../input/fsh/EHDS-models/humanName.fsh), [EHDSPatient](../input/fsh/EHDS-models/patient.fsh), [EHDSServiceRequest](../input/fsh/EHDS-models/serviceRequest.fsh), [EHDSSpecimen](../input/fsh/EHDS-models/specimen.fsh), [EHDSMedicationUse](../input/fsh/EHDS-models/medicationUse.fsh) — Other changes from recommended or expected to mandatory. RESOLVED.** The stronger requirements in Device, HumanName, Patient, ServiceRequest, Specimen and MedicationUse descriptions now match WP.
+Aurora: OK
 
 **41.** ✅ **[EHDSAttachment](../input/fsh/EHDS-models/attachment.fsh) — MIME description and comments. RESOLVED.** Attachment.contentType now contains the expanded WP MIME/character-encoding description. Comments 13–14 describe wording already incorporated in WP and the model.
+Aurora: OK
 
 **42.** ✅ **[Data type table](../input/pagecontent/datatypes.md) — time added and integer64 removed. RESOLVED IN TYPE DOCUMENTATION.** `time` is now documented with the WP definition. Unused `integer64` was removed from the data-type table; a search of the FSH sources confirmed that no model uses it. The documented type names now match all 17 types in the WP table.
+Aurora: OK
 
 **43.** ✅ **[Data type table](../input/pagecontent/datatypes.md) — Period and other type definitions. RESOLVED IN TYPE DOCUMENTATION.** Data-type descriptions match WP, including Period, Narrative, Range, Ratio, uri and dateTime, except for the intentional Annex IX-to-X correction tracked separately in finding 44. The table formatting attribute is outside the data rows.
+Aurora: OK
 
 ## Corresponding fields with different names
 
