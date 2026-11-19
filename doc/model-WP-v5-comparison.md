@@ -86,7 +86,7 @@ The restored key-image identifiers (finding 21), restored Ratio binding rules (f
 
 **5.** ⚪ **[EHDSDocument](../input/fsh/EHDS-models/document.fsh), [EHDSDataSet](../input/fsh/EHDS-models/dataSet.fsh) — Date and country omitted from common metadata. OPEN.** Common WP document metadata still omits date and countryOfOrigin, and common data-group metadata still omits date. The model retains them. clinicalEventTime[x] represents clinical applicability and does not replace the authoring/issuing date. The shared date and country metadata are retained because WP still includes them in individual category/data-group tables.
 
-**Aurora**: Retain in the logical models (EHDSDocument - date 1..1, CoO - 0..1) and (EHDSDataSet - date 0..1) 
+**Aurora**: Add date to Document metadata and Data group metadata in Annex III. Do not add countryOfOrigin.
 
 **25.** ⚪ **[EHDSCurrentPregnancyStatus](../input/fsh/EHDS-models/currentPregnancyStatus.fsh) — Gestational-age data type. OPEN.** CurrentPregnancyStatus.gestationalAge remains string in WP versus Quantity in the model, both `0..1`.
 
@@ -102,11 +102,11 @@ The restored key-image identifiers (finding 21), restored Ratio binding rules (f
 
 **45.** ⚪ **Inherited common metadata absent from repeated WP tables — OPEN IN WP TABLES.** WP omits header.clinicalEventTime[x] in all 24 named models deriving from EHDSDataSet, and common EHDSDocument metadata also omits it. Twenty named data-group tables additionally omit inherited header.version, header.attestation with its two children, and header.lastUpdate, accounting for 100 further rows. Together these are 125 model-only occurrences. Four repeated document tables also omit header.lastUpdate (finding 6). These inherited fields are retained by agreement; the remaining common-versus-repeated WP table inconsistencies are not model-deletion tasks. resourceCategory scope and category inheritance are tracked separately as open finding 46.
 
-**Aurora**: Do not inherit the elements, Annex III metadata is for searching. **KONSTANTIN PLEASE SIGN OFF.**
+**Outcome**: Do not inherit the elements, Annex III metadata is for searching.
 
 **46.** ⚪ **Resource category scope and inheritance — OPEN WP INTERPRETATION.** WP common metadata defines resourceCategory as CodeableConcept, `0..*`, with the binding supplied by the corresponding data group. Individual tables explicitly list category only for Condition and AdvanceDirective, both `0..* CodeableConcept` with SNOMED GPS binding. The current model defines those two fields independently and has no active category or resourceCategory in EHDSDataSet.
 
-**Aurora**: Remove resourceCategory from Data group metadata. **KONSTANTIN I NEED YOU TO CONFIRM.**
+**Outcome**: Remove resourceCategory from Data group metadata.
 
 **Clarification required:** does the common meta-element require every applicable resource model to define or inherit a category field with a resource-specific binding, even where its individual table omits that field, or is category limited to the models that explicitly list it? If it is universal, WP also needs to clarify the shared placement and the binding for each affected model. Cardinality `0..*` permits omission of values in an instance; it does not by itself determine whether the element must be part of every model definition.
 
@@ -114,7 +114,7 @@ The restored key-image identifiers (finding 21), restored Ratio binding rules (f
 
 **Current disposition:** retain the present model pending clarification. Absence of category from other individual tables is not treated as proof that it must be absent from those models. The 197 field differences reflect the current mapping; potential additional category definitions are not counted until their intended scope is established. This finding is open, not an approved intentional exception or a resolved omission.
 
-**Aurora**: Absence of category from other individual tables IS TO BE TREATED AS PROOF THAT IT MUST BE ABSENT FROM THOSE MODELS. **KONSTANTIN I NEED YOU TO SIGN OFF.**
+**Outcome**: Absence of category from other individual tables IS TO BE TREATED AS PROOF THAT IT MUST BE ABSENT FROM THOSE MODELS. 
 
 ### 🟡 Partly resolved findings
 
@@ -124,7 +124,7 @@ The restored key-image identifiers (finding 21), restored Ratio binding rules (f
 
 **6.** 🟡 **[EHDSDocument](../input/fsh/EHDS-models/document.fsh) — Common metadata versus repeated document tables. PARTLY RESOLVED.** All legal-authentication descriptions now match the respective WP tables, including their common-versus-repeated wording differences. header.lastUpdate remains inherited into Patient Summary, Imaging Report, Medical Test Report and Discharge Report but is absent from their repeated WP tables. Inherited lastUpdate is retained by agreement; this remains a common-versus-repeated WP table inconsistency.
 
-**Aurora**: The lastUpdate element is defined in Annex III as technical metadata for searching and retrieval. It is not part of the individual document content models and therefore does not need to be inherited into their headers. **KONSTANTIN PLEASE SIGN OFF.**
+**Outcome**: lastUpdate should be taken out of the metadata tables. Instead, add element "date", 1..1, "Date of finalisation/issuance of the document." or "Date of finalisation/issuance of the resource" after the author[x] element.
 
 **37.** 🟡 **[EHDSProcedure](../input/fsh/EHDS-models/procedure.fsh) — Reason binding omitted and performer wording strengthened. PARTLY RESOLVED.** Procedure reason and performer descriptions now match WP. reason[x] still has a blank WP binding versus SNOMED GPS (preferred), ICD-10, Orphacode in the model.
 
@@ -142,7 +142,7 @@ The restored key-image identifiers (finding 21), restored Ratio binding rules (f
 
 **11.** 🔵 **[EHDSMedicationPrescription](../input/fsh/EHDS-models/medicationPrescription.fsh) — Prescription issuing-time element renamed. INTENTIONAL NAMING EXCEPTION.** WP uses `header.dateTime` for prescription issuance; the model retains `header.date`. Types, cardinalities and descriptions match. **Reason:** `header.date` is inherited from EHDSDataSet and is used for the authoring/issuing timestamp throughout the shared metadata. Retaining that name preserves the common inherited field for prescriptions instead of introducing a differently named field with the same meaning.
 
-**Aurora**: Please change header.dateTime to header.date in EHDSMedicationPrescription. **KONSTANTIN PLEASE SIGN OFF.**
+**Outcome**: Please change header.dateTime to header.date in EHDSMedicationPrescription.
 
 **13.** 🔵 **[EHDSMedicationDispense](../input/fsh/EHDS-models/medicationDispense.fsh) — Case-sensitive field names and stronger wording. INTENTIONAL NAMING EXCEPTION.** Dispensation descriptions now match WP and language is repeatable. WP uses `header.Status`, `header.Language`, `Medication` and `Note`; the model uses `header.status`, `header.language`, `medication` and `note`. **Reason:** the model follows lower camel case and retains the inherited status and language names from EHDSDataSet. Initial capitals in these WP rows do not indicate different data elements.
 
@@ -154,7 +154,7 @@ The restored key-image identifiers (finding 21), restored Ratio binding rules (f
 
 **21.** 🔵 **[EHDSImagingStudy](../input/fsh/EHDS-models/imagingStudy.fsh) — Key-image identifiers missing from WP. INTENTIONAL EXCEPTION.** The model retains active keyImage.seriesUID and keyImage.instanceUID, both Identifier, `1..*`, although WP omits them. **Reason:** keyImage needs identifiers for the referenced series and SOP instances so that the images flagged as significant can be identified unambiguously. A flag and a textual reason alone do not supply those references. Both identifiers are present in the current compiled model and Word tables.
 
-**Aurora**: The additional keyImage.seriesUID and keyImage.instanceUID elements **can be removed**. The series and instance identifiers are already available in the containing imaging study structure. References to images flagged by a DICOM KOS document can be obtained by retrieving and inspecting that document. **KONSTANTIN, I NEED YOU TO SIGN OFF ON THIS DECISION. Please check the MS comments on file 'All templated comments to article 15 IA v3' --> Tab: Non-paper annexes  --> Rows 91 and 92**
+**Outcome**: The additional keyImage.seriesUID and keyImage.instanceUID elements **can be removed**. The series and instance identifiers are already available in the containing imaging study structure. References to images flagged by a DICOM KOS document can be obtained by retrieving and inspecting that document. 
 
 **22.** 🔵 **[EHDSDischargeReport](../input/fsh/EHDS-models/dischargeReport.fsh) — Model name and stronger narrative requirements. INTENTIONAL NAMING EXCEPTION.** Discharge Report element descriptions now match WP. The WP root name remains `DischargeReport`, versus `EHDSDischargeReport` in the model. **Reason:** the EHDS prefix identifies the model consistently with the other EHDS logical models. Omitting the prefix in this WP table does not denote a separate model. Root-name differences remain outside the field-difference totals.
 
@@ -162,11 +162,11 @@ The restored key-image identifiers (finding 21), restored Ratio binding rules (f
 
 **29.** 🔵 **[EHDSMedication](../input/fsh/EHDS-models/medication.fsh) — Quantity binding placement and unit binding on integer. INTENTIONAL EXCEPTION.** WP places UCUM/EDQM directly on item.containedQuantity (Ratio); the model retains explicit numerator and denominator rules, both with required UCUM/EDQM bindings. **Reason:** Ratio is not supported as a direct terminology-binding target in this model representation. The child rules are needed to express the unit bindings on its components; their omission from the WP table is not a reason to remove them. WP also binds UCUM to integer device.deviceQuantity; the model intentionally omits that binding because an integer carries only a count and has no unit/code component to bind. Both child rules and their bindings are present in the compiled model and Word tables.
 
-**Aurora**: Please retain the UCUM and EDQM bindings on the numerator and denominator of containedQuantity in the logical model. Can you clarify in the Annex their application to the components of the Ratio. Lets remove the UCUM binding from device.deviceQuantity. **KONSTANTIN I NEED YOU TO CONFIRM.**
+**Outcome**: This is the matter of convention, we don't normally drill down to individual components of data types such as Ratio, CodeableConcept, Range or Quantity. Keep the binding at a higher level.
 
 **33.** 🔵 **[EHDSObservation](../input/fsh/EHDS-models/observation.fsh), [EHDSLaboratoryObservation](../input/fsh/EHDS-models/laboratoryObservation.fsh) — Direct-subject alternatives. INTENTIONAL INHERITANCE EXCEPTION.** The model permits `EHDSProcedure` in `Observation.header.directSubject[x]`; WP Observation omits it, while WP LaboratoryObservation permits it. **Reason:** EHDSLaboratoryObservation derives from EHDSObservation. A derived model can restrict the inherited choice of types but cannot add a type excluded by the parent. EHDSObservation must therefore allow EHDSProcedure so that LaboratoryObservation can use the alternative required by its WP table. This difference preserves valid inheritance and the WP LaboratoryObservation content; it is not a request to remove EHDSProcedure from the model.
 
-**Aurora**: Please retain EHDSProcedure as an allowed type for EHDSObservation.header.directSubject[x]. **KONSTANTIN I NEED YOU TO CONFIRM THIS**
+**Outcome**: Please retain EHDSProcedure as an allowed type for EHDSObservation.header.directSubject[x].
 
 **35.** 🔵 **[EHDSLaboratoryObservation](../input/fsh/EHDS-models/laboratoryObservation.fsh), [EHDSMedication](../input/fsh/EHDS-models/medication.fsh) — Capitalised Boolean types. INTENTIONAL EXCEPTION.** WP spells the type `Boolean` for LaboratoryObservation.accreditationStatus, LaboratoryObservation.pointOfCareTest and Medication.item.ingredient.isActive, while the model retains `boolean`. **Reason:** the WP data-type table itself defines the type as `boolean` with a lowercase b. The capitalised spelling in the three element rows is therefore an internal WP inconsistency. The model follows the spelling in the WP data-type table and the FHIR type name; no type change is required.
 
