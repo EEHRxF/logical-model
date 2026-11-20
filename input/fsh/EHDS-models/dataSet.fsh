@@ -33,9 +33,9 @@ Description: "Common resource-content header used as an implementation parent. A
     //  //* insert Full(#SHOULD)
     //  //* insert Basic(#SHOULD)
     // TODO Obligation removed to not populate double-obligations downstreams
-  * attestation 0..* Base "Resource attestation details."
-    * attester[x] 1..1 EHDSHealthProfessional or EHDSDevice "Attester who validated the resource."
-    * dateTime 1..1 dateTime "Date and time of the approval of the resource by the attester."
+  // * attestation 0..* Base "Resource attestation details."
+  //   * attester[x] 1..1 EHDSHealthProfessional or EHDSDevice "Attester who validated the resource."
+  //   * dateTime 1..1 dateTime "Date and time of the approval of the resource by the attester."
   * status 1..1 CodeableConcept "Status of the resource."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHOULD)
