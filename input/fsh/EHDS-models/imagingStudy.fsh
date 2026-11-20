@@ -149,5 +149,5 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
 // Aurora 45, commit 96fb0898: search metadata is not inherited into individual data-group content.
 // * header.clinicalEventTime[x] 0..0 // Parent element removed from EHDSDataSet.
 * header.version 0..0
-* header.attestation 0..0
+// * header.attestation 0..0 // Parent element removed from EHDSDataSet.
 // * header.lastUpdate 0..0 // Obsolete: the parent definition is commented out by user decision.

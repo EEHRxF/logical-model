@@ -42,13 +42,13 @@ Description: "EHDSDocument means a structured set of data elements common all he
     * ^short = "Version of the document."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
-  * attestation ^short = "Document attestation details."
+  * attestation 0..* Base "Document attestation details."
     //  //* insert Full(#SHOULD)
     //  //* insert Basic(#SHOULD)
-    * attester[x] ^short = "Attester who validated the document."
+    * attester[x] 1..1 EHDSHealthProfessional or EHDSDevice "Attester who validated the document."
       //  //* insert Full(#SHALL)
       //  //* insert Basic(#SHALL)
-    * dateTime ^short = "Date and time of the approval of the document by the attester."
+    * dateTime 1..1 dateTime "Date and time of the approval of the document by the attester."
       //  //* insert Full(#SHALL)
       //  //* insert Basic(#SHALL)
   * legalAuthentication 0..* Base "Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile."
