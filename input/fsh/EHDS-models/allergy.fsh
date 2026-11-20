@@ -10,6 +10,9 @@ Description: "EHDSAllergyIntolerance means a structured set of data elements des
   * status ^short = "Current status of the allergy or intolerance, for example whether it is active, inactive or resolved."
     * ^binding.description = "HL7 AllergyIntolerance Clinical Status Codes"
     * ^binding.strength = #required
+* type 0..1 CodeableConcept "Type of propensity (indicating allergy or intolerance). The type element may be omitted from the resource when there is insufficient information to classify the reaction as either an allergy or an intolerance."
+  * ^binding.description = "HL7 AllergyIntoleranceType"
+  * ^binding.strength = #required
 * agentOrAllergen 1..1 CodeableConcept "Code that identifies the substance, pharmaceutical product or group of medications the person is allergic or intolerant to."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
