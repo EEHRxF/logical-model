@@ -76,7 +76,7 @@ Description: "Electronic dispensation."
 * header.language ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
 
 // Aurora 45, commit 96fb0898: search metadata is not inherited into individual data-group content.
-* header.clinicalEventTime[x] 0..0
+// * header.clinicalEventTime[x] 0..0 // Parent element removed from EHDSDataSet.
 * header.version 0..0
 * header.attestation 0..0
 // * header.lastUpdate 0..0 // Obsolete: the parent definition is commented out by user decision.
