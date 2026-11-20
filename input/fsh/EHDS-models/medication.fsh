@@ -77,16 +77,14 @@ Description: "EHDSMedication means a structured set of data elements describing 
   * containedQuantity 0..1 Ratio "Packaged item quantity per item (3 ml / one vial)"
     //* insert Full(#SHOULD)
     //* insert Basic(#SHOULD)
-    // Explicit user decision, finding 29: retain this direct binding even though Ratio is an unsupported target.
-    * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
-    * ^binding.strength = #required
-    // Git provenance: Aurora retained component bindings in 96fb0898; the higher-level Outcome was introduced by Konstantin in 956292b0.
-    // * numerator
-    //   * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
-    //   * ^binding.strength = #required
-    // * denominator //0..1 Quantity "Quantity in the denominator."
-    //   * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
-    //   * ^binding.strength = #required
+   //  * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
+   //  * ^binding.strength = #required
+    * numerator
+      * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
+      * ^binding.strength = #required
+    * denominator //0..1 Quantity "Quantity in the denominator."
+      * ^binding.description = "UCUM for units of measure / EDQM Standard Terms for units of presentation"
+      * ^binding.strength = #required
   * amount 0..1 Quantity "Number of such items in this medicinal product (e.g. five vials in the package). The combined amount of all items shall be considered to be the total package size."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
