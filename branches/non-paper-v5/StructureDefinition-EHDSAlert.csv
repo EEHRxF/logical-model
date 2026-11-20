@@ -1,0 +1,39 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"EHDSAlert","EHDSAlert","","","",0,*,"","","","null {[]} {[]}
+","Alert model","EHDSAlert means a structured set of data elements describing a clinically relevant fact about a patient that requires attention during a healthcare encounter in order to ensure patient safety or prevent adverse outcomes, including, but not limited to, intolerances, rare diseases requiring special management, implanted devices, ongoing special treatments, transplanted organs, or participation in a clinical trial.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"EHDSAlert.header","EHDSAlert.header","","","",1,1,"","","","Base {[]} {[]}
+","Basic metadata for this information.","Basic metadata for this information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header",1,1,"",""
+"EHDSAlert.header.subject","EHDSAlert.header.subject","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
+","Patient/subject information.","Patient/subject information.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.subject",1,1,"",""
+"EHDSAlert.header.identifier","EHDSAlert.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
+","Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).","Unique identifier of the resource.","Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.identifier",1,*,"",""
+"EHDSAlert.header.clinicalEventTime[x]","EHDSAlert.header.clinicalEventTime[x]","","","",0,1,"","","","dateTime {[]} {[]}
+Period {[]} {[]}","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.clinicalEventTime[x]",0,1,"",""
+"EHDSAlert.header.version","EHDSAlert.header.version","","","",0,1,"","","","string {[]} {[]}
+","Version of the resource.","Version of the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.version",0,1,"",""
+"EHDSAlert.header.author[x]","EHDSAlert.header.author[x]","","","",1,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Information describing who authored the resource.","Author of the resource.","Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.author[x]",1,*,"",""
+"EHDSAlert.header.date","EHDSAlert.header.date","","","",0,1,"","","","dateTime {[]} {[]}
+","Date and optionally time of authoring/issuing.","Date and optionally time of authoring/issuing.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.date",0,1,"",""
+"EHDSAlert.header.attestation","EHDSAlert.header.attestation","","","",0,*,"","","","Base {[]} {[]}
+","Resource attestation details.","Resource attestation details.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation",0,*,"",""
+"EHDSAlert.header.attestation.attester[x]","EHDSAlert.header.attestation.attester[x]","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice {[]} {[]}","Attester who validated the resource.","Attester who validated the resource.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.attester[x]",1,1,"",""
+"EHDSAlert.header.attestation.dateTime","EHDSAlert.header.attestation.dateTime","","","",1,1,"","","","dateTime {[]} {[]}
+","Date and time of the approval of the resource by the attester.","Date and time of the approval of the resource by the attester.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.attestation.dateTime",1,1,"",""
+"EHDSAlert.header.status","EHDSAlert.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Current status of the alert.","Current status of the alert.","","","","","","","","","",,"required","HL7 Flag Status","","",,,,"EHDSDataSet.header.status",1,1,"",""
+"EHDSAlert.header.language","EHDSAlert.header.language","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Language in which the resource is written. Language is expressed by the IETF language tag.","Language in which the resource is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"required","BCP 47","","",,,,"EHDSDataSet.header.language",0,*,"",""
+"EHDSAlert.header.lastUpdate","EHDSAlert.header.lastUpdate","","","",0,1,"","","","dateTime {[]} {[]}
+","Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.","Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.","","","","","","","","","",,,,,"",,,,"EHDSDataSet.header.lastUpdate",0,1,"",""
+"EHDSAlert.code","EHDSAlert.code","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","A coded representation of the alert.","A coded representation of the alert.","","","","","","","","","",,"required","SNOMED GPS","","",,,,"EHDSAlert.code",0,1,"",""
+"EHDSAlert.description","EHDSAlert.description","","","",0,1,"","","","Narrative {[]} {[]}
+","Narrative representation of the alert.","Narrative representation of the alert.","","","","","","","","","",,,,,"",,,,"EHDSAlert.description",0,1,"",""
+"EHDSAlert.priority","EHDSAlert.priority","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","A code that identifies the priority of the alert.","A code that identifies the priority of the alert.","","","","","","","","","",,"required","HL7 Flag Priority Codes","","",,,,"EHDSAlert.priority",0,1,"",""
+"EHDSAlert.period","EHDSAlert.period","","","",0,1,"","","","Period {[]} {[]}
+","Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.","Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.","","","","","","","","","",,,,,"",,,,"EHDSAlert.period",0,1,"",""
+"EHDSAlert.sourceReference","EHDSAlert.sourceReference","","","",0,*,"","","","uri {[]} {[]}
+","A reference to the resource the alert is about.","A reference to the resource the alert is about.","","","","","","","","","",,,,,"",,,,"EHDSAlert.sourceReference",0,*,"",""

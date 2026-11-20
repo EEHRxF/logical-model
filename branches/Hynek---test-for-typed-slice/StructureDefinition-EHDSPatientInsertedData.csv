@@ -1,0 +1,31 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"EHDSPatientInsertedData","EHDSPatientInsertedData","","","",0,*,"","","","null {[]} {[]}
+","Patient-inserted data model","Patient-inserted data model.","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"EHDSPatientInsertedData.header","EHDSPatientInsertedData.header","","","",1,1,"","","","Base {[]} {[]}
+","Patient inserted data header.","Patient inserted data header.","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.header",1,1,"",""
+"EHDSPatientInsertedData.header.subject","EHDSPatientInsertedData.header.subject","","","",1,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
+","Patient/subject information.","Patient/subject information.","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.header.subject",1,1,"",""
+"EHDSPatientInsertedData.header.identifier","EHDSPatientInsertedData.header.identifier","","","",1,*,"","","","Identifier {[]} {[]}
+","Unique identifier of the document.","Unique identifier of the document.","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.header.identifier",1,*,"",""
+"EHDSPatientInsertedData.header.author[x]","EHDSPatientInsertedData.header.author[x]","","","",1,*,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson {[]} {[]}","Author of the document.","Author of the document.","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.header.author[x]",1,*,"",""
+"EHDSPatientInsertedData.header.date","EHDSPatientInsertedData.header.date","","","",1,1,"","","","dateTime {[]} {[]}
+","Date of finalising/issuing the document.","Date of finalising/issuing the document.","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.header.date",1,1,"",""
+"EHDSPatientInsertedData.header.status","EHDSPatientInsertedData.header.status","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Status of the document.","Status of the document.","","","","","","","","","",,"required","HL7 Composition Status","","",,,,"EHDSPatientInsertedData.header.status",1,1,"",""
+"EHDSPatientInsertedData.header.language","EHDSPatientInsertedData.header.language","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Language in which the document is written. Language is expressed by the IETF language tag.","Language in which the document is written. Language is expressed by the IETF language tag.","","","","","","","","","",,"required","BCP 47","","",,,,"EHDSPatientInsertedData.header.language",0,1,"",""
+"EHDSPatientInsertedData.header.documentType","EHDSPatientInsertedData.header.documentType","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Type of document e.g. 48765-2 Allergies and adverse reactions document.","Type of document e.g. 48765-2 Allergies and adverse reactions document.","","","","","","","","","",,"required","LOINC","","",,,,"EHDSPatientInsertedData.header.documentType",1,1,"",""
+"EHDSPatientInsertedData.header.documentTitle","EHDSPatientInsertedData.header.documentTitle","","","",1,1,"","","","string {[]} {[]}
+","Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Patient inserted data: allergies and adverse reactions').","Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Patient inserted data: allergies and adverse reactions').","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.header.documentTitle",1,1,"",""
+"EHDSPatientInsertedData.header.period","EHDSPatientInsertedData.header.period","","","",0,1,"","","","Period {[]} {[]}
+","Time period of information covered in the document.","Time period of information covered in the document.","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.header.period",0,1,"",""
+"EHDSPatientInsertedData.header.version","EHDSPatientInsertedData.header.version","","","",1,1,"","","","string {[]} {[]}
+","Version of the document.","Version of the document.","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.header.version",1,1,"",""
+"EHDSPatientInsertedData.header.custodian","EHDSPatientInsertedData.header.custodian","","","",0,1,"","","","http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation {[]} {[]}
+","Organisation that is in charge of maintaining the document.","Organisation that is in charge of maintaining the document.","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.header.custodian",0,1,"",""
+"EHDSPatientInsertedData.header.countryOfOrigin","EHDSPatientInsertedData.header.countryOfOrigin","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Country of origin of the document.","Country of origin of the document.","","","","","","","","","",,"required","ISO 3166-1 alpha-2","","",,,,"EHDSPatientInsertedData.header.countryOfOrigin",0,1,"",""
+"EHDSPatientInsertedData.content[x]","EHDSPatientInsertedData.content[x]","","","",1,*,"","","","string {[]} {[]}
+http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment {[]} {[]}","Content (payload) of the patient inserted data","Content (payload) of the patient inserted data","","","","","","","","","",,,,,"",,,,"EHDSPatientInsertedData.content[x]",1,*,"",""

@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSPatientInsertedData"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSPatientInsertedData</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData" title="Patient-inserted data model.">EHDSPatientInsertedData</a><a name="EHDSPatientInsertedData"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient-inserted data model</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header" title="Patient inserted data header.">header</a><a name="EHDSPatientInsertedData.header"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Base</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient inserted data header.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.subject" title="Patient/subject information.">subject</a><a name="EHDSPatientInsertedData.header.subject"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSPatient.html">EHDSPatient</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient/subject information.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.identifier" title="Unique identifier of the document.">identifier</a><a name="EHDSPatientInsertedData.header.identifier"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Unique identifier of the document.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.author[x]" title="Author of the document.">author[x]</a><a name="EHDSPatientInsertedData.header.author_x_"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Author of the document.<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSPatient means a structured set of data elements describing a subject of care.">authorEHDSPatient</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSPatient.html">EHDSPatient</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSRelatedPerson means a structured set of data elements describing a person related to the patient, such as a guardian, next of kin, or other related person.">authorEHDSRelatedPerson</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSRelatedPerson.html">EHDSRelatedPerson</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.date" title="Date of finalising/issuing the document.">date</a><a name="EHDSPatientInsertedData.header.date"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date of finalising/issuing the document.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.status" title="Status of the document.">status</a><a name="EHDSPatientInsertedData.header.status"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Status of the document.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding"> </span><span style="font-weight:bold; color: #c97a18" title="This binding doesn't define a testable ValueSet" class="binding">⚠</span><span title="null" class="binding">: </span><span title="null" class="binding">HL7 Composition Status</span><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.language" title="Language in which the document is written. Language is expressed by the IETF language tag.">language</a><a name="EHDSPatientInsertedData.header.language"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Language in which the document is written. Language is expressed by the IETF language tag.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding"> </span><span style="font-weight:bold; color: #c97a18" title="This binding doesn't define a testable ValueSet" class="binding">⚠</span><span title="null" class="binding">: </span><span title="null" class="binding">BCP 47</span><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.documentType" title="Type of document e.g. 48765-2 Allergies and adverse reactions document.">documentType</a><a name="EHDSPatientInsertedData.header.documentType"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Type of document e.g. 48765-2 Allergies and adverse reactions document.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding"> </span><span style="font-weight:bold; color: #c97a18" title="This binding doesn't define a testable ValueSet" class="binding">⚠</span><span title="null" class="binding">: </span><span title="null" class="binding">LOINC</span><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.documentTitle" title="Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Patient inserted data: allergies and adverse reactions').">documentTitle</a><a name="EHDSPatientInsertedData.header.documentTitle"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Patient inserted data: allergies and adverse reactions').<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.period" title="Time period of information covered in the document.">period</a><a name="EHDSPatientInsertedData.header.period"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Period">Period</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Time period of information covered in the document.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.version" title="Version of the document.">version</a><a name="EHDSPatientInsertedData.header.version"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Version of the document.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.custodian" title="Organisation that is in charge of maintaining the document.">custodian</a><a name="EHDSPatientInsertedData.header.custodian"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Organisation that is in charge of maintaining the document.<table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.header.countryOfOrigin" title="Country of origin of the document.">countryOfOrigin</a><a name="EHDSPatientInsertedData.header.countryOfOrigin"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Country of origin of the document.<br class="binding"/><span style="font-weight:bold" title="null" class="binding">Binding Description: </span><span title="null" class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span title="null" class="binding">)</span><span title="null" class="binding"> </span><span style="font-weight:bold; color: #c97a18" title="This binding doesn't define a testable ValueSet" class="binding">⚠</span><span title="null" class="binding">: </span><span title="null" class="binding">ISO 3166-1 alpha-2</span><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHOULD</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="." style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <a href="StructureDefinition-EHDSPatientInsertedData-definitions.html#EHDSPatientInsertedData.content[x]" title="Content (payload) of the patient inserted data">content[x]</a><a name="EHDSPatientInsertedData.content_x_"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #D50000" title="This element has obligations">O</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Content (payload) of the patient inserted data<br/><table class="obligation grid"><tr><td style="font-size: 11px"><b>Obligations</b></td><td style="font-size: 11px"><b>Actor</b></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-full.html">Full</a></td></tr><tr><td style="font-size: 11px"><b>SHALL</b>:<a href="http://hl7.org/fhir/extensions/5.3.0/CodeSystem-obligation.html#obligation-process" title="Obligation Codes: process">process</a></td><td style="font-size: 11px; opacity: 0.5;"><a href="ActorDefinition-actor-basic.html">Basic</a></td></tr></table></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span title="string Type: A sequence of Unicode characters">contentString</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span title="EHDSAttachment means a structured set of data elements describing additional content, in a format identifiable by a MIME type, including images, clinical reports, or other documents.">contentEHDSAttachment</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-EHDSAttachment.html">EHDSAttachment</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData"/>
+  <version value="0.1.0"/>
+  <name value="EHDSPatientInsertedData"/>
+  <title value="Patient-inserted data model"/>
+  <status value="draft"/>
+  <date value="2026-07-23T08:27:45+00:00"/>
+  <publisher value="EC"/>
+  <contact>
+    <name value="EC"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://commission.europa.eu/"/>
+    </telecom>
+  </contact>
+  <description value="Patient-inserted data model."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="5.0.0"/>
+    </extension>
+    <element id="EHDSPatientInsertedData">
+      <path value="EHDSPatientInsertedData"/>
+      <short value="Patient-inserted data model"/>
+      <definition value="Patient-inserted data model."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSPatientInsertedData.header">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header"/>
+      <short value="Patient inserted data header."/>
+      <definition value="Patient inserted data header."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.subject"/>
+      <short value="Patient/subject information."/>
+      <definition value="Patient/subject information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.identifier"/>
+      <short value="Unique identifier of the document."/>
+      <definition value="Unique identifier of the document."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.identifier"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.author[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.author[x]"/>
+      <short value="Author of the document."/>
+      <definition value="Author of the document."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.author[x]"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.date">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.date"/>
+      <short value="Date of finalising/issuing the document."/>
+      <definition value="Date of finalising/issuing the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.date"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.status"/>
+      <short value="Status of the document."/>
+      <definition value="Status of the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Composition Status"/>
+      </binding>
+    </element>
+    <element id="EHDSPatientInsertedData.header.language">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.language"/>
+      <short value="Language in which the document is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the document is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSPatientInsertedData.header.documentType">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.documentType"/>
+      <short value="Type of document e.g. 48765-2 Allergies and adverse reactions document."/>
+      <definition value="Type of document e.g. 48765-2 Allergies and adverse reactions document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.documentType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC"/>
+      </binding>
+    </element>
+    <element id="EHDSPatientInsertedData.header.documentTitle">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.documentTitle"/>
+      <short value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Patient inserted data: allergies and adverse reactions')."/>
+      <definition value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Patient inserted data: allergies and adverse reactions')."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.documentTitle"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.period">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.period"/>
+      <short value="Time period of information covered in the document."/>
+      <definition value="Time period of information covered in the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.version">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.version"/>
+      <short value="Version of the document."/>
+      <definition value="Version of the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.version"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.custodian">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.custodian"/>
+      <short value="Organisation that is in charge of maintaining the document."/>
+      <definition value="Organisation that is in charge of maintaining the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.custodian"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.countryOfOrigin">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.countryOfOrigin"/>
+      <short value="Country of origin of the document."/>
+      <definition value="Country of origin of the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSPatientInsertedData.header.countryOfOrigin"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="ISO 3166-1 alpha-2"/>
+      </binding>
+    </element>
+    <element id="EHDSPatientInsertedData.content[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-source">
+          <valueCanonical value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatientInsertedData|0.1.0"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.content[x]"/>
+      <short value="Content (payload) of the patient inserted data"/>
+      <definition value="Content (payload) of the patient inserted data"/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSPatientInsertedData.content[x]"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSPatientInsertedData">
+      <path value="EHDSPatientInsertedData"/>
+      <short value="Patient-inserted data model"/>
+      <definition value="Patient-inserted data model."/>
+    </element>
+    <element id="EHDSPatientInsertedData.header">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header"/>
+      <short value="Patient inserted data header."/>
+      <definition value="Patient inserted data header."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.subject">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.subject"/>
+      <short value="Patient/subject information."/>
+      <definition value="Patient/subject information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.identifier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.identifier"/>
+      <short value="Unique identifier of the document."/>
+      <definition value="Unique identifier of the document."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.author[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.author[x]"/>
+      <short value="Author of the document."/>
+      <definition value="Author of the document."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.date">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.date"/>
+      <short value="Date of finalising/issuing the document."/>
+      <definition value="Date of finalising/issuing the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.status">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.status"/>
+      <short value="Status of the document."/>
+      <definition value="Status of the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Composition Status"/>
+      </binding>
+    </element>
+    <element id="EHDSPatientInsertedData.header.language">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.language"/>
+      <short value="Language in which the document is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the document is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSPatientInsertedData.header.documentType">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.documentType"/>
+      <short value="Type of document e.g. 48765-2 Allergies and adverse reactions document."/>
+      <definition value="Type of document e.g. 48765-2 Allergies and adverse reactions document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC"/>
+      </binding>
+    </element>
+    <element id="EHDSPatientInsertedData.header.documentTitle">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.documentTitle"/>
+      <short value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Patient inserted data: allergies and adverse reactions')."/>
+      <definition value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Patient inserted data: allergies and adverse reactions')."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.period">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.period"/>
+      <short value="Time period of information covered in the document."/>
+      <definition value="Time period of information covered in the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.version">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.version"/>
+      <short value="Version of the document."/>
+      <definition value="Version of the document."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.custodian">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.custodian"/>
+      <short value="Organisation that is in charge of maintaining the document."/>
+      <definition value="Organisation that is in charge of maintaining the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSPatientInsertedData.header.countryOfOrigin">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHOULD:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.header.countryOfOrigin"/>
+      <short value="Country of origin of the document."/>
+      <definition value="Country of origin of the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="ISO 3166-1 alpha-2"/>
+      </binding>
+    </element>
+    <element id="EHDSPatientInsertedData.content[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-full"/>
+        </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
+        <extension url="code">
+          <valueCode value="SHALL:process"/>
+        </extension>
+        <extension url="actor">
+          <valueCanonical value="https://ehds.eu/specifications/fhir/actor-basic"/>
+        </extension>
+      </extension>
+      <path value="EHDSPatientInsertedData.content[x]"/>
+      <short value="Content (payload) of the patient inserted data"/>
+      <definition value="Content (payload) of the patient inserted data"/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

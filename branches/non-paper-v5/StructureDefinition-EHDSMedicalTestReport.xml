@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSMedicalTestReport"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSMedicalTestReport</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport" title="Medical test results, including laboratory and other diagnostic results and related reports.">EHDSMedicalTestReport</a><a name="EHDSMedicalTestReport"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDocument.html">EHDSDocument</a></td><td style="" class="hierarchy xhtCellBorder0">Medical test result and report model<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-EHDSDataSet.html" title="Basic metadata for this information.">header</a>, <a href="StructureDefinition-EHDSDocument.html">header</a>, <a href="StructureDefinition-EHDSDocument.html" title="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document.">presentedForm</a></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header">header</a><a name="EHDSMedicalTestReport.header"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.header.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header.author[x]">author[x]</a><a name="EHDSMedicalTestReport.header.author_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html" class="xhtPieceDeEmphasized">EHDSHealthProfessional</a><span class="xhtPieceDeEmphasized">, </span><a href="StructureDefinition-EHDSOrganisation.html" class="xhtPieceDeEmphasized">EHDSOrganisation</a><span class="xhtPieceDeEmphasized">, </span><a href="StructureDefinition-EHDSDevice.html" class="xhtPieceDeEmphasized">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">Author of the document.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.header.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header.date">date</a><a name="EHDSMedicalTestReport.header.date"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">Date and optionally time of authoring/issuing.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.header.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header.language">language</a><a name="EHDSMedicalTestReport.header.language"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Language in which the resource is written. Language is expressed by the IETF language tag.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.header.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header.documentCategory">documentCategory</a><a name="EHDSMedicalTestReport.header.documentCategory"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Broad category of document (e.g. 11502-2 ‘Laboratory report’ or 70004-7 ‘Diagnostic study note’).</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.header.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header.documentType">documentType</a><a name="EHDSMedicalTestReport.header.documentType"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Type of document (e.g. 18725-2 ‘Microbiology studies (set)’ or 18759-1 ‘Spirometry study’).</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.header.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header.documentTitle">documentTitle</a><a name="EHDSMedicalTestReport.header.documentTitle"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string" class="xhtPieceDeEmphasized">string</a></td><td style="" class="hierarchy xhtCellBorder0">Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Example: Medical test report.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.header.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header.legalAuthentication">legalAuthentication</a><a name="EHDSMedicalTestReport.header.legalAuthentication"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Base</span></td><td style="" class="hierarchy xhtCellBorder0">Document legal authentication details.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.header.legalAuthentication.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header.legalAuthentication.legalAuthenticator[x]">legalAuthenticator[x]</a><a name="EHDSMedicalTestReport.header.legalAuthentication.legalAuthenticator_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html" class="xhtPieceDeEmphasized">EHDSHealthProfessional</a><span class="xhtPieceDeEmphasized">, </span><a href="StructureDefinition-EHDSOrganisation.html" class="xhtPieceDeEmphasized">EHDSOrganisation</a></td><td style="" class="hierarchy xhtCellBorder0">The person or organisation taking responsibility for the content of the document.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.header.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.header.eventCategory">eventCategory</a><a name="EHDSMedicalTestReport.header.eventCategory"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Categorisation of the event covered by the document (e.g. medical study types). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">LOINC (preferred), SNOMED GPS</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.presentedForm">presentedForm</a><a name="EHDSMedicalTestReport.presentedForm"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSAttachment.html" class="xhtPieceDeEmphasized">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">A narrative easy-to-read representation of the full dataset, e.g. PDF version of a document. At least one of body or presentedForm shall be present.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.intendedRecipient[x]" title="Details of the recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).">intendedRecipient[x]</a><a name="EHDSMedicalTestReport.intendedRecipient_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">Details of the recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.intendedRecipient[x].</span><span title="EHDSPatient means a structured set of data elements describing a subject of care.">intendedRecipientEHDSPatient</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSPatient.html">EHDSPatient</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.intendedRecipient[x].</span><span title="EHDSRelatedPerson means a structured set of data elements describing a person related to the patient, such as a guardian, next of kin, or other related person.">intendedRecipientEHDSRelatedPerson</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSRelatedPerson.html">EHDSRelatedPerson</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.intendedRecipient[x].</span><span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">intendedRecipientEHDSHealthProfessional</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.intendedRecipient[x].</span><span title="EHDSOrganisation means a structured set of data elements describing an organisation.">intendedRecipientEHDSOrganisation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.intendedRecipient[x].</span><span title="EHDSDevice means a structured set of data elements describing a medical device or implant.">intendedRecipientEHDSDevice</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body" title="Medical test result and report structured body. At least one of body or presentedForm shall be present.">body</a><a name="EHDSMedicalTestReport.body"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Medical test result and report structured body. At least one of body or presentedForm shall be present.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.orderInformation" title="Order information.">orderInformation</a><a name="EHDSMedicalTestReport.body.orderInformation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Order information.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.orderInformation.orderId" title="An identifier of the medical test order.">orderId</a><a name="EHDSMedicalTestReport.body.orderInformation.orderId"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">An identifier of the medical test order.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.orderInformation.orderDateAndTime" title="Date and time of the order placement.">orderDateAndTime</a><a name="EHDSMedicalTestReport.body.orderInformation.orderDateAndTime"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">Date and time of the order placement.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.orderInformation.orderPlacer[x]" title="The person/organisation authorised to place the order.">orderPlacer[x]</a><a name="EHDSMedicalTestReport.body.orderInformation.orderPlacer_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">The person/organisation authorised to place the order.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.orderPlacer[x].</span><span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">orderPlacerEHDSHealthProfessional</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.orderPlacer[x].</span><span title="EHDSOrganisation means a structured set of data elements describing an organisation.">orderPlacerEHDSOrganisation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.orderPlacer[x].</span><span title="EHDSPatient means a structured set of data elements describing a subject of care.">orderPlacerEHDSPatient</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSPatient.html">EHDSPatient</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.orderInformation.orderReason[x]" title="An explanation or justification for why this service is being requested.">orderReason[x]</a><a name="EHDSMedicalTestReport.body.orderInformation.orderReason_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">An explanation or justification for why this service is being requested.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">SNOMED GPS (preferred), ICD-10</span><br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.orderReason[x].</span><span title="CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.">orderReasonCodeableConcept</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.orderReason[x].</span><span title="EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis.">orderReasonEHDSCondition</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSCondition.html">EHDSCondition</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.orderReason[x].</span><span title="EHDSObservation means a structured set of data elements describing a clinical finding or measurement and its results. This includes simple observational findings (e.g., alcohol and tobacco use, blood pressure measurements) and complex medical test results (e.g., cardiopulmonary stress test, Holter monitor), supporting the grouping of related observations and the representation of multi-part results observed under shared or different conditions.">orderReasonEHDSObservation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.orderReason[x].</span><span title="string Type: A sequence of Unicode characters">orderReasonString</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.orderInformation.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.orderInformation.clinicalQuestion" title="Specification of clinical question (goal of the investigation) to be answered by the medical test.">clinicalQuestion</a><a name="EHDSMedicalTestReport.body.orderInformation.clinicalQuestion"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Specification of clinical question (goal of the investigation) to be answered by the medical test.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.supportingInformation" title="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnoses, clinical findings and other observations. In medical test ordering, it may include answers to questions asked at order entry (AOE), including observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order.">supportingInformation</a><a name="EHDSMedicalTestReport.body.supportingInformation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnoses, clinical findings and other observations. In medical test ordering, it may include answers to questions asked at order entry (AOE), including observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.supportingInformation.observation" title="Clinical findings and other observations.">observation</a><a name="EHDSMedicalTestReport.body.supportingInformation.observation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="" class="hierarchy xhtCellBorder0">Clinical findings and other observations.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.supportingInformation.condition" title="Condition that may influence the service or result interpretation.">condition</a><a name="EHDSMedicalTestReport.body.supportingInformation.condition"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSCondition.html">EHDSCondition</a></td><td style="" class="hierarchy xhtCellBorder0">Condition that may influence the service or result interpretation.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.supportingInformation.medicationAdministration" title="Medication administered specifically in relation to this test.">medicationAdministration</a><a name="EHDSMedicalTestReport.body.supportingInformation.medicationAdministration"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSMedicationAdministration.html">EHDSMedicationAdministration</a></td><td style="" class="hierarchy xhtCellBorder0">Medication administered specifically in relation to this test.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.supportingInformation.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.supportingInformation.immunisation" title="Immunisation history that may influence the service or result interpretation.">immunisation</a><a name="EHDSMedicalTestReport.body.supportingInformation.immunisation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSImmunisation.html">EHDSImmunisation</a></td><td style="" class="hierarchy xhtCellBorder0">Immunisation history that may influence the service or result interpretation.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.specimen" title="Specimen information.">specimen</a><a name="EHDSMedicalTestReport.body.specimen"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSSpecimen.html">EHDSSpecimen</a></td><td style="" class="hierarchy xhtCellBorder0">Specimen information.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck101.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.resultData" title="Medical test result data.">resultData</a><a name="EHDSMedicalTestReport.body.resultData"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Medical test result data.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.resultData.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.resultData.comment" title="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report.">comment</a><a name="EHDSMedicalTestReport.body.resultData.comment"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/narrative.html#Narrative">Narrative</a></td><td style="" class="hierarchy xhtCellBorder0">Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report.<br/><span class="xhtPieceBold">This profile does not constrain the narrative in regard to content, language, or traceability to data elements</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1001.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.resultData.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.body.resultData.medicalTestResult[x]" title="Observation details.">medicalTestResult[x]</a><a name="EHDSMedicalTestReport.body.resultData.medicalTestResult_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">Observation details.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10010.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.resultData.medicalTestResult[x].</span><span title="EHDSObservation means a structured set of data elements describing a clinical finding or measurement and its results. This includes simple observational findings (e.g., alcohol and tobacco use, blood pressure measurements) and complex medical test results (e.g., cardiopulmonary stress test, Holter monitor), supporting the grouping of related observations and the representation of multi-part results observed under shared or different conditions.">medicalTestResultEHDSObservation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10000.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.body.resultData.medicalTestResult[x].</span><span title="Model for observation performed by laboratory.">medicalTestResultEHDSLaboratoryObservation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSLaboratoryObservation.html">EHDSLaboratoryObservation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSMedicalTestReport.</span><a href="StructureDefinition-EHDSMedicalTestReport-definitions.html#EHDSMedicalTestReport.attachment" title="Report attachment.">attachment</a><a name="EHDSMedicalTestReport.attachment"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSAttachment.html">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">Report attachment.<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestReport"/>
+  <version value="0.3.0"/>
+  <name value="EHDSMedicalTestReport"/>
+  <title value="Medical test result and report model"/>
+  <status value="draft"/>
+  <date value="2026-11-18T22:38:10+00:00"/>
+  <publisher value="EC"/>
+  <contact>
+    <name value="EC"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://commission.europa.eu/"/>
+    </telecom>
+  </contact>
+  <description value="Medical test results, including laboratory and other diagnostic results and related reports."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicalTestReport"/>
+  <baseDefinition value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="0.3.0"/>
+    </extension>
+    <element id="EHDSMedicalTestReport">
+      <path value="EHDSMedicalTestReport"/>
+      <short value="Medical test result and report model"/>
+      <definition value="Medical test results, including laboratory and other diagnostic results and related reports."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSMedicalTestReport.header">
+      <path value="EHDSMedicalTestReport.header"/>
+      <short value="Document header."/>
+      <definition value="Basic metadata for this information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.subject">
+      <path value="EHDSMedicalTestReport.header.subject"/>
+      <short value="Patient/subject information."/>
+      <definition value="Patient/subject information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.identifier">
+      <path value="EHDSMedicalTestReport.header.identifier"/>
+      <short value="Unique identifier of the document."/>
+      <definition value="Unique identifier of the resource."/>
+      <comment value="Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.identifier"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.clinicalEventTime[x]">
+      <path value="EHDSMedicalTestReport.header.clinicalEventTime[x]"/>
+      <short value="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."/>
+      <definition value="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.clinicalEventTime[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.version">
+      <path value="EHDSMedicalTestReport.header.version"/>
+      <short value="Version of the document."/>
+      <definition value="Version of the resource."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.version"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.author[x]">
+      <path value="EHDSMedicalTestReport.header.author[x]"/>
+      <short value="Author of the document."/>
+      <definition value="Information describing who authored the resource."/>
+      <comment value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.author[x]"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.date">
+      <path value="EHDSMedicalTestReport.header.date"/>
+      <short value="Date and optionally time of authoring/issuing."/>
+      <definition value="Date and optionally time of authoring/issuing."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.attestation">
+      <path value="EHDSMedicalTestReport.header.attestation"/>
+      <short value="Document attestation details."/>
+      <definition value="Resource attestation details."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.attestation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.attestation.attester[x]">
+      <path value="EHDSMedicalTestReport.header.attestation.attester[x]"/>
+      <short value="Attester who validated the document."/>
+      <definition value="Attester who validated the resource."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.attestation.attester[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.attestation.dateTime">
+      <path value="EHDSMedicalTestReport.header.attestation.dateTime"/>
+      <short value="Date and time of the approval of the document by the attester."/>
+      <definition value="Date and time of the approval of the resource by the attester."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.attestation.dateTime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.status">
+      <path value="EHDSMedicalTestReport.header.status"/>
+      <short value="Status of the document."/>
+      <definition value="Status of the resource."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Composition Status"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.header.language">
+      <path value="EHDSMedicalTestReport.header.language"/>
+      <short value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.language"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.header.lastUpdate">
+      <path value="EHDSMedicalTestReport.header.lastUpdate"/>
+      <short value="Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."/>
+      <definition value="Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.lastUpdate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.documentCategory">
+      <path value="EHDSMedicalTestReport.header.documentCategory"/>
+      <short value="Broad category of document (e.g. 11502-2 ‘Laboratory report’ or 70004-7 ‘Diagnostic study note’)."/>
+      <definition value="Broad category of document (e.g. 11502-2 Laboratory report)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentCategory"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.header.documentType">
+      <path value="EHDSMedicalTestReport.header.documentType"/>
+      <short value="Type of document (e.g. 18725-2 ‘Microbiology studies (set)’ or 18759-1 ‘Spirometry study’)."/>
+      <definition value="Type of document (e.g. 18725-2 Microbiology studies (set))."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.header.documentTitle">
+      <path value="EHDSMedicalTestReport.header.documentTitle"/>
+      <short value="Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Example: Medical test report."/>
+      <definition value="Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentTitle"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.period">
+      <path value="EHDSMedicalTestReport.header.period"/>
+      <short value="Time of service that is being documented."/>
+      <definition value="Time of service that is being documented."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.legalAuthentication">
+      <path value="EHDSMedicalTestReport.header.legalAuthentication"/>
+      <short value="Document legal authentication details."/>
+      <definition value="Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.legalAuthentication.legalAuthenticator[x]">
+      <path value="EHDSMedicalTestReport.header.legalAuthentication.legalAuthenticator[x]"/>
+      <short value="The person or organisation taking responsibility for the content of the document."/>
+      <definition value="The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.legalAuthenticator[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.legalAuthentication.dateTime">
+      <path value="EHDSMedicalTestReport.header.legalAuthentication.dateTime"/>
+      <short value="Date and time when the document was authorised."/>
+      <definition value="Date and time when the document was authorised."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.dateTime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.eventCategory">
+      <path value="EHDSMedicalTestReport.header.eventCategory"/>
+      <short value="Categorisation of the event covered by the document (e.g. medical study types). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes."/>
+      <definition value="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.eventCategory"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC (preferred), SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.header.serviceSpecialty">
+      <path value="EHDSMedicalTestReport.header.serviceSpecialty"/>
+      <short value="Additional details about where the content was created (e.g. clinical speciality)."/>
+      <definition value="Additional details about where the content was created (e.g. clinical speciality)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.serviceSpecialty"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.header.custodian">
+      <path value="EHDSMedicalTestReport.header.custodian"/>
+      <short value="Organisation that is in charge of maintaining the document."/>
+      <definition value="Organisation that is in charge of maintaining the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.custodian"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.header.countryOfOrigin">
+      <path value="EHDSMedicalTestReport.header.countryOfOrigin"/>
+      <short value="Country of origin of the document."/>
+      <definition value="Country of origin of the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.countryOfOrigin"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="ISO 3166-1 alpha-2"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.presentedForm">
+      <path value="EHDSMedicalTestReport.presentedForm"/>
+      <short value="A narrative easy-to-read representation of the full dataset, e.g. PDF version of a document. At least one of body or presentedForm shall be present."/>
+      <definition value="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.presentedForm"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.intendedRecipient[x]">
+      <path value="EHDSMedicalTestReport.intendedRecipient[x]"/>
+      <short value="Details of the recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals)."/>
+      <definition value="Details of the recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.intendedRecipient[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body">
+      <path value="EHDSMedicalTestReport.body"/>
+      <short value="Medical test result and report structured body. At least one of body or presentedForm shall be present."/>
+      <definition value="Medical test result and report structured body. At least one of body or presentedForm shall be present."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation">
+      <path value="EHDSMedicalTestReport.body.orderInformation"/>
+      <short value="Order information."/>
+      <definition value="Order information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.orderInformation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.orderId">
+      <path value="EHDSMedicalTestReport.body.orderInformation.orderId"/>
+      <short value="An identifier of the medical test order."/>
+      <definition value="An identifier of the medical test order."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.orderInformation.orderId"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.orderDateAndTime">
+      <path value="EHDSMedicalTestReport.body.orderInformation.orderDateAndTime"/>
+      <short value="Date and time of the order placement."/>
+      <definition value="Date and time of the order placement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.orderInformation.orderDateAndTime"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.orderPlacer[x]">
+      <path value="EHDSMedicalTestReport.body.orderInformation.orderPlacer[x]"/>
+      <short value="The person/organisation authorised to place the order."/>
+      <definition value="The person/organisation authorised to place the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.orderInformation.orderPlacer[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.orderReason[x]">
+      <path value="EHDSMedicalTestReport.body.orderInformation.orderReason[x]"/>
+      <short value="An explanation or justification for why this service is being requested."/>
+      <definition value="An explanation or justification for why this service is being requested."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.orderInformation.orderReason[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS (preferred), ICD-10"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.clinicalQuestion">
+      <path value="EHDSMedicalTestReport.body.orderInformation.clinicalQuestion"/>
+      <short value="Specification of clinical question (goal of the investigation) to be answered by the medical test."/>
+      <definition value="Specification of clinical question (goal of the investigation) to be answered by the medical test."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.orderInformation.clinicalQuestion"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation">
+      <path value="EHDSMedicalTestReport.body.supportingInformation"/>
+      <short value="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnoses, clinical findings and other observations. In medical test ordering, it may include answers to questions asked at order entry (AOE), including observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order."/>
+      <definition value="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnoses, clinical findings and other observations. In medical test ordering, it may include answers to questions asked at order entry (AOE), including observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.supportingInformation"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation.observation">
+      <path value="EHDSMedicalTestReport.body.supportingInformation.observation"/>
+      <short value="Clinical findings and other observations."/>
+      <definition value="Clinical findings and other observations."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.supportingInformation.observation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation.condition">
+      <path value="EHDSMedicalTestReport.body.supportingInformation.condition"/>
+      <short value="Condition that may influence the service or result interpretation."/>
+      <definition value="Condition that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.supportingInformation.condition"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation.medicationAdministration">
+      <path value="EHDSMedicalTestReport.body.supportingInformation.medicationAdministration"/>
+      <short value="Medication administered specifically in relation to this test."/>
+      <definition value="Medication administered specifically in relation to this test."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.supportingInformation.medicationAdministration"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation.immunisation">
+      <path value="EHDSMedicalTestReport.body.supportingInformation.immunisation"/>
+      <short value="Immunisation history that may influence the service or result interpretation."/>
+      <definition value="Immunisation history that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.supportingInformation.immunisation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSImmunisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.specimen">
+      <path value="EHDSMedicalTestReport.body.specimen"/>
+      <short value="Specimen information."/>
+      <definition value="Specimen information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.specimen"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSSpecimen"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.resultData">
+      <path value="EHDSMedicalTestReport.body.resultData"/>
+      <short value="Medical test result data."/>
+      <definition value="Medical test result data."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.resultData"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.resultData.comment">
+      <path value="EHDSMedicalTestReport.body.resultData.comment"/>
+      <short value="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report."/>
+      <definition value="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.resultData.comment"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Narrative"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.resultData.medicalTestResult[x]">
+      <path value="EHDSMedicalTestReport.body.resultData.medicalTestResult[x]"/>
+      <short value="Observation details."/>
+      <definition value="Observation details."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.body.resultData.medicalTestResult[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.attachment">
+      <path value="EHDSMedicalTestReport.attachment"/>
+      <short value="Report attachment."/>
+      <definition value="Report attachment."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSMedicalTestReport.attachment"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSMedicalTestReport">
+      <path value="EHDSMedicalTestReport"/>
+      <short value="Medical test result and report model"/>
+      <definition value="Medical test results, including laboratory and other diagnostic results and related reports."/>
+    </element>
+    <element id="EHDSMedicalTestReport.header.author[x]">
+      <path value="EHDSMedicalTestReport.header.author[x]"/>
+      <short value="Author of the document."/>
+    </element>
+    <element id="EHDSMedicalTestReport.header.date">
+      <path value="EHDSMedicalTestReport.header.date"/>
+      <short value="Date and optionally time of authoring/issuing."/>
+    </element>
+    <element id="EHDSMedicalTestReport.header.language">
+      <path value="EHDSMedicalTestReport.header.language"/>
+      <short value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+    </element>
+    <element id="EHDSMedicalTestReport.header.documentCategory">
+      <path value="EHDSMedicalTestReport.header.documentCategory"/>
+      <short value="Broad category of document (e.g. 11502-2 ‘Laboratory report’ or 70004-7 ‘Diagnostic study note’)."/>
+    </element>
+    <element id="EHDSMedicalTestReport.header.documentType">
+      <path value="EHDSMedicalTestReport.header.documentType"/>
+      <short value="Type of document (e.g. 18725-2 ‘Microbiology studies (set)’ or 18759-1 ‘Spirometry study’)."/>
+    </element>
+    <element id="EHDSMedicalTestReport.header.documentTitle">
+      <path value="EHDSMedicalTestReport.header.documentTitle"/>
+      <short value="Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Example: Medical test report."/>
+    </element>
+    <element id="EHDSMedicalTestReport.header.legalAuthentication">
+      <path value="EHDSMedicalTestReport.header.legalAuthentication"/>
+      <short value="Document legal authentication details."/>
+    </element>
+    <element id="EHDSMedicalTestReport.header.legalAuthentication.legalAuthenticator[x]">
+      <path value="EHDSMedicalTestReport.header.legalAuthentication.legalAuthenticator[x]"/>
+      <short value="The person or organisation taking responsibility for the content of the document."/>
+    </element>
+    <element id="EHDSMedicalTestReport.header.eventCategory">
+      <path value="EHDSMedicalTestReport.header.eventCategory"/>
+      <short value="Categorisation of the event covered by the document (e.g. medical study types). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes."/>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC (preferred), SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.presentedForm">
+      <path value="EHDSMedicalTestReport.presentedForm"/>
+      <short value="A narrative easy-to-read representation of the full dataset, e.g. PDF version of a document. At least one of body or presentedForm shall be present."/>
+    </element>
+    <element id="EHDSMedicalTestReport.intendedRecipient[x]">
+      <path value="EHDSMedicalTestReport.intendedRecipient[x]"/>
+      <short value="Details of the recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals)."/>
+      <definition value="Details of the recipient of the information, i.e. a person or organisation that shall be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body">
+      <path value="EHDSMedicalTestReport.body"/>
+      <short value="Medical test result and report structured body. At least one of body or presentedForm shall be present."/>
+      <definition value="Medical test result and report structured body. At least one of body or presentedForm shall be present."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation">
+      <path value="EHDSMedicalTestReport.body.orderInformation"/>
+      <short value="Order information."/>
+      <definition value="Order information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.orderId">
+      <path value="EHDSMedicalTestReport.body.orderInformation.orderId"/>
+      <short value="An identifier of the medical test order."/>
+      <definition value="An identifier of the medical test order."/>
+      <min value="1"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.orderDateAndTime">
+      <path value="EHDSMedicalTestReport.body.orderInformation.orderDateAndTime"/>
+      <short value="Date and time of the order placement."/>
+      <definition value="Date and time of the order placement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.orderPlacer[x]">
+      <path value="EHDSMedicalTestReport.body.orderInformation.orderPlacer[x]"/>
+      <short value="The person/organisation authorised to place the order."/>
+      <definition value="The person/organisation authorised to place the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.orderReason[x]">
+      <path value="EHDSMedicalTestReport.body.orderInformation.orderReason[x]"/>
+      <short value="An explanation or justification for why this service is being requested."/>
+      <definition value="An explanation or justification for why this service is being requested."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS (preferred), ICD-10"/>
+      </binding>
+    </element>
+    <element id="EHDSMedicalTestReport.body.orderInformation.clinicalQuestion">
+      <path value="EHDSMedicalTestReport.body.orderInformation.clinicalQuestion"/>
+      <short value="Specification of clinical question (goal of the investigation) to be answered by the medical test."/>
+      <definition value="Specification of clinical question (goal of the investigation) to be answered by the medical test."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation">
+      <path value="EHDSMedicalTestReport.body.supportingInformation"/>
+      <short value="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnoses, clinical findings and other observations. In medical test ordering, it may include answers to questions asked at order entry (AOE), including observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order."/>
+      <definition value="Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnoses, clinical findings and other observations. In medical test ordering, it may include answers to questions asked at order entry (AOE), including observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation.observation">
+      <path value="EHDSMedicalTestReport.body.supportingInformation.observation"/>
+      <short value="Clinical findings and other observations."/>
+      <definition value="Clinical findings and other observations."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation.condition">
+      <path value="EHDSMedicalTestReport.body.supportingInformation.condition"/>
+      <short value="Condition that may influence the service or result interpretation."/>
+      <definition value="Condition that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation.medicationAdministration">
+      <path value="EHDSMedicalTestReport.body.supportingInformation.medicationAdministration"/>
+      <short value="Medication administered specifically in relation to this test."/>
+      <definition value="Medication administered specifically in relation to this test."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationAdministration"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.supportingInformation.immunisation">
+      <path value="EHDSMedicalTestReport.body.supportingInformation.immunisation"/>
+      <short value="Immunisation history that may influence the service or result interpretation."/>
+      <definition value="Immunisation history that may influence the service or result interpretation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSImmunisation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.specimen">
+      <path value="EHDSMedicalTestReport.body.specimen"/>
+      <short value="Specimen information."/>
+      <definition value="Specimen information."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSSpecimen"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.resultData">
+      <path value="EHDSMedicalTestReport.body.resultData"/>
+      <short value="Medical test result data."/>
+      <definition value="Medical test result data."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.resultData.comment">
+      <path value="EHDSMedicalTestReport.body.resultData.comment"/>
+      <short value="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report."/>
+      <definition value="Narrative, potentially formatted, such as a textual interpretation or advice accompanying the result report."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Narrative"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.body.resultData.medicalTestResult[x]">
+      <path value="EHDSMedicalTestReport.body.resultData.medicalTestResult[x]"/>
+      <short value="Observation details."/>
+      <definition value="Observation details."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+    </element>
+    <element id="EHDSMedicalTestReport.attachment">
+      <path value="EHDSMedicalTestReport.attachment"/>
+      <short value="Report attachment."/>
+      <definition value="Report attachment."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
