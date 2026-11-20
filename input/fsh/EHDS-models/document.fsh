@@ -1,7 +1,7 @@
 Logical: EHDSDocument
 Parent: EHDSDataSet
 Title: "Document model"
-Description: "EHDSDocument means a structured set of data elements common all health documents."
+Description: "EHDSDocument means a structured set of data elements common all health documents. Additional document search metadata is defined separately in EHDSDocumentSearchMetadata."
 
 * header ^short = "Document header."
   * identifier 1..*
@@ -14,10 +14,11 @@ Description: "EHDSDocument means a structured set of data elements common all he
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
   * date 1..1
-    * ^short = "Date of finalising/issuing the document."
+    * ^short = "Date of finalisation/issuance of the document."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
-  * lastUpdate ^short = "Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."
+  // Aurora 6: lastUpdate belongs to search metadata, not document content.
+  // * lastUpdate ^short = "Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."
   * status
     * ^short = "Status of the document."
     //  //* insert Basic(#SHALL)
@@ -113,3 +114,7 @@ Description: "EHDSDocument means a structured set of data elements common all he
 
 // Element descriptions aligned with WP v5.
 * header.language ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
+
+// Aurora 45 and 6, commit 96fb0898: search metadata is not inherited into document content.
+* header.clinicalEventTime[x] 0..0
+// * header.lastUpdate 0..0 // Obsolete: the parent definition is commented out by user decision.

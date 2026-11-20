@@ -248,10 +248,12 @@ groups:
 
   EHDSMetadataModels:
     name: EHDS Metadata Models
-    description: Information models acting as templates for specialised models.
+    description: Shared resource-content templates and independent search metadata models.
     resources:
       - StructureDefinition/EHDSDataSet
       - StructureDefinition/EHDSDocument
+      - StructureDefinition/EHDSSearchMetadata
+      - StructureDefinition/EHDSDocumentSearchMetadata
 
   EHDSSupportLevels:
     name: Support Levels

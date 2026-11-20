@@ -4,8 +4,8 @@ Title: "Administered dosage model"
 Description: """EHDSAdministeredDosage means the structured set of data elements describing a single instance of medication administration, including the dose given, the route and method of administration, and the time of administration."""
 
 * dosageDetails 0..1
-  // Keep the parent EHDSDosage limit: a derived model cannot widen the inherited 0..1 cardinality.
-  * doseAndRate 0..1
+  // Aurora, finding 26: both parent and derived model allow repeated dose-and-rate entries.
+  * doseAndRate 0..*
   * doseAndRate ^short = "Amount of medication administered per dose (= one timing)."
     * dose[x] ^short = "Amount of medication per dose (1 tablet, 23 tablets, 20 ml)."
        //* insert Full(#SHOULD)

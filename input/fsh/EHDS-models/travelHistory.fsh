@@ -12,7 +12,7 @@ Description: "EHDSTravelHistory means a structured set of data elements describi
   * date ^short = "Date and optionally time of authoring/issuing."
   * status ^short = "Status of the resource or document."
      //* insert Full(#SHOULD)
-    * ^binding.description = "Not defined" // TODO: Correct binding shall be added
+    * ^binding.description = "HL7 Observation Status"
 * country 1..1 CodeableConcept "Country visited."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
@@ -51,3 +51,9 @@ Description: "EHDSTravelHistory means a structured set of data elements describi
 // Element descriptions aligned with WP v5.
 * header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
 * header.author[x] ^short = "Author of the resource."
+
+// Aurora 45, commit 96fb0898: search metadata is not inherited into individual data-group content.
+* header.clinicalEventTime[x] 0..0
+* header.version 0..0
+* header.attestation 0..0
+// * header.lastUpdate 0..0 // Obsolete: the parent definition is commented out by user decision.
