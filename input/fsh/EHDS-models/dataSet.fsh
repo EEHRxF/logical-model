@@ -18,7 +18,7 @@ Description: "Common resource-content header used as an implementation parent. A
   // * resourceCategory 0..* CodeableConcept "Data group-specific category (e.g. category of condition, category of advance directive)."
   //   * ^binding.description = "In accordance with the category ‘binding’ in the corresponding data group"
   //   * ^binding.strength = #required
-  * clinicalEventTime[x] 0..1 dateTime or Period "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."
+  //* clinicalEventTime[x] 0..1 dateTime or Period "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."
   * version 0..1 string "Version of the resource."
   * author[x] 0..* EHDSHealthProfessional or EHDSOrganisation or EHDSDevice /*or EHDSPatient or EHDSRelatedPerson*/ "Information describing who authored the resource."
 //     //* insert Full(#SHOULD)

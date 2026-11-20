@@ -116,5 +116,5 @@ Description: "EHDSDocument means a structured set of data elements common all he
 * header.language ^short = "Language in which the document is written. Language is expressed by the IETF language tag."
 
 // Aurora 45 and 6, commit 96fb0898: search metadata is not inherited into document content.
-* header.clinicalEventTime[x] 0..0
+// * header.clinicalEventTime[x] 0..0 // Parent element removed from EHDSDataSet.
 // * header.lastUpdate 0..0 // Obsolete: the parent definition is commented out by user decision.
