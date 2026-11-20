@@ -24,6 +24,12 @@ For example, the Laboratory Observation model is derived from the general Observ
 When the logical model is not derived (the first element in the model is of the data type “Base”), all three views appear equal.
 
 
+### Resource content and search metadata
+
+[EHDSDataSet](StructureDefinition-EHDSDataSet.html) and [EHDSDocument](StructureDefinition-EHDSDocument.html) are shared implementation parents for resource content. The Annex III metadata used for searching is also represented separately by [EHDSSearchMetadata](StructureDefinition-EHDSSearchMetadata.html) and its document variant [EHDSDocumentSearchMetadata](StructureDefinition-EHDSDocumentSearchMetadata.html). Content models do not inherit from these search models. Common definitions remain in DataSet, while explicit constraints exclude search-only fields from individual content models. Document version and attestation remain part of document content. lastUpdate is defined only in the search models; its former DataSet definition and obsolete content exclusions are commented out.
+
+The final review requires mandatory search date (`1..1`), confirmed by an explicit user decision. The user also retained optional DataSet content date (`0..1`) and mandatory Document content date (`1..1`). **The general search-date requirement remains open:** when a source resource has no date, no rule currently defines where the mandatory search date comes from. No fallback timestamp is assumed.
+
 ### Tree vs Detailed view
 
 When navigating to a page of a model, the default view is the Content tab that displays a compact tree view of the content. It displays:

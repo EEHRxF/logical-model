@@ -14,7 +14,7 @@ Description: "EHDSDosage means a structured set of data elements describing the 
   * note 0..1 string "Patient-oriented instructions as free text for this dosage step."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
-  * doseAndRate 0..1 Base "Amount of medicinal product administered per dose (= one timing)."
+  * doseAndRate 0..* Base "Amount of medicinal product administered per dose (= one timing)."
      //* insert Full(#SHOULD)
      //* insert Basic(#SHOULD)
     * dose[x] 0..1 Quantity or Range "Amount of medicinal product per one dose (1 tablet, 2-3 tablets, 20 ml)."

@@ -112,13 +112,14 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
       * reason 0..1 string "Textual reason for flagging the image as significant."
          //* insert Full(#SHOULD)
          //* insert Basic(#SHOULD)
-      // Intentional addition to WP v5: keyImage needs identifiers for the referenced series and instances.
-      * seriesUID 1..* Identifier "Series instance UID for the series that contains the instances flagged as significant."
-         //* insert Full(#SHALL)
-         //* insert Basic(#SHALL)
-      * instanceUID 1..* Identifier "SOP Instance UID for the instances flagged as significant by the Key Image Note object (DICOM KOS) that flags this image."
-         //* insert Full(#SHALL)
-         //* insert Basic(#SHALL)
+      // Aurora 21, revised in commit 96fb0898: identifiers are provided by the containing series and instance.
+      // References flagged by a DICOM KOS document are obtained by retrieving and inspecting that document.
+      // * seriesUID 1..* Identifier "Series instance UID for the series that contains the instances flagged as significant."
+      //    //* insert Full(#SHALL)
+      //    //* insert Basic(#SHALL)
+      // * instanceUID 1..* Identifier "SOP Instance UID for the instances flagged as significant by the Key Image Note object (DICOM KOS) that flags this image."
+      //    //* insert Full(#SHALL)
+      //    //* insert Basic(#SHALL)
 
 // Elements inherited from the parent model but not present in the source table.
 //* header.patientInsertedData 0..0
@@ -144,3 +145,9 @@ Description: "EHDSImagingStudy means the structured set of data elements for fac
 // Element descriptions aligned with WP v5.
 * header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
 * header.author[x] ^short = "Author of the resource."
+
+// Aurora 45, commit 96fb0898: search metadata is not inherited into individual data-group content.
+* header.clinicalEventTime[x] 0..0
+* header.version 0..0
+* header.attestation 0..0
+// * header.lastUpdate 0..0 // Obsolete: the parent definition is commented out by user decision.

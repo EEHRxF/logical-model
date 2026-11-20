@@ -1,6 +1,6 @@
 Logical: EHDSDataSet
 Title: "DataSet model"
-Description: "DataSet model."
+Description: "Common resource-content header used as an implementation parent. Additional search metadata is defined separately in EHDSSearchMetadata."
 
 * header 1..1 Base "Basic metadata for this information."
   //  //* insert Full(#SHALL)
@@ -8,7 +8,7 @@ Description: "DataSet model."
   * subject 1..1 EHDSPatient "Patient/subject information."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
-  * identifier 1..* Identifier "Unique identifier of the resource."
+  * identifier 0..* Identifier "Unique identifier of the resource."
     //  //* insert Full(#SHOULD)
     //  //* insert Basic(#SHOULD)
     // TODO Obligation removed to not populate double-obligations downstreams
@@ -20,7 +20,7 @@ Description: "DataSet model."
   //   * ^binding.strength = #required
   * clinicalEventTime[x] 0..1 dateTime or Period "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."
   * version 0..1 string "Version of the resource."
-  * author[x] 1..* EHDSHealthProfessional or EHDSOrganisation or EHDSDevice /*or EHDSPatient or EHDSRelatedPerson*/ "Information describing who authored the resource."
+  * author[x] 0..* EHDSHealthProfessional or EHDSOrganisation or EHDSDevice /*or EHDSPatient or EHDSRelatedPerson*/ "Information describing who authored the resource."
 //     //* insert Full(#SHOULD)
 //     //* insert Basic(#SHOULD)
 // TODO Obligation removed to not populate double-obligations downstreams
@@ -28,7 +28,8 @@ Description: "DataSet model."
    //* patientInsertedData 0..1 boolean "Indicator that states, when included with value 'true', that the contents of this resource represent information inserted by the natural person or their representative. In this case, the contents shall not be considered as verified by a health professional or a healthcare provider, even if digitally signed by them as part of a bigger data set. Details of the person who inserted the information may be provided in the author[x] element."
     //  //* insert Full(#SHALL)
     //  //* insert Basic(#SHALL)
-  * date 0..1 dateTime "Date and optionally time of authoring/issuing."
+  * date 0..1 dateTime "Date of finalisation/issuance of the resource."
+    * ^comment = "The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined."
     //  //* insert Full(#SHOULD)
     //  //* insert Basic(#SHOULD)
     // TODO Obligation removed to not populate double-obligations downstreams
@@ -45,4 +46,5 @@ Description: "DataSet model."
     //  //* insert Basic(#SHOULD)
     * ^binding.description = "BCP 47"
     * ^binding.strength = #required
-  * lastUpdate 0..1 dateTime "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time."
+  // User resolution of findings 3 and 6: lastUpdate belongs only to the search models.
+  // * lastUpdate 0..1 dateTime "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time."

@@ -20,11 +20,12 @@ Description: "EHDSCurrentPregnancyStatus means a structured set of data elements
 * expectedDateOfDelivery 0..1 dateTime "Date on which the woman is due to give birth. Day, year and month are required."
    //* insert Full(#SHALL)
    //* insert Basic(#SHOULD)
-* gestationalAge 0..1 Quantity "Duration of the pregnancy (weeks, days or weeks and days) at the time of the observation."
+* gestationalAge 0..1 string "Duration of the pregnancy (weeks, days or weeks and days) at the time of the observation."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
-  * ^binding.description = "UCUM (units of measurement)"
-  * ^binding.strength = #required
+  // A string can express weeks, days or their combination; a unit binding is not applicable.
+  // * ^binding.description = "UCUM (units of measurement)"
+  // * ^binding.strength = #required
 * note 0..1 string "Free text notes by the health professional."
    //* insert Full(#SHOULD)
    //* insert Basic(#SHOULD)
@@ -59,3 +60,9 @@ Description: "EHDSCurrentPregnancyStatus means a structured set of data elements
 // Element descriptions aligned with WP v5.
 * header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
 * header.author[x] ^short = "Author of the resource."
+
+// Aurora 45, commit 96fb0898: search metadata is not inherited into individual data-group content.
+* header.clinicalEventTime[x] 0..0
+* header.version 0..0
+* header.attestation 0..0
+// * header.lastUpdate 0..0 // Obsolete: the parent definition is commented out by user decision.

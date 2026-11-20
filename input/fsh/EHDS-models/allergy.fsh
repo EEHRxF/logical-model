@@ -85,3 +85,9 @@ Description: "EHDSAllergyIntolerance means a structured set of data elements des
 // Element descriptions aligned with WP v5.
 * header.identifier ^short = "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
 * header.author[x] ^short = "Author of the resource."
+
+// Aurora 45, commit 96fb0898: search metadata is not inherited into individual data-group content.
+* header.clinicalEventTime[x] 0..0
+* header.version 0..0
+* header.attestation 0..0
+// * header.lastUpdate 0..0 // Obsolete: the parent definition is commented out by user decision.
