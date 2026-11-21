@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSDocument"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSDocument</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument" title="EHDSDocument means a structured set of data elements common all health documents.">EHDSDocument</a><a name="EHDSDocument"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDataSet.html">EHDSDataSet</a></td><td style="" class="hierarchy xhtCellBorder0">Document model<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-EHDSDataSet.html" title="Basic metadata for this information.">header</a></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header">header</a><a name="EHDSDocument.header"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Base</span></td><td style="" class="hierarchy xhtCellBorder0">Document header.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.identifier">identifier</a><a name="EHDSDocument.header.identifier"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier" class="xhtPieceDeEmphasized">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Unique identifier of the document.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.version">version</a><a name="EHDSDocument.header.version"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string" class="xhtPieceDeEmphasized">string</a></td><td style="" class="hierarchy xhtCellBorder0">Version of the document.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.author[x]">author[x]</a><a name="EHDSDocument.header.author_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html" class="xhtPieceDeEmphasized">EHDSHealthProfessional</a><span class="xhtPieceDeEmphasized">, </span><a href="StructureDefinition-EHDSOrganisation.html" class="xhtPieceDeEmphasized">EHDSOrganisation</a><span class="xhtPieceDeEmphasized">, </span><a href="StructureDefinition-EHDSDevice.html" class="xhtPieceDeEmphasized">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">Information describing who authored the resource or document.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.date">date</a><a name="EHDSDocument.header.date"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">Date of finalising/issuing the document.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.attestation">attestation</a><a name="EHDSDocument.header.attestation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Base</span></td><td style="" class="hierarchy xhtCellBorder0">Document attestation details.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.attestation.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.attestation.attester[x]">attester[x]</a><a name="EHDSDocument.header.attestation.attester_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html" class="xhtPieceDeEmphasized">EHDSHealthProfessional</a><span class="xhtPieceDeEmphasized">, </span><a href="StructureDefinition-EHDSDevice.html" class="xhtPieceDeEmphasized">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">Attester who validated the document.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.attestation.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.attestation.dateTime">dateTime</a><a name="EHDSDocument.header.attestation.dateTime"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">Date and time of the approval of the document by the attester.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.status">status</a><a name="EHDSDocument.header.status"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Status of the document.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">HL7 Composition Status</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.language">language</a><a name="EHDSDocument.header.language"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Language in which the document is written. Language is expressed by the IETF language tag.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.lastUpdate">lastUpdate</a><a name="EHDSDocument.header.lastUpdate"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime" class="xhtPieceDeEmphasized">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.documentCategory" title="Broad category of document (e.g. 11502-2 Laboratory report).">documentCategory</a><a name="EHDSDocument.header.documentCategory"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Broad category of document (e.g. 11502-2 Laboratory report).<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">LOINC</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.documentType" title="Type of document (e.g. 18725-2 Microbiology studies (set)).">documentType</a><a name="EHDSDocument.header.documentType"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Type of document (e.g. 18725-2 Microbiology studies (set)).<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">LOINC</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.documentTitle" title="Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’.">documentTitle</a><a name="EHDSDocument.header.documentTitle"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="" class="hierarchy xhtCellBorder0">Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.period" title="Time of service that is being documented.">period</a><a name="EHDSDocument.header.period"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Period">Period</a></td><td style="" class="hierarchy xhtCellBorder0">Time of service that is being documented.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.legalAuthentication" title="Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile.">legalAuthentication</a><a name="EHDSDocument.header.legalAuthentication"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0">Base</td><td style="" class="hierarchy xhtCellBorder0">Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck1111.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.legalAuthentication.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.legalAuthentication.legalAuthenticator[x]" title="The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician).">legalAuthenticator[x]</a><a name="EHDSDocument.header.legalAuthentication.legalAuthenticator_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician).</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.legalAuthentication.legalAuthenticator[x].</span><span title="EHDSHealthProfessional means a structured set of data elements describing a health professional.">legalAuthenticatorEHDSHealthProfessional</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSHealthProfessional.html">EHDSHealthProfessional</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.legalAuthentication.legalAuthenticator[x].</span><span title="EHDSOrganisation means a structured set of data elements describing an organisation.">legalAuthenticatorEHDSOrganisation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.legalAuthentication.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.legalAuthentication.dateTime" title="Date and time when the document was authorised.">dateTime</a><a name="EHDSDocument.header.legalAuthentication.dateTime"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">1..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="" class="hierarchy xhtCellBorder0">Date and time when the document was authorised.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.eventCategory" title="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes.">eventCategory</a><a name="EHDSDocument.header.eventCategory"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">SNOMED GPS, LOINC, DICOM CID 33 Modality</span><br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.serviceSpecialty" title="Additional details about where the content was created (e.g. clinical speciality).">serviceSpecialty</a><a name="EHDSDocument.header.serviceSpecialty"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Additional details about where the content was created (e.g. clinical speciality).<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">SNOMED GPS</span><br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.custodian" title="Organisation that is in charge of maintaining the document.">custodian</a><a name="EHDSDocument.header.custodian"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSOrganisation.html">EHDSOrganisation</a></td><td style="" class="hierarchy xhtCellBorder0">Organisation that is in charge of maintaining the document.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.header.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.header.countryOfOrigin" title="Country of origin of the document.">countryOfOrigin</a><a name="EHDSDocument.header.countryOfOrigin"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Country of origin of the document.<br class="binding"/><span class="xhtPieceBold binding">Binding Description: </span><span class="binding"> (</span><a href="http://hl7.org/fhir/R5/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set." class="binding">required</a><span class="binding">)</span><span class="binding"> </span><span title="This binding doesn't define a testable ValueSet" class="xhtBindingNotTestable xhtPieceBold binding">⚠</span><span class="binding">: </span><span class="binding">ISO 3166-1 alpha-2</span></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSDocument.</span><a href="StructureDefinition-EHDSDocument-definitions.html#EHDSDocument.presentedForm" title="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document.">presentedForm</a><a name="EHDSDocument.presentedForm"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSAttachment.html">EHDSAttachment</a></td><td style="" class="hierarchy xhtCellBorder0">A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document.<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument"/>
+  <version value="0.3.0"/>
+  <name value="EHDSDocument"/>
+  <title value="Document model"/>
+  <status value="draft"/>
+  <date value="2026-11-18T22:38:10+00:00"/>
+  <publisher value="EC"/>
+  <contact>
+    <name value="EC"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://commission.europa.eu/"/>
+    </telecom>
+  </contact>
+  <description value="EHDSDocument means a structured set of data elements common all health documents."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument"/>
+  <baseDefinition value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="0.3.0"/>
+    </extension>
+    <element id="EHDSDocument">
+      <path value="EHDSDocument"/>
+      <short value="Document model"/>
+      <definition value="EHDSDocument means a structured set of data elements common all health documents."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSDocument.header">
+      <path value="EHDSDocument.header"/>
+      <short value="Document header."/>
+      <definition value="Basic metadata for this information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.subject">
+      <path value="EHDSDocument.header.subject"/>
+      <short value="Patient/subject information."/>
+      <definition value="Patient/subject information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.identifier">
+      <path value="EHDSDocument.header.identifier"/>
+      <short value="Unique identifier of the document."/>
+      <definition value="Unique identifier of the resource."/>
+      <comment value="Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.identifier"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.clinicalEventTime[x]">
+      <path value="EHDSDocument.header.clinicalEventTime[x]"/>
+      <short value="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."/>
+      <definition value="Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken)."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.clinicalEventTime[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.version">
+      <path value="EHDSDocument.header.version"/>
+      <short value="Version of the document."/>
+      <definition value="Version of the resource."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.version"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.author[x]">
+      <path value="EHDSDocument.header.author[x]"/>
+      <short value="Information describing who authored the resource or document."/>
+      <definition value="Information describing who authored the resource."/>
+      <comment value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
+      <min value="1"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.author[x]"/>
+        <min value="1"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.date">
+      <path value="EHDSDocument.header.date"/>
+      <short value="Date of finalising/issuing the document."/>
+      <definition value="Date and optionally time of authoring/issuing."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.attestation">
+      <path value="EHDSDocument.header.attestation"/>
+      <short value="Document attestation details."/>
+      <definition value="Resource attestation details."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.attestation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.attestation.attester[x]">
+      <path value="EHDSDocument.header.attestation.attester[x]"/>
+      <short value="Attester who validated the document."/>
+      <definition value="Attester who validated the resource."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.attestation.attester[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.attestation.dateTime">
+      <path value="EHDSDocument.header.attestation.dateTime"/>
+      <short value="Date and time of the approval of the document by the attester."/>
+      <definition value="Date and time of the approval of the resource by the attester."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.attestation.dateTime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.status">
+      <path value="EHDSDocument.header.status"/>
+      <short value="Status of the document."/>
+      <definition value="Status of the resource."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Composition Status"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.language">
+      <path value="EHDSDocument.header.language"/>
+      <short value="Language in which the document is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.language"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.lastUpdate">
+      <path value="EHDSDocument.header.lastUpdate"/>
+      <short value="Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."/>
+      <definition value="Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.lastUpdate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.documentCategory">
+      <path value="EHDSDocument.header.documentCategory"/>
+      <short value="Broad category of document (e.g. 11502-2 Laboratory report)."/>
+      <definition value="Broad category of document (e.g. 11502-2 Laboratory report)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentCategory"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.documentType">
+      <path value="EHDSDocument.header.documentType"/>
+      <short value="Type of document (e.g. 18725-2 Microbiology studies (set))."/>
+      <definition value="Type of document (e.g. 18725-2 Microbiology studies (set))."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.documentTitle">
+      <path value="EHDSDocument.header.documentTitle"/>
+      <short value="Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’."/>
+      <definition value="Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.documentTitle"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.period">
+      <path value="EHDSDocument.header.period"/>
+      <short value="Time of service that is being documented."/>
+      <definition value="Time of service that is being documented."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.legalAuthentication">
+      <path value="EHDSDocument.header.legalAuthentication"/>
+      <short value="Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile."/>
+      <definition value="Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.legalAuthentication.legalAuthenticator[x]">
+      <path value="EHDSDocument.header.legalAuthentication.legalAuthenticator[x]"/>
+      <short value="The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician)."/>
+      <definition value="The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.legalAuthenticator[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.legalAuthentication.dateTime">
+      <path value="EHDSDocument.header.legalAuthentication.dateTime"/>
+      <short value="Date and time when the document was authorised."/>
+      <definition value="Date and time when the document was authorised."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.legalAuthentication.dateTime"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.eventCategory">
+      <path value="EHDSDocument.header.eventCategory"/>
+      <short value="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes."/>
+      <definition value="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.eventCategory"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS, LOINC, DICOM CID 33 Modality"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.serviceSpecialty">
+      <path value="EHDSDocument.header.serviceSpecialty"/>
+      <short value="Additional details about where the content was created (e.g. clinical speciality)."/>
+      <definition value="Additional details about where the content was created (e.g. clinical speciality)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.header.serviceSpecialty"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.custodian">
+      <path value="EHDSDocument.header.custodian"/>
+      <short value="Organisation that is in charge of maintaining the document."/>
+      <definition value="Organisation that is in charge of maintaining the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.custodian"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.countryOfOrigin">
+      <path value="EHDSDocument.header.countryOfOrigin"/>
+      <short value="Country of origin of the document."/>
+      <definition value="Country of origin of the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDocument.header.countryOfOrigin"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="ISO 3166-1 alpha-2"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.presentedForm">
+      <path value="EHDSDocument.presentedForm"/>
+      <short value="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."/>
+      <definition value="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDocument.presentedForm"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSDocument">
+      <path value="EHDSDocument"/>
+      <short value="Document model"/>
+      <definition value="EHDSDocument means a structured set of data elements common all health documents."/>
+    </element>
+    <element id="EHDSDocument.header">
+      <path value="EHDSDocument.header"/>
+      <short value="Document header."/>
+    </element>
+    <element id="EHDSDocument.header.identifier">
+      <path value="EHDSDocument.header.identifier"/>
+      <short value="Unique identifier of the document."/>
+    </element>
+    <element id="EHDSDocument.header.version">
+      <path value="EHDSDocument.header.version"/>
+      <short value="Version of the document."/>
+      <min value="1"/>
+    </element>
+    <element id="EHDSDocument.header.author[x]">
+      <path value="EHDSDocument.header.author[x]"/>
+      <short value="Information describing who authored the resource or document."/>
+    </element>
+    <element id="EHDSDocument.header.date">
+      <path value="EHDSDocument.header.date"/>
+      <short value="Date of finalising/issuing the document."/>
+      <min value="1"/>
+    </element>
+    <element id="EHDSDocument.header.attestation">
+      <path value="EHDSDocument.header.attestation"/>
+      <short value="Document attestation details."/>
+    </element>
+    <element id="EHDSDocument.header.attestation.attester[x]">
+      <path value="EHDSDocument.header.attestation.attester[x]"/>
+      <short value="Attester who validated the document."/>
+    </element>
+    <element id="EHDSDocument.header.attestation.dateTime">
+      <path value="EHDSDocument.header.attestation.dateTime"/>
+      <short value="Date and time of the approval of the document by the attester."/>
+    </element>
+    <element id="EHDSDocument.header.status">
+      <path value="EHDSDocument.header.status"/>
+      <short value="Status of the document."/>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Composition Status"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.language">
+      <path value="EHDSDocument.header.language"/>
+      <short value="Language in which the document is written. Language is expressed by the IETF language tag."/>
+    </element>
+    <element id="EHDSDocument.header.lastUpdate">
+      <path value="EHDSDocument.header.lastUpdate"/>
+      <short value="Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."/>
+    </element>
+    <element id="EHDSDocument.header.documentCategory">
+      <path value="EHDSDocument.header.documentCategory"/>
+      <short value="Broad category of document (e.g. 11502-2 Laboratory report)."/>
+      <definition value="Broad category of document (e.g. 11502-2 Laboratory report)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.documentType">
+      <path value="EHDSDocument.header.documentType"/>
+      <short value="Type of document (e.g. 18725-2 Microbiology studies (set))."/>
+      <definition value="Type of document (e.g. 18725-2 Microbiology studies (set))."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="LOINC"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.documentTitle">
+      <path value="EHDSDocument.header.documentTitle"/>
+      <short value="Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’."/>
+      <definition value="Human-readable document title that may be displayed in search results etc. This may be documentType’s display name, or it may be assembled from multiple elements. Examples: ‘Laboratory result report’, ‘Patient summary of Jane Green 10.12.2024’."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.period">
+      <path value="EHDSDocument.header.period"/>
+      <short value="Time of service that is being documented."/>
+      <definition value="Time of service that is being documented."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.legalAuthentication">
+      <path value="EHDSDocument.header.legalAuthentication"/>
+      <short value="Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile."/>
+      <definition value="Document legal authentication details. Legal authentication metadata is included only where required by applicable legal or organisational frameworks. Absence of legal authentication does not affect interoperability compliance under this profile."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.legalAuthentication.legalAuthenticator[x]">
+      <path value="EHDSDocument.header.legalAuthentication.legalAuthenticator[x]"/>
+      <short value="The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician)."/>
+      <definition value="The person taking responsibility for the medical content of the document. legalAuthenticator may be different from author and attester (e.g author=junior doctor, attester=senior physician, legalAuthenticator= attending physician)."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.legalAuthentication.dateTime">
+      <path value="EHDSDocument.header.legalAuthentication.dateTime"/>
+      <short value="Date and time when the document was authorised."/>
+      <definition value="Date and time when the document was authorised."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.eventCategory">
+      <path value="EHDSDocument.header.eventCategory"/>
+      <short value="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes."/>
+      <definition value="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality). Selection of such tags or labels depends on the use case and agreement between data-sharing parties. This metadata element serves primarily for searching and filtering purposes."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS, LOINC, DICOM CID 33 Modality"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.serviceSpecialty">
+      <path value="EHDSDocument.header.serviceSpecialty"/>
+      <short value="Additional details about where the content was created (e.g. clinical speciality)."/>
+      <definition value="Additional details about where the content was created (e.g. clinical speciality)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.header.custodian">
+      <path value="EHDSDocument.header.custodian"/>
+      <short value="Organisation that is in charge of maintaining the document."/>
+      <definition value="Organisation that is in charge of maintaining the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+    </element>
+    <element id="EHDSDocument.header.countryOfOrigin">
+      <path value="EHDSDocument.header.countryOfOrigin"/>
+      <short value="Country of origin of the document."/>
+      <definition value="Country of origin of the document."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="ISO 3166-1 alpha-2"/>
+      </binding>
+    </element>
+    <element id="EHDSDocument.presentedForm">
+      <path value="EHDSDocument.presentedForm"/>
+      <short value="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."/>
+      <definition value="A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

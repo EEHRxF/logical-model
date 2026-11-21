@@ -1,0 +1,461 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "EHDSDevice",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSDevice</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice\" title=\"EHDSDevice means a structured set of data elements describing a medical device or implant.\">EHDSDevice</a><a name=\"EHDSDevice\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/types.html#Base\">Base</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Device or implant model</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.instanceIdentifier\" title=\"Identifier of the device instance.\">instanceIdentifier</a><a name=\"EHDSDevice.instanceIdentifier\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Identifier of the device instance.<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.udiCarrier\" title=\"Unique device identifier (UDI) value.\">udiCarrier</a><a name=\"EHDSDevice.udiCarrier\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Unique device identifier (UDI) value.<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.manufacturer\" title=\"Name of device manufacturer. If the manufacturer code is included in an identifier, the manufacturer shall correspond to that code.\">manufacturer</a><a name=\"EHDSDevice.manufacturer\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Name of device manufacturer. If the manufacturer code is included in an identifier, the manufacturer shall correspond to that code.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.manufactureDate\" title=\"Date and optionally time when the device was manufactured.\">manufactureDate</a><a name=\"EHDSDevice.manufactureDate\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Date and optionally time when the device was manufactured.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.expiryDate\" title=\"The date and time beyond which this device is no longer valid or shall not be used (if applicable).\">expiryDate</a><a name=\"EHDSDevice.expiryDate\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">The date and time beyond which this device is no longer valid or shall not be used (if applicable).</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.lotNumber\" title=\"Lot number of device. May be omitted if included in an identifier.\">lotNumber</a><a name=\"EHDSDevice.lotNumber\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Lot number of device. May be omitted if included in an identifier.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.serialNumber\" title=\"Serial number assigned by the manufacturer. May be omitted if included in an identifier.\">serialNumber</a><a name=\"EHDSDevice.serialNumber\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Serial number assigned by the manufacturer. May be omitted if included in an identifier.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.name\" title=\"The name and name type of the device.\">name</a><a name=\"EHDSDevice.name\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">The name and name type of the device.<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.name.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.name.value\" title=\"The name of the device as known to, e.g., the manufacturer, patient or both.\">value</a><a name=\"EHDSDevice.name.value\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">The name of the device as known to, e.g., the manufacturer, patient or both.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.name.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.name.type\" title=\"The type of name, e.g. UDI label name, user-friendly name.\">type</a><a name=\"EHDSDevice.name.type\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">The type of name, e.g. UDI label name, user-friendly name.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">HL7 Device name type</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.modelNumber\" title=\"The manufacturer’s model number for the device.\">modelNumber</a><a name=\"EHDSDevice.modelNumber\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">The manufacturer’s model number for the device.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.version\" title=\"The actual design of the device, the software version running on the device or both.\">version</a><a name=\"EHDSDevice.version\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">The actual design of the device, the software version running on the device or both.<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.type\" title=\"Device type.\">type</a><a name=\"EHDSDevice.type\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Device type.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">SNOMED GPS (preferred), EMDN</span><br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSDevice.</span><a href=\"StructureDefinition-EHDSDevice-definitions.html#EHDSDevice.note\" title=\"Device note, device comment or device note and comment.\">note</a><a name=\"EHDSDevice.note\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Device note, device comment or device note and comment.</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice",
+  "version" : "0.3.0",
+  "name" : "EHDSDevice",
+  "title" : "Device or implant model",
+  "status" : "draft",
+  "date" : "2026-11-18T22:38:10+00:00",
+  "publisher" : "EC",
+  "contact" : [{
+    "name" : "EC",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://commission.europa.eu/"
+    }]
+  }],
+  "description" : "EHDSDevice means a structured set of data elements describing a medical device or implant.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "5.0.0"
+    }],
+    "element" : [{
+      "id" : "EHDSDevice",
+      "path" : "EHDSDevice",
+      "short" : "Device or implant model",
+      "definition" : "EHDSDevice means a structured set of data elements describing a medical device or implant.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.instanceIdentifier",
+      "path" : "EHDSDevice.instanceIdentifier",
+      "short" : "Identifier of the device instance.",
+      "definition" : "Identifier of the device instance.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDevice.instanceIdentifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.udiCarrier",
+      "path" : "EHDSDevice.udiCarrier",
+      "short" : "Unique device identifier (UDI) value.",
+      "definition" : "Unique device identifier (UDI) value.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDevice.udiCarrier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.manufacturer",
+      "path" : "EHDSDevice.manufacturer",
+      "short" : "Name of device manufacturer. If the manufacturer code is included in an identifier, the manufacturer shall correspond to that code.",
+      "definition" : "Name of device manufacturer. If the manufacturer code is included in an identifier, the manufacturer shall correspond to that code.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDevice.manufacturer",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.manufactureDate",
+      "path" : "EHDSDevice.manufactureDate",
+      "short" : "Date and optionally time when the device was manufactured.",
+      "definition" : "Date and optionally time when the device was manufactured.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDevice.manufactureDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.expiryDate",
+      "path" : "EHDSDevice.expiryDate",
+      "short" : "The date and time beyond which this device is no longer valid or shall not be used (if applicable).",
+      "definition" : "The date and time beyond which this device is no longer valid or shall not be used (if applicable).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDevice.expiryDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.lotNumber",
+      "path" : "EHDSDevice.lotNumber",
+      "short" : "Lot number of device. May be omitted if included in an identifier.",
+      "definition" : "Lot number of device. May be omitted if included in an identifier.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDevice.lotNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.serialNumber",
+      "path" : "EHDSDevice.serialNumber",
+      "short" : "Serial number assigned by the manufacturer. May be omitted if included in an identifier.",
+      "definition" : "Serial number assigned by the manufacturer. May be omitted if included in an identifier.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDevice.serialNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.name",
+      "path" : "EHDSDevice.name",
+      "short" : "The name and name type of the device.",
+      "definition" : "The name and name type of the device.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDevice.name",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.name.value",
+      "path" : "EHDSDevice.name.value",
+      "short" : "The name of the device as known to, e.g., the manufacturer, patient or both.",
+      "definition" : "The name of the device as known to, e.g., the manufacturer, patient or both.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDevice.name.value",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.name.type",
+      "path" : "EHDSDevice.name.type",
+      "short" : "The type of name, e.g. UDI label name, user-friendly name.",
+      "definition" : "The type of name, e.g. UDI label name, user-friendly name.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDevice.name.type",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Device name type"
+      }
+    },
+    {
+      "id" : "EHDSDevice.modelNumber",
+      "path" : "EHDSDevice.modelNumber",
+      "short" : "The manufacturer’s model number for the device.",
+      "definition" : "The manufacturer’s model number for the device.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDevice.modelNumber",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.version",
+      "path" : "EHDSDevice.version",
+      "short" : "The actual design of the device, the software version running on the device or both.",
+      "definition" : "The actual design of the device, the software version running on the device or both.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDevice.version",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.type",
+      "path" : "EHDSDevice.type",
+      "short" : "Device type.",
+      "definition" : "Device type.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDevice.type",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "SNOMED GPS (preferred), EMDN"
+      }
+    },
+    {
+      "id" : "EHDSDevice.note",
+      "path" : "EHDSDevice.note",
+      "short" : "Device note, device comment or device note and comment.",
+      "definition" : "Device note, device comment or device note and comment.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDevice.note",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "EHDSDevice",
+      "path" : "EHDSDevice",
+      "short" : "Device or implant model",
+      "definition" : "EHDSDevice means a structured set of data elements describing a medical device or implant."
+    },
+    {
+      "id" : "EHDSDevice.instanceIdentifier",
+      "path" : "EHDSDevice.instanceIdentifier",
+      "short" : "Identifier of the device instance.",
+      "definition" : "Identifier of the device instance.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.udiCarrier",
+      "path" : "EHDSDevice.udiCarrier",
+      "short" : "Unique device identifier (UDI) value.",
+      "definition" : "Unique device identifier (UDI) value.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.manufacturer",
+      "path" : "EHDSDevice.manufacturer",
+      "short" : "Name of device manufacturer. If the manufacturer code is included in an identifier, the manufacturer shall correspond to that code.",
+      "definition" : "Name of device manufacturer. If the manufacturer code is included in an identifier, the manufacturer shall correspond to that code.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.manufactureDate",
+      "path" : "EHDSDevice.manufactureDate",
+      "short" : "Date and optionally time when the device was manufactured.",
+      "definition" : "Date and optionally time when the device was manufactured.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.expiryDate",
+      "path" : "EHDSDevice.expiryDate",
+      "short" : "The date and time beyond which this device is no longer valid or shall not be used (if applicable).",
+      "definition" : "The date and time beyond which this device is no longer valid or shall not be used (if applicable).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.lotNumber",
+      "path" : "EHDSDevice.lotNumber",
+      "short" : "Lot number of device. May be omitted if included in an identifier.",
+      "definition" : "Lot number of device. May be omitted if included in an identifier.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.serialNumber",
+      "path" : "EHDSDevice.serialNumber",
+      "short" : "Serial number assigned by the manufacturer. May be omitted if included in an identifier.",
+      "definition" : "Serial number assigned by the manufacturer. May be omitted if included in an identifier.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.name",
+      "path" : "EHDSDevice.name",
+      "short" : "The name and name type of the device.",
+      "definition" : "The name and name type of the device.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.name.value",
+      "path" : "EHDSDevice.name.value",
+      "short" : "The name of the device as known to, e.g., the manufacturer, patient or both.",
+      "definition" : "The name of the device as known to, e.g., the manufacturer, patient or both.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.name.type",
+      "path" : "EHDSDevice.name.type",
+      "short" : "The type of name, e.g. UDI label name, user-friendly name.",
+      "definition" : "The type of name, e.g. UDI label name, user-friendly name.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Device name type"
+      }
+    },
+    {
+      "id" : "EHDSDevice.modelNumber",
+      "path" : "EHDSDevice.modelNumber",
+      "short" : "The manufacturer’s model number for the device.",
+      "definition" : "The manufacturer’s model number for the device.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.version",
+      "path" : "EHDSDevice.version",
+      "short" : "The actual design of the device, the software version running on the device or both.",
+      "definition" : "The actual design of the device, the software version running on the device or both.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDevice.type",
+      "path" : "EHDSDevice.type",
+      "short" : "Device type.",
+      "definition" : "Device type.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "SNOMED GPS (preferred), EMDN"
+      }
+    },
+    {
+      "id" : "EHDSDevice.note",
+      "path" : "EHDSDevice.note",
+      "short" : "Device note, device comment or device note and comment.",
+      "definition" : "Device note, device comment or device note and comment.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
+  }
+}

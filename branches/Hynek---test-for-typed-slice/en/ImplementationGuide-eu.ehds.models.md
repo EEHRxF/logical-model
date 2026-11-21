@@ -1,0 +1,1252 @@
+# Resource EHDS Logical Information Models
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "eu.ehds.models",
+  "language" : "en",
+  "url" : "http://ehds.eu/fhir/models/ImplementationGuide/eu.ehds.models",
+  "version" : "0.1.0",
+  "name" : "EHDSModels",
+  "title" : "EHDS Logical Information Models",
+  "status" : "draft",
+  "date" : "2026-07-24T10:04:43+00:00",
+  "publisher" : "EC",
+  "contact" : [{
+    "name" : "EC",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://commission.europa.eu/"
+    }]
+  }],
+  "description" : "EHDS Logical Information Models",
+  "packageId" : "eu.ehds.models",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "7.2.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "5.3.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r5#1.1.2"
+    }],
+    "grouping" : [{
+      "id" : "EHDSPriorityCategories",
+      "name" : "EHDS Priority Categories",
+      "description" : "The models representing EHDS priority categories."
+    },
+    {
+      "id" : "EHDSCommonLogicalModels",
+      "name" : "EHDS Common Logical Models",
+      "description" : "Information models shared across different priority categories."
+    },
+    {
+      "id" : "EHDSMetadataModels",
+      "name" : "EHDS Metadata Models",
+      "description" : "Information models acting as templates for specialised models."
+    },
+    {
+      "id" : "EHDSSupportLevels",
+      "name" : "Support Levels",
+      "description" : "Support levels for obligations defined as ActorDefinitions."
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSPatientSummary.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSPatientSummary"
+      },
+      "name" : "Patient summary model",
+      "description" : "The model is a structured document designed to provide an overview of a patient's most important health information. The model aims to be compatible with the ISO International Patient Summary standard.",
+      "isExample" : false,
+      "groupingId" : "EHDSPriorityCategories"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSMedicationPrescription.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSMedicationPrescription"
+      },
+      "name" : "Electronic prescription model",
+      "description" : "Electronic prescription.",
+      "isExample" : false,
+      "groupingId" : "EHDSPriorityCategories"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSMedicationDispense.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSMedicationDispense"
+      },
+      "name" : "Medication dispense model.",
+      "description" : "Electronic dispensation.",
+      "isExample" : false,
+      "groupingId" : "EHDSPriorityCategories"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSMedicalTestResultAndReport.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSMedicalTestResultAndReport"
+      },
+      "name" : "Medical test result and report model",
+      "description" : "Medical test results, including laboratory and other diagnostic results and related reports.",
+      "isExample" : false,
+      "groupingId" : "EHDSPriorityCategories"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSImagingReport.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSImagingReport"
+      },
+      "name" : "Imaging report model.",
+      "description" : "Imaging report.",
+      "isExample" : false,
+      "groupingId" : "EHDSPriorityCategories"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSImagingStudy.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSImagingStudy"
+      },
+      "name" : "Imaging study model.",
+      "description" : "EHDSImagingStudy means the structured set of data elements for facilitating the exchange of imaging studies. Its goal is to enable the exchange of imaging studies regardless of whether the corresponding imaging report is available. It contains metadata that includes the endpoint where the imaging study is located. EHDSImagingStudy may be represented using DICOM KOS and/or HL7 FHIR, depending on the implementation guide.",
+      "isExample" : false,
+      "groupingId" : "EHDSPriorityCategories"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSDischargeReport.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSDischargeReport"
+      },
+      "name" : "Discharge report model",
+      "description" : "Discharge report.",
+      "isExample" : false,
+      "groupingId" : "EHDSPriorityCategories"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSPatientInsertedData.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSPatientInsertedData"
+      },
+      "name" : "Patient-inserted data model",
+      "description" : "Patient-inserted data model.",
+      "isExample" : false,
+      "groupingId" : "EHDSPriorityCategories"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSAddress.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSAddress"
+      },
+      "name" : "Address model",
+      "description" : "EHDSAddress means the structured set of data elements identifying a geographical or postal location.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSAdministeredDosage.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSAdministeredDosage"
+      },
+      "name" : "Administered dosage model",
+      "description" : "EHDSAdministeredDosage means the structured set of data elements describing a single instance of medication administration, including the dose given, the route and method of administration, and the time of administration.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSAdvanceDirective.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSAdvanceDirective"
+      },
+      "name" : "Advance directive model",
+      "description" : "EHDSAdvanceDirective means a documented expression of a patient's wishes, preferences or instructions regarding their healthcare, including, but not limited to, decisions concerning life-sustaining treatment or arrangements to take effect after death.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSAlert.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSAlert"
+      },
+      "name" : "Alert model",
+      "description" : "EHDSAlert means a structured set of data elements describing a clinically relevant fact about a patient that requires attention during a healthcare encounter in order to ensure patient safety or prevent adverse outcomes, including, but not limited to, intolerances, rare diseases requiring special management, implanted devices, ongoing special treatments, transplanted organs, or participation in a clinical trial.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSAllergyIntolerance.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSAllergyIntolerance"
+      },
+      "name" : "Allergy intolerance model",
+      "description" : "EHDSAllergyIntolerance means a structured set of data elements describing a clinically identified predisposition of a patient to an adverse reaction upon exposure to a specific agent or allergen.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSAttachment.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSAttachment"
+      },
+      "name" : "Attachment model",
+      "description" : "EHDSAttachment means a structured set of data elements describing additional content, in a format identifiable by a MIME type, including images, clinical reports, or other documents.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSBodyStructure.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSBodyStructure"
+      },
+      "name" : "Body structure model",
+      "description" : "EHDSBodyStructure means a structured set of data elements describing an anatomical structure of a patient.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSCarePlan.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSCarePlan"
+      },
+      "name" : "Care plan model",
+      "description" : "EHDSCarePlan means a structured set of data elements describing the intended management of a patient's health conditions but excluding pharmacological treatment plans that are represented through medication model.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSCondition.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSCondition"
+      },
+      "name" : "Condition model",
+      "description" : "EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSCurrentPregnancyStatus.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSCurrentPregnancyStatus"
+      },
+      "name" : "Current pregnancy status model",
+      "description" : "EHDSCurrentPregnancyStatus means a structured set of data elements describing a patient's pregnancy status at a given point in time.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSDevice.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSDevice"
+      },
+      "name" : "Device or implant model",
+      "description" : "EHDSDevice means a structured set of data elements describing a medical device or implant.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSDeviceUse.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSDeviceUse"
+      },
+      "name" : "Device use model",
+      "description" : "EHDSDeviceUse means a structured set of data elements describing the use of a medical device.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSDosage.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSDosage"
+      },
+      "name" : "Dosage model",
+      "description" : "EHDSDosage means a structured set of data elements describing the instructions for administering a medicinal product.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSEncounter.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSEncounter"
+      },
+      "name" : "Encounter model",
+      "description" : "EHDSEncounter means a structured set of data elements describing a patient's interaction with a healthcare service, but excluding the tracking of broader episodes of care (e.g., a maternity episode from first antenatal visit through delivery and postnatal follow-up) extending beyond individual encounters.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSEndpoint.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSEndpoint"
+      },
+      "name" : "Endpoint model",
+      "description" : "EHDSEndpoint means a structured set of data elements describing the technical details of a connection point for electronic services.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSHealthProfessional.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSHealthProfessional"
+      },
+      "name" : "Health professional model",
+      "description" : "EHDSHealthProfessional means a structured set of data elements describing a health professional.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSHumanName.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSHumanName"
+      },
+      "name" : "Human name model",
+      "description" : "EHDSHumanName means a structured set of data elements describing the name of a person.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSImmunisation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSImmunisation"
+      },
+      "name" : "Immunisation model",
+      "description" : "EHDSImmunisation means a structured set of data elements describing the administration of a vaccine or immunoglobulin, but excluding natural immunity, immunisation outcomes, refusals, and administration planning.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSLaboratoryObservation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSLaboratoryObservation"
+      },
+      "name" : "Model for observation performed by laboratory",
+      "description" : "Model for observation performed by laboratory.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSLocation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSLocation"
+      },
+      "name" : "Location model",
+      "description" : "EHDSLocation means a structured set of data elements describing a place where health services are provided or resources and participants are accommodated.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSMedication.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSMedication"
+      },
+      "name" : "Medication model",
+      "description" : "EHDSMedication means a structured set of data elements describing a medicinal product.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSMedicationAdministration.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSMedicationAdministration"
+      },
+      "name" : "Medication administration model",
+      "description" : "EHDSMedicationAdministration means a structured set of data elements describing a single instance of the administration of a medicinal product in the context of an imaging or laboratory procedure.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSMedicationUse.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSMedicationUse"
+      },
+      "name" : "Medication use model",
+      "description" : "EHDSMedicationUse means a structured set of data elements describing a use of a single medicinal product as part of a medication summary.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSObservation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSObservation"
+      },
+      "name" : "Observation model",
+      "description" : "EHDSObservation means a structured set of data elements describing a clinical finding or measurement and its results. This includes simple observational findings (e.g., alcohol and tobacco use, blood pressure measurements) and complex medical test results (e.g., cardiopulmonary stress test, Holter monitor), supporting the grouping of related observations and the representation of multi-part results observed under shared or different conditions.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSOrganisation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSOrganisation"
+      },
+      "name" : "Organisation model",
+      "description" : "EHDSOrganisation means a structured set of data elements describing an organisation.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSPatient.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSPatient"
+      },
+      "name" : "Patient model",
+      "description" : "EHDSPatient means a structured set of data elements describing a subject of care.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSPregnancyHistory.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSPregnancyHistory"
+      },
+      "name" : "Pregnancy history model",
+      "description" : "EHDSPregnancyHistory means a structured set of data elements describing a single past pregnancy.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSProcedure.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSProcedure"
+      },
+      "name" : "Procedure model",
+      "description" : "EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSRelatedPerson.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSRelatedPerson"
+      },
+      "name" : "Related person model",
+      "description" : "EHDSRelatedPerson means a structured set of data elements describing a person related to the patient, such as a guardian, next of kin, or other related person.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSServiceRequest.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSServiceRequest"
+      },
+      "name" : "Service request model",
+      "description" : "EHDSServiceRequest means a structured set of data elements describing one or more requested services.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSSpecimen.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSSpecimen"
+      },
+      "name" : "Specimen model",
+      "description" : "EHDSSpecimen means a structured set of data elements describing a sample collected.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSTelecom.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSTelecom"
+      },
+      "name" : "Telecom model",
+      "description" : "EHDSTelecom means a structured set of data elements describing a telecommunication contact point.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSTravelHistory.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSTravelHistory"
+      },
+      "name" : "Travel history model",
+      "description" : "EHDSTravelHistory means a structured set of data elements describing a patient's past travel to a specific country.",
+      "isExample" : false,
+      "groupingId" : "EHDSCommonLogicalModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSDataSet.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSDataSet"
+      },
+      "name" : "DataSet model",
+      "description" : "DataSet model.",
+      "isExample" : false,
+      "groupingId" : "EHDSMetadataModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-EHDSDocument.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EHDSDocument"
+      },
+      "name" : "Document model",
+      "description" : "EHDSDocument means a structured set of data elements common all health documents.",
+      "isExample" : false,
+      "groupingId" : "EHDSMetadataModels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-actor-full.html"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/actor-full"
+      },
+      "name" : "Full",
+      "description" : "Support that enables the exchange of personal electronic health data with the focus on structured content representation.",
+      "isExample" : true,
+      "groupingId" : "EHDSSupportLevels"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ActorDefinition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ActorDefinition-actor-basic.html"
+      }],
+      "reference" : {
+        "reference" : "ActorDefinition/actor-basic"
+      },
+      "name" : "Basic",
+      "description" : "Support that enables the exchange of personal electronic health data with the focus on unstructured content representation while providing limited support for detailed underlying data structures.",
+      "isExample" : true,
+      "groupingId" : "EHDSSupportLevels"
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "background.html",
+        "name" : "background.html",
+        "title" : "Background",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "howto.html",
+        "name" : "howto.html",
+        "title" : "How to read this guide",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "datatypes.html",
+        "name" : "datatypes.html",
+        "title" : "Data types and references",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "authoring-process.html",
+        "name" : "authoring-process.html",
+        "title" : "Authoring rules",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "knownIssues.html",
+        "name" : "knownIssues.html",
+        "title" : "Known issues",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "scope.html",
+        "name" : "scope.html",
+        "title" : "Scope and Content",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "wow.html",
+        "name" : "wow.html",
+        "title" : "Ways of working",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "obligations.html",
+        "name" : "obligations.html",
+        "title" : "Obligations Framework",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "overview-prescription.html",
+        "name" : "overview-prescription.html",
+        "title" : "ePrescription",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "overview-dispensation.html",
+        "name" : "overview-dispensation.html",
+        "title" : "eDispensation",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "overview-patientsummary.html",
+        "name" : "overview-patientsummary.html",
+        "title" : "Patient Summary",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "overview-medicaltestresult.html",
+        "name" : "overview-medicaltestresult.html",
+        "title" : "Medical Test Results and Laboratory Report",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "overview-medicalimages.html",
+        "name" : "overview-medicalimages.html",
+        "title" : "Medical Images",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "overview-dischargereport.html",
+        "name" : "overview-dischargereport.html",
+        "title" : "Discharge Report",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "downloads.html",
+        "name" : "downloads.html",
+        "title" : "Download",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "changes.html",
+        "name" : "changes.html",
+        "title" : "Change Log",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2026+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "ci-build"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "produce-jekyll-data"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/maps"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/assets"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "http://ehds.eu/fhir/models/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "i18n-default-lang"
+      },
+      "value" : "en"
+    }]
+  }
+}
+
+```

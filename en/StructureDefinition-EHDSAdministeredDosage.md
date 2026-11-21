@@ -1,0 +1,103 @@
+# Administered dosage model - EHDS Logical Information Models v0.3.0
+
+## Logical Model: Administered dosage model 
+
+**Usages:**
+
+* Use this Logical Model: [Medication administration model](StructureDefinition-EHDSMedicationAdministration.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSAdministeredDosage.json)
+
+### Formal Views of Profile Content
+
+ [Description Differentials, Snapshots, and other representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-EHDSAdministeredDosage.csv), [Excel](../StructureDefinition-EHDSAdministeredDosage.xlsx) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "EHDSAdministeredDosage",
+  "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAdministeredDosage",
+  "version" : "0.3.0",
+  "name" : "EHDSAdministeredDosage",
+  "title" : "Administered dosage model",
+  "status" : "draft",
+  "date" : "2026-11-21T16:14:41+00:00",
+  "publisher" : "EC",
+  "contact" : [{
+    "name" : "EC",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://commission.europa.eu/"
+    }]
+  }],
+  "description" : "EHDSAdministeredDosage means the structured set of data elements describing a single instance of medication administration, including the dose given, the route and method of administration, and the time of administration.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAdministeredDosage",
+  "baseDefinition" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDosage",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [{
+      "id" : "EHDSAdministeredDosage",
+      "path" : "EHDSAdministeredDosage",
+      "short" : "Administered dosage model",
+      "definition" : "EHDSAdministeredDosage means the structured set of data elements describing a single instance of medication administration, including the dose given, the route and method of administration, and the time of administration."
+    },
+    {
+      "id" : "EHDSAdministeredDosage.renderedDosageInstruction",
+      "path" : "EHDSAdministeredDosage.renderedDosageInstruction",
+      "short" : "Full dosage information as human-readable text covering all dosage steps. Generating the text follows local rules and shall include all locally implemented dosage data even when such elements are not present in this model."
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails",
+      "path" : "EHDSAdministeredDosage.dosageDetails",
+      "max" : "1"
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails.sequence",
+      "path" : "EHDSAdministeredDosage.dosageDetails.sequence",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails.doseAndRate",
+      "path" : "EHDSAdministeredDosage.dosageDetails.doseAndRate",
+      "short" : "Amount of medication administered per dose (= one timing)."
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.dose[x]",
+      "path" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.dose[x]",
+      "short" : "Amount of medication per dose (1 tablet, 23 tablets, 20 ml)."
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.rate[x]",
+      "path" : "EHDSAdministeredDosage.dosageDetails.doseAndRate.rate[x]",
+      "short" : "Amount of medication per time period (e.g. 100 mg per hour). When rate is provided per time unit, Quantity data type may be used with a suitable unit (e.g. mg/h, μg/min.)."
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails.repeat",
+      "path" : "EHDSAdministeredDosage.dosageDetails.repeat",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSAdministeredDosage.dosageDetails.asNeeded",
+      "path" : "EHDSAdministeredDosage.dosageDetails.asNeeded",
+      "max" : "0"
+    }]
+  }
+}
+
+```

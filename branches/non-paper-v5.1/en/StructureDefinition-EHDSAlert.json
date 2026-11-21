@@ -1,0 +1,388 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "EHDSAlert",
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSAlert</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert\" title=\"EHDSAlert means a structured set of data elements describing a clinically relevant fact about a patient that requires attention during a healthcare encounter in order to ensure patient safety or prevent adverse outcomes, including, but not limited to, intolerances, rare diseases requiring special management, implanted devices, ongoing special treatments, transplanted organs, or participation in a clinical trial.\">EHDSAlert</a><a name=\"EHDSAlert\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSDataSet.html\">EHDSDataSet</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Alert model<br/><br/>Elements defined in Ancestors:<a href=\"StructureDefinition-EHDSDataSet.html\" title=\"Basic metadata for this information.\">header</a></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.header\">header</a><a name=\"EHDSAlert.header\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.header.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.header.identifier\">identifier</a><a name=\"EHDSAlert.header.identifier\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\" class=\"xhtPieceDeEmphasized\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.header.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.header.version\" class=\"xhtPieceStrikeout\">version</a><a name=\"EHDSAlert.header.version\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceStrikeout\"/><span class=\"xhtPieceStrikeout xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceStrikeout\">..</span><span class=\"xhtPieceStrikeout\">0</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">Version of the resource.</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.header.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.header.author[x]\" title=\"Author of the resource.\">author[x]</a><a name=\"EHDSAlert.header.author_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSHealthProfessional.html\" class=\"xhtPieceDeEmphasized\">EHDSHealthProfessional</a><span class=\"xhtPieceDeEmphasized\">, </span><a href=\"StructureDefinition-EHDSOrganisation.html\" class=\"xhtPieceDeEmphasized\">EHDSOrganisation</a><span class=\"xhtPieceDeEmphasized\">, </span><a href=\"StructureDefinition-EHDSDevice.html\" class=\"xhtPieceDeEmphasized\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">Information describing who authored the resource.</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.header.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.header.status\" title=\"Current status of the alert.\">status</a><a name=\"EHDSAlert.header.status\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">1</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Current status of the alert.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">HL7 Flag Status</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.code\" title=\"A coded representation of the alert.\">code</a><a name=\"EHDSAlert.code\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">A coded representation of the alert.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">SNOMED GPS</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.description\" title=\"Narrative representation of the alert.\">description</a><a name=\"EHDSAlert.description\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/narrative.html#Narrative\">Narrative</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Narrative representation of the alert.<br/><span class=\"xhtPieceBold\">This profile does not constrain the narrative in regard to content, language, or traceability to data elements</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.priority\" title=\"A code that identifies the priority of the alert.\">priority</a><a name=\"EHDSAlert.priority\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">A code that identifies the priority of the alert.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">HL7 Flag Priority Codes</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.period\" title=\"Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.\">period</a><a name=\"EHDSAlert.period\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Period\">Period</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSAlert.</span><a href=\"StructureDefinition-EHDSAlert-definitions.html#EHDSAlert.sourceReference\" title=\"A reference to the resource the alert is about.\">sourceReference</a><a name=\"EHDSAlert.sourceReference\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#uri\">uri</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">A reference to the resource the alert is about.<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAlert",
+  "version" : "0.3.0",
+  "name" : "EHDSAlert",
+  "title" : "Alert model",
+  "status" : "draft",
+  "date" : "2026-11-21T16:13:39+00:00",
+  "publisher" : "EC",
+  "contact" : [{
+    "name" : "EC",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://commission.europa.eu/"
+    }]
+  }],
+  "description" : "EHDSAlert means a structured set of data elements describing a clinically relevant fact about a patient that requires attention during a healthcare encounter in order to ensure patient safety or prevent adverse outcomes, including, but not limited to, intolerances, rare diseases requiring special management, implanted devices, ongoing special treatments, transplanted organs, or participation in a clinical trial.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAlert",
+  "baseDefinition" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "0.3.0"
+    }],
+    "element" : [{
+      "id" : "EHDSAlert",
+      "path" : "EHDSAlert",
+      "short" : "Alert model",
+      "definition" : "EHDSAlert means a structured set of data elements describing a clinically relevant fact about a patient that requires attention during a healthcare encounter in order to ensure patient safety or prevent adverse outcomes, including, but not limited to, intolerances, rare diseases requiring special management, implanted devices, ongoing special treatments, transplanted organs, or participation in a clinical trial.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.header",
+      "path" : "EHDSAlert.header",
+      "short" : "Basic metadata for this information.",
+      "definition" : "Basic metadata for this information.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.header.subject",
+      "path" : "EHDSAlert.header.subject",
+      "short" : "Patient/subject information.",
+      "definition" : "Patient/subject information.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.subject",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.header.identifier",
+      "path" : "EHDSAlert.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).",
+      "definition" : "Unique identifier of the resource.",
+      "comment" : "Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDataSet.header.identifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.header.version",
+      "path" : "EHDSAlert.header.version",
+      "short" : "Version of the resource.",
+      "definition" : "Version of the resource.",
+      "min" : 0,
+      "max" : "0",
+      "base" : {
+        "path" : "EHDSDataSet.header.version",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.header.author[x]",
+      "path" : "EHDSAlert.header.author[x]",
+      "short" : "Information describing who authored the resource.",
+      "definition" : "Author of the resource.",
+      "comment" : "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDataSet.header.author[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.header.date",
+      "path" : "EHDSAlert.header.date",
+      "short" : "Date of finalisation/issuance of the resource.",
+      "definition" : "Date of finalisation/issuance of the resource.",
+      "comment" : "The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.date",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.header.status",
+      "path" : "EHDSAlert.header.status",
+      "short" : "Current status of the alert.",
+      "definition" : "Current status of the alert.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSDataSet.header.status",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Flag Status"
+      }
+    },
+    {
+      "id" : "EHDSAlert.header.language",
+      "path" : "EHDSAlert.header.language",
+      "short" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "definition" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSDataSet.header.language",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "BCP 47"
+      }
+    },
+    {
+      "id" : "EHDSAlert.code",
+      "path" : "EHDSAlert.code",
+      "short" : "A coded representation of the alert.",
+      "definition" : "A coded representation of the alert.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSAlert.code",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "SNOMED GPS"
+      }
+    },
+    {
+      "id" : "EHDSAlert.description",
+      "path" : "EHDSAlert.description",
+      "short" : "Narrative representation of the alert.",
+      "definition" : "Narrative representation of the alert.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSAlert.description",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.priority",
+      "path" : "EHDSAlert.priority",
+      "short" : "A code that identifies the priority of the alert.",
+      "definition" : "A code that identifies the priority of the alert.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSAlert.priority",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Flag Priority Codes"
+      }
+    },
+    {
+      "id" : "EHDSAlert.period",
+      "path" : "EHDSAlert.period",
+      "short" : "Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.",
+      "definition" : "Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSAlert.period",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.sourceReference",
+      "path" : "EHDSAlert.sourceReference",
+      "short" : "A reference to the resource the alert is about.",
+      "definition" : "A reference to the resource the alert is about.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSAlert.sourceReference",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "uri"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "EHDSAlert",
+      "path" : "EHDSAlert",
+      "short" : "Alert model",
+      "definition" : "EHDSAlert means a structured set of data elements describing a clinically relevant fact about a patient that requires attention during a healthcare encounter in order to ensure patient safety or prevent adverse outcomes, including, but not limited to, intolerances, rare diseases requiring special management, implanted devices, ongoing special treatments, transplanted organs, or participation in a clinical trial."
+    },
+    {
+      "id" : "EHDSAlert.header.identifier",
+      "path" : "EHDSAlert.header.identifier",
+      "short" : "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."
+    },
+    {
+      "id" : "EHDSAlert.header.version",
+      "path" : "EHDSAlert.header.version",
+      "max" : "0"
+    },
+    {
+      "id" : "EHDSAlert.header.author[x]",
+      "path" : "EHDSAlert.header.author[x]",
+      "definition" : "Author of the resource."
+    },
+    {
+      "id" : "EHDSAlert.header.status",
+      "path" : "EHDSAlert.header.status",
+      "short" : "Current status of the alert.",
+      "definition" : "Current status of the alert.",
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Flag Status"
+      }
+    },
+    {
+      "id" : "EHDSAlert.code",
+      "path" : "EHDSAlert.code",
+      "short" : "A coded representation of the alert.",
+      "definition" : "A coded representation of the alert.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "SNOMED GPS"
+      }
+    },
+    {
+      "id" : "EHDSAlert.description",
+      "path" : "EHDSAlert.description",
+      "short" : "Narrative representation of the alert.",
+      "definition" : "Narrative representation of the alert.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.priority",
+      "path" : "EHDSAlert.priority",
+      "short" : "A code that identifies the priority of the alert.",
+      "definition" : "A code that identifies the priority of the alert.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "HL7 Flag Priority Codes"
+      }
+    },
+    {
+      "id" : "EHDSAlert.period",
+      "path" : "EHDSAlert.period",
+      "short" : "Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.",
+      "definition" : "Time period when alert is active. The period of time from activation of the alert to inactivation of the alert. If the alert is active, the end of the period shall not be specified.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSAlert.sourceReference",
+      "path" : "EHDSAlert.sourceReference",
+      "short" : "A reference to the resource the alert is about.",
+      "definition" : "A reference to the resource the alert is about.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "uri"
+      }]
+    }]
+  }
+}

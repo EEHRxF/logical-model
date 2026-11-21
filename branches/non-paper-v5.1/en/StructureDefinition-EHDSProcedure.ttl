@@ -1,0 +1,536 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://ehds.eu/fhir/models/StructureDefinition/EHDSProcedure> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EHDSProcedure"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSProcedure</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure\" title=\"EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage.\">EHDSProcedure</a><a name=\"EHDSProcedure\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSDataSet.html\">EHDSDataSet</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Procedure model<br/><br/>Elements defined in Ancestors:<a href=\"StructureDefinition-EHDSDataSet.html\" title=\"Basic metadata for this information.\">header</a></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.header\">header</a><a name=\"EHDSProcedure.header\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.header.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.header.identifier\">identifier</a><a name=\"EHDSProcedure.header.identifier\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\" class=\"xhtPieceDeEmphasized\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries).</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.header.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.header.version\" class=\"xhtPieceStrikeout\">version</a><a name=\"EHDSProcedure.header.version\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceStrikeout\"/><span class=\"xhtPieceStrikeout xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceStrikeout\">..</span><span class=\"xhtPieceStrikeout\">0</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceItalic xhtPieceDeEmphasized\">Version of the resource.</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.header.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.header.author[x]\">author[x]</a><a name=\"EHDSProcedure.header.author_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSHealthProfessional.html\" class=\"xhtPieceDeEmphasized\">EHDSHealthProfessional</a><span class=\"xhtPieceDeEmphasized\">, </span><a href=\"StructureDefinition-EHDSOrganisation.html\" class=\"xhtPieceDeEmphasized\">EHDSOrganisation</a><span class=\"xhtPieceDeEmphasized\">, </span><a href=\"StructureDefinition-EHDSDevice.html\" class=\"xhtPieceDeEmphasized\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Author of the resource.</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.header.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.header.status\">status</a><a name=\"EHDSProcedure.header.status\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">1</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">1</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\" class=\"xhtPieceDeEmphasized\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Status of the procedure, e.g. completed, on hold, stopped.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">HL7 Event Status</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.code\" title=\"Concept code and display name identifying the type of procedure.\">code</a><a name=\"EHDSProcedure.code\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Concept code and display name identifying the type of procedure.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">SNOMED GPS</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.procedureDate[x]\" title=\"Date and time of the procedure or interval of its performance.\">procedureDate[x]</a><a name=\"EHDSProcedure.procedureDate_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">Date and time of the procedure or interval of its performance.</td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.procedureDate[x].</span><span title=\"dateTime Type: A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a UTC offset SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates.\">procedureDateDateTime</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.procedureDate[x].</span><span title=\"Period Type: A time period defined by a start and end date and optionally time.\">procedureDatePeriod</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Period\">Period</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.performer\" title=\"Actors who performed the procedure (only main responsible actors required).\">performer</a><a name=\"EHDSProcedure.performer\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSHealthProfessional.html\">EHDSHealthProfessional</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Actors who performed the procedure (only main responsible actors required).<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.bodySite\" title=\"Target body site of the procedure.\">bodySite</a><a name=\"EHDSProcedure.bodySite\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSBodyStructure.html\">EHDSBodyStructure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Target body site of the procedure.<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.reason[x]\" title=\"The reason for performing the procedure.This may be expressed as a coded concept or as a reference to a specific condition, observation or procedure that describes the reason.\">reason[x]</a><a name=\"EHDSProcedure.reason_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">The reason for performing the procedure.This may be expressed as a coded concept or as a reference to a specific condition, observation or procedure that describes the reason.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">SNOMED GPS (preferred), ICD-10, Orphacode</span><br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.reason[x].</span><span title=\"CodeableConcept Type: A concept that may be defined by a formal reference to a terminology or ontology or may be provided by text.\">reasonCodeableConcept</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.reason[x].</span><span title=\"EHDSCondition means a structured set of data elements describing a clinical condition, problem, or diagnosis.\">reasonEHDSCondition</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSCondition.html\">EHDSCondition</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.reason[x].</span><span title=\"EHDSObservation means a structured set of data elements describing a clinical finding or measurement and its results. This includes simple observational findings (e.g., alcohol and tobacco use, blood pressure measurements) and complex medical test results (e.g., cardiopulmonary stress test, Holter monitor), supporting the grouping of related observations and the representation of multi-part results observed under shared or different conditions.\">reasonEHDSObservation</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSObservation.html\">EHDSObservation</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.reason[x].</span><span title=\"EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage.\">reasonEHDSProcedure</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSProcedure.html\">EHDSProcedure</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.outcome\" title=\"The immediate result of the procedure (e.g. successful, unsuccessful). This does not include assessment over a longer period of time.\">outcome</a><a name=\"EHDSProcedure.outcome\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">The immediate result of the procedure (e.g. successful, unsuccessful). This does not include assessment over a longer period of time.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">SNOMED GPS</span></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.complication\" title=\"Complication that occurred during the procedure, or in the immediate post-procedure period.\">complication</a><a name=\"EHDSProcedure.complication\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Complication that occurred during the procedure, or in the immediate post-procedure period.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">SNOMED GPS (preferred), ICD-10,</span><br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.deviceUsed\" title=\"Device used to perform the procedure.\">deviceUsed</a><a name=\"EHDSProcedure.deviceUsed\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSDevice.html\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Device used to perform the procedure.<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.focalDevice\" title=\"Device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound vac, etc.) as a focal portion of the procedure.\">focalDevice</a><a name=\"EHDSProcedure.focalDevice\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSDevice.html\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound vac, etc.) as a focal portion of the procedure.<br/></td></tr>#xD;\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSProcedure.</span><a href=\"StructureDefinition-EHDSProcedure-definitions.html#EHDSProcedure.note\" title=\"Free text notes by the health professional.\">note</a><a name=\"EHDSProcedure.note\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Free text notes by the health professional.</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSProcedure"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.3.0"] ; # 
+  fhir:name [ fhir:v "EHDSProcedure"] ; # 
+  fhir:title [ fhir:v "Procedure model"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-11-21T16:13:39+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "EC"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "EC" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://commission.europa.eu/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage."] ; # 
+  fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/v3"^^xsd:anyURI ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v false] ; # 
+  fhir:type [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSProcedure"^^xsd:anyURI] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet"^^xsd:anyURI ;
+     fhir:link <http://ehds.eu/fhir/models/StructureDefinition/EHDSDataSet>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0.3.0"
+       ]
+     ] ) ;
+     fhir:element ( [
+       fhir:id [ fhir:v "EHDSProcedure" ] ;
+       fhir:path [ fhir:v "EHDSProcedure" ] ;
+       fhir:short [ fhir:v "Procedure model" ] ;
+       fhir:definition [ fhir:v "EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header" ] ;
+       fhir:short [ fhir:v "Basic metadata for this information." ] ;
+       fhir:definition [ fhir:v "Basic metadata for this information." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDataSet.header" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Base"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.subject" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.subject" ] ;
+       fhir:short [ fhir:v "Patient/subject information." ] ;
+       fhir:definition [ fhir:v "Patient/subject information." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDataSet.header.subject" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.identifier" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.identifier" ] ;
+       fhir:short [ fhir:v "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)." ] ;
+       fhir:definition [ fhir:v "Unique identifier of the resource." ] ;
+       fhir:comment [ fhir:v "Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDataSet.header.identifier" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Identifier"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.version" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.version" ] ;
+       fhir:short [ fhir:v "Version of the resource." ] ;
+       fhir:definition [ fhir:v "Version of the resource." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "0" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDataSet.header.version" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.author[x]" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.author[x]" ] ;
+       fhir:short [ fhir:v "Author of the resource." ] ;
+       fhir:definition [ fhir:v "Information describing who authored the resource." ] ;
+       fhir:comment [ fhir:v "Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDataSet.header.author[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.date" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.date" ] ;
+       fhir:short [ fhir:v "Date of finalisation/issuance of the resource." ] ;
+       fhir:definition [ fhir:v "Date of finalisation/issuance of the resource." ] ;
+       fhir:comment [ fhir:v "The user explicitly retained content date 0..1 and search date 1..1. The missing-source-date issue remains open; no fallback or derivation rule is defined." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDataSet.header.date" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.status" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.status" ] ;
+       fhir:short [ fhir:v "Status of the procedure, e.g. completed, on hold, stopped." ] ;
+       fhir:definition [ fhir:v "Status of the resource." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDataSet.header.status" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "HL7 Event Status" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.language" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.language" ] ;
+       fhir:short [ fhir:v "Language in which the resource is written. Language is expressed by the IETF language tag." ] ;
+       fhir:definition [ fhir:v "Language in which the resource is written. Language is expressed by the IETF language tag." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSDataSet.header.language" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "BCP 47" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.code" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.code" ] ;
+       fhir:short [ fhir:v "Concept code and display name identifying the type of procedure." ] ;
+       fhir:definition [ fhir:v "Concept code and display name identifying the type of procedure." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.code" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "SNOMED GPS" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.procedureDate[x]" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.procedureDate[x]" ] ;
+       fhir:short [ fhir:v "Date and time of the procedure or interval of its performance." ] ;
+       fhir:definition [ fhir:v "Date and time of the procedure or interval of its performance." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.procedureDate[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.performer" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.performer" ] ;
+       fhir:short [ fhir:v "Actors who performed the procedure (only main responsible actors required)." ] ;
+       fhir:definition [ fhir:v "Actors who performed the procedure (only main responsible actors required)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.performer" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.bodySite" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.bodySite" ] ;
+       fhir:short [ fhir:v "Target body site of the procedure." ] ;
+       fhir:definition [ fhir:v "Target body site of the procedure." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.bodySite" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSBodyStructure"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.reason[x]" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.reason[x]" ] ;
+       fhir:short [ fhir:v "The reason for performing the procedure.This may be expressed as a coded concept or as a reference to a specific condition, observation or procedure that describes the reason." ] ;
+       fhir:definition [ fhir:v "The reason for performing the procedure.This may be expressed as a coded concept or as a reference to a specific condition, observation or procedure that describes the reason." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.reason[x]" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSProcedure"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "SNOMED GPS (preferred), ICD-10, Orphacode" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.outcome" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.outcome" ] ;
+       fhir:short [ fhir:v "The immediate result of the procedure (e.g. successful, unsuccessful). This does not include assessment over a longer period of time." ] ;
+       fhir:definition [ fhir:v "The immediate result of the procedure (e.g. successful, unsuccessful). This does not include assessment over a longer period of time." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.outcome" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "SNOMED GPS" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.complication" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.complication" ] ;
+       fhir:short [ fhir:v "Complication that occurred during the procedure, or in the immediate post-procedure period." ] ;
+       fhir:definition [ fhir:v "Complication that occurred during the procedure, or in the immediate post-procedure period." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.complication" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "SNOMED GPS (preferred), ICD-10," ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.deviceUsed" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.deviceUsed" ] ;
+       fhir:short [ fhir:v "Device used to perform the procedure." ] ;
+       fhir:definition [ fhir:v "Device used to perform the procedure." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.deviceUsed" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.focalDevice" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.focalDevice" ] ;
+       fhir:short [ fhir:v "Device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound vac, etc.) as a focal portion of the procedure." ] ;
+       fhir:definition [ fhir:v "Device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound vac, etc.) as a focal portion of the procedure." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.focalDevice" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.note" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.note" ] ;
+       fhir:short [ fhir:v "Free text notes by the health professional." ] ;
+       fhir:definition [ fhir:v "Free text notes by the health professional." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "EHDSProcedure.note" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "EHDSProcedure" ] ;
+       fhir:path [ fhir:v "EHDSProcedure" ] ;
+       fhir:short [ fhir:v "Procedure model" ] ;
+       fhir:definition [ fhir:v "EHDSProcedure means a structured set of data elements describing a procedure performed on or for a patient, including surgical, therapeutic, and diagnostic procedures and specimen collection, but excluding procedures in the planning stage." ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.identifier" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.identifier" ] ;
+       fhir:short [ fhir:v "Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)." ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.version" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.version" ] ;
+       fhir:max [ fhir:v "0" ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.author[x]" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.author[x]" ] ;
+       fhir:short [ fhir:v "Author of the resource." ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.header.status" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.header.status" ] ;
+       fhir:short [ fhir:v "Status of the procedure, e.g. completed, on hold, stopped." ] ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "HL7 Event Status" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.code" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.code" ] ;
+       fhir:short [ fhir:v "Concept code and display name identifying the type of procedure." ] ;
+       fhir:definition [ fhir:v "Concept code and display name identifying the type of procedure." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "SNOMED GPS" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.procedureDate[x]" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.procedureDate[x]" ] ;
+       fhir:short [ fhir:v "Date and time of the procedure or interval of its performance." ] ;
+       fhir:definition [ fhir:v "Date and time of the procedure or interval of its performance." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "dateTime"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "Period"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.performer" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.performer" ] ;
+       fhir:short [ fhir:v "Actors who performed the procedure (only main responsible actors required)." ] ;
+       fhir:definition [ fhir:v "Actors who performed the procedure (only main responsible actors required)." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.bodySite" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.bodySite" ] ;
+       fhir:short [ fhir:v "Target body site of the procedure." ] ;
+       fhir:definition [ fhir:v "Target body site of the procedure." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSBodyStructure"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.reason[x]" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.reason[x]" ] ;
+       fhir:short [ fhir:v "The reason for performing the procedure.This may be expressed as a coded concept or as a reference to a specific condition, observation or procedure that describes the reason." ] ;
+       fhir:definition [ fhir:v "The reason for performing the procedure.This may be expressed as a coded concept or as a reference to a specific condition, observation or procedure that describes the reason." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"^^xsd:anyURI ]
+       ] [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSProcedure"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "SNOMED GPS (preferred), ICD-10, Orphacode" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.outcome" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.outcome" ] ;
+       fhir:short [ fhir:v "The immediate result of the procedure (e.g. successful, unsuccessful). This does not include assessment over a longer period of time." ] ;
+       fhir:definition [ fhir:v "The immediate result of the procedure (e.g. successful, unsuccessful). This does not include assessment over a longer period of time." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "SNOMED GPS" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.complication" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.complication" ] ;
+       fhir:short [ fhir:v "Complication that occurred during the procedure, or in the immediate post-procedure period." ] ;
+       fhir:definition [ fhir:v "Complication that occurred during the procedure, or in the immediate post-procedure period." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
+       ] ) ;
+       fhir:binding [
+         fhir:strength [ fhir:v "required" ] ;
+         fhir:description [ fhir:v "SNOMED GPS (preferred), ICD-10," ]
+       ]
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.deviceUsed" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.deviceUsed" ] ;
+       fhir:short [ fhir:v "Device used to perform the procedure." ] ;
+       fhir:definition [ fhir:v "Device used to perform the procedure." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.focalDevice" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.focalDevice" ] ;
+       fhir:short [ fhir:v "Device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound vac, etc.) as a focal portion of the procedure." ] ;
+       fhir:definition [ fhir:v "Device that is implanted, removed or otherwise manipulated (calibration, battery replacement, fitting a prosthesis, attaching a wound vac, etc.) as a focal portion of the procedure." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"^^xsd:anyURI ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "EHDSProcedure.note" ] ;
+       fhir:path [ fhir:v "EHDSProcedure.note" ] ;
+       fhir:short [ fhir:v "Free text notes by the health professional." ] ;
+       fhir:definition [ fhir:v "Free text notes by the health professional." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

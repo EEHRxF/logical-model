@@ -1,0 +1,2086 @@
+# Discharge report model - EHDS Logical Information Models v0.1.0
+
+## Logical Model: Discharge report model 
+
+ 
+Discharge report. 
+
+**Usages:**
+
+* This Logical Model is not used by any profiles in this Specification
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/eu.ehds.models|current/StructureDefinition/StructureDefinition-EHDSDischargeReport.json)
+
+### Formal Views of Profile Content
+
+ [Description Differentials, Snapshots, and other representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-EHDSDischargeReport.csv), [Excel](../StructureDefinition-EHDSDischargeReport.xlsx) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "EHDSDischargeReport",
+  "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDischargeReport",
+  "version" : "0.1.0",
+  "name" : "EHDSDischargeReport",
+  "title" : "Discharge report model",
+  "status" : "draft",
+  "date" : "2026-07-21T09:03:40+00:00",
+  "publisher" : "EC",
+  "contact" : [{
+    "name" : "EC",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://commission.europa.eu/"
+    }]
+  }],
+  "description" : "Discharge report.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDischargeReport",
+  "baseDefinition" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDocument",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [{
+      "id" : "EHDSDischargeReport",
+      "path" : "EHDSDischargeReport",
+      "short" : "Discharge report model",
+      "definition" : "Discharge report."
+    },
+    {
+      "id" : "EHDSDischargeReport.header",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header",
+      "short" : "Discharge report Document header."
+    },
+    {
+      "id" : "EHDSDischargeReport.header.subject",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.subject"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.identifier",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.identifier"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.author[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.author[x]"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.date",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.date"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.status",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.status"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.language",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.language",
+      "short" : "Language in which the document is written. Language is expressed by the IETF language tag."
+    },
+    {
+      "id" : "EHDSDischargeReport.header.documentType",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.documentType",
+      "short" : "Type of document e.g. 34105-7 Hospital discharge summary."
+    },
+    {
+      "id" : "EHDSDischargeReport.header.documentTitle",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.documentTitle",
+      "short" : "Human readable document title that can be displayed in search results, etc. This can be documentType's display name or it can contain further information. Example: 'Hospital discharge report. Jane Green. 07.10.2025-10.10.2025')."
+    },
+    {
+      "id" : "EHDSDischargeReport.header.period",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.period",
+      "short" : "Time period of information covered in the document."
+    },
+    {
+      "id" : "EHDSDischargeReport.header.version",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.version"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.attestation",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.attestation"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.attestation.attester[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.attestation.attester[x]"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.attestation.dateTime",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.attestation.dateTime"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.legalAuthentication",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.legalAuthentication"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.legalAuthentication.legalAuthenticator[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.legalAuthentication.legalAuthenticator[x]"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.legalAuthentication.dateTime",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.legalAuthentication.dateTime"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.eventCategory",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.eventCategory",
+      "short" : "Categorisation of the event covered by the document (e.g. discharge type). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.",
+      "binding" : {
+        "strength" : "required",
+        "description" : "SNOMED GPS (preferred), LOINC"
+      }
+    },
+    {
+      "id" : "EHDSDischargeReport.header.serviceSpecialty",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.serviceSpecialty",
+      "short" : "Additional details about where the content was created (e.g. clinical specialty)"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.custodian",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.custodian"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.countryOfOrigin",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.countryOfOrigin"
+    },
+    {
+      "id" : "EHDSDischargeReport.header.intendedRecipient[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.header.intendedRecipient[x]",
+      "short" : "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
+      "definition" : "Intended recipient of the information, i.e. a person or organisation that should be notified or be aware of the content. This element is used to indicate explicit communication intent and does not represent routine storage or passive availability of information (e.g. in portals).",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.presentedForm",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.presentedForm"
+    },
+    {
+      "id" : "EHDSDischargeReport.body",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body",
+      "short" : "Discharge report structured body.",
+      "definition" : "Discharge report structured body.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.alerts",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.alerts",
+      "short" : "Section: Alerts.",
+      "definition" : "Section: Alerts.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.alerts.generatedNarrative",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.alerts.generatedNarrative",
+      "short" : "Narrative, potentially formatted, content of the whole section.",
+      "definition" : "Narrative, potentially formatted, content of the whole section.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.alerts.medicalAlert",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.alerts.medicalAlert",
+      "short" : "Medical alerts relevant in the context of the encounter.",
+      "definition" : "Medical alerts relevant in the context of the encounter.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAlert"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.encounterInformation",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.encounterInformation",
+      "short" : "Section: Encounter information.",
+      "definition" : "Section: Encounter information.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.encounterInformation.generatedNarrative",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.encounterInformation.generatedNarrative",
+      "short" : "Narrative, potentially formatted, content of the whole section.",
+      "definition" : "Narrative, potentially formatted, content of the whole section.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.encounterInformation.encounter",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.encounterInformation.encounter",
+      "short" : "Encounter information.",
+      "definition" : "Encounter information.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSEncounter"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.encounterInformation.note",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.encounterInformation.note",
+      "short" : "Free text notes by the health professional.",
+      "definition" : "Free text notes by the health professional.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.admissionEvaluation",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.admissionEvaluation",
+      "short" : "Section: Admission evaluation. Admission evaluation section should be reported only if it is relevant to ensure continuity of care.",
+      "definition" : "Section: Admission evaluation. Admission evaluation section should be reported only if it is relevant to ensure continuity of care.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.admissionEvaluation.generatedNarrative",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.admissionEvaluation.generatedNarrative",
+      "short" : "Narrative, potentially formatted, content of the whole section.",
+      "definition" : "Narrative, potentially formatted, content of the whole section.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.admissionEvaluation.objectiveFindings",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.admissionEvaluation.objectiveFindings",
+      "short" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination.",
+      "definition" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.admissionEvaluation.functionalStatus[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.admissionEvaluation.functionalStatus[x]",
+      "short" : "An individual's ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
+      "definition" : "An individual's ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.admissionEvaluation.note",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.admissionEvaluation.note",
+      "short" : "Free text notes by the evaluation performer.",
+      "definition" : "Free text notes by the evaluation performer.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.patientHistory",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.patientHistory",
+      "short" : "Section: Patient health history (anamnesis) containing only information that is highly relevant for this specific episode of care. The model is designed with the expectation that patient summary is available.",
+      "definition" : "Section: Patient health history (anamnesis) containing only information that is highly relevant for this specific episode of care. The model is designed with the expectation that patient summary is available.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.patientHistory.generatedNarrative",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.patientHistory.generatedNarrative",
+      "short" : "Narrative, potentially formatted, content of the whole section. In case the section includes structured information, it should also be included in generatedNarrative.",
+      "definition" : "Narrative, potentially formatted, content of the whole section. In case the section includes structured information, it should also be included in generatedNarrative.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.patientHistory.pastProblems[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.patientHistory.pastProblems[x]",
+      "short" : "A list of conditions of a patient that the patient suffered in the past or still suffers. Unlike diagnostic summary, medical history is not only a list of problems, but could contain broader description of the condition and its progress, details about treatment including medication and patient response to treatment. Past problem section (unlike the same section of the patient summary) should include only conditions that are important for continuity of care. This section, if provided, complements the diagnostic summary section of the discharge report.",
+      "definition" : "A list of conditions of a patient that the patient suffered in the past or still suffers. Unlike diagnostic summary, medical history is not only a list of problems, but could contain broader description of the condition and its progress, details about treatment including medication and patient response to treatment. Past problem section (unlike the same section of the patient summary) should include only conditions that are important for continuity of care. This section, if provided, complements the diagnostic summary section of the discharge report.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.patientHistory.devicesAndImplants",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.patientHistory.devicesAndImplants",
+      "short" : "Devices and implants in patient anamnesis.",
+      "definition" : "Devices and implants in patient anamnesis.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDeviceUse"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.patientHistory.procedures",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.patientHistory.procedures",
+      "short" : "Procedures in patient anamnesis.",
+      "definition" : "Procedures in patient anamnesis.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSProcedure"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.patientHistory.note",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.patientHistory.note",
+      "short" : "Free text notes by the health professional.",
+      "definition" : "Free text notes by the health professional.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.courseOfEncounter",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.courseOfEncounter",
+      "short" : "Section: Course of inpatient or outpatient encounter.",
+      "definition" : "Section: Course of inpatient or outpatient encounter.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.courseOfEncounter.generatedNarrative",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.courseOfEncounter.generatedNarrative",
+      "short" : "Narrative, potentially formatted, content of the whole section.",
+      "definition" : "Narrative, potentially formatted, content of the whole section.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.courseOfEncounter.conditionSummary",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.courseOfEncounter.conditionSummary",
+      "short" : "Conditions that were treated or affected provisioning of care (diagnostics, therapy, nursing, monitoring) during the encounter. At least one attended condition should be marked. Other conditions are recorded only if they are important for continuity of care (after discharge).",
+      "definition" : "Conditions that were treated or affected provisioning of care (diagnostics, therapy, nursing, monitoring) during the encounter. At least one attended condition should be marked. Other conditions are recorded only if they are important for continuity of care (after discharge).",
+      "min" : 1,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.courseOfEncounter.procedures",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.courseOfEncounter.procedures",
+      "short" : "Procedures performed during encounter which are significant for continuity of care, e.g. surgeries and other instrumental interventions (endoscopic, intravascular), chemotherapy, radiotherapy, purification methods (dialysis, hemoperfusion), circulation support methods (counterpulsation, etc.), administration of blood derivatives or others. Diagnostic procedures are typically captured as observation results and not repeated here.",
+      "definition" : "Procedures performed during encounter which are significant for continuity of care, e.g. surgeries and other instrumental interventions (endoscopic, intravascular), chemotherapy, radiotherapy, purification methods (dialysis, hemoperfusion), circulation support methods (counterpulsation, etc.), administration of blood derivatives or others. Diagnostic procedures are typically captured as observation results and not repeated here.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSProcedure"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.courseOfEncounter.medicalDevicesAndImplants",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.courseOfEncounter.medicalDevicesAndImplants",
+      "short" : "Medical devices (including implants) whose use was started, stopped, or otherwise modified during the encounter.",
+      "definition" : "Medical devices (including implants) whose use was started, stopped, or otherwise modified during the encounter.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDeviceUse"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.courseOfEncounter.pharmacotherapy",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.courseOfEncounter.pharmacotherapy",
+      "short" : "Significant medication treatments during encounter.",
+      "definition" : "Significant medication treatments during encounter.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationUse"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.courseOfEncounter.objectiveFindings",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.courseOfEncounter.objectiveFindings",
+      "short" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination. The line between objective findings and test results is not clear and it is up to the implementers to decide how to logically display different measurements.",
+      "definition" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination. The line between objective findings and test results is not clear and it is up to the implementers to decide how to logically display different measurements.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.courseOfEncounter.testResults[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.courseOfEncounter.testResults[x]",
+      "short" : "Significant medical test results of functional, diagnostic (including laboratory), and imaging examinations performed during encounter.",
+      "definition" : "Significant medical test results of functional, diagnostic (including laboratory), and imaging examinations performed during encounter.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.courseOfEncounter.note",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.courseOfEncounter.note",
+      "short" : "Free text notes by the health professional.",
+      "definition" : "Free text notes by the health professional.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.dischargeDetails",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.dischargeDetails",
+      "short" : "Section: Discharge details.",
+      "definition" : "Section: Discharge details.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.dischargeDetails.generatedNarrative",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.dischargeDetails.generatedNarrative",
+      "short" : "Narrative, potentially formatted, content of the whole section.",
+      "definition" : "Narrative, potentially formatted, content of the whole section.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.dischargeDetails.objectiveFindings",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.dischargeDetails.objectiveFindings",
+      "short" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination.",
+      "definition" : "Objective findings, such as anthropometric measurements, vital signs, or objective anatomical findings of physical examination.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.dischargeDetails.functionalStatus[x]",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.dischargeDetails.functionalStatus[x]",
+      "short" : "An individual's ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
+      "definition" : "An individual's ability to perform normal daily activities required to meet basic needs, fulfil usual roles and maintain health and well-being.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSCondition"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.dischargeDetails.note",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.dischargeDetails.note",
+      "short" : "Free text notes by the health professional.",
+      "definition" : "Free text notes by the health professional.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.medicationSummary",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.medicationSummary",
+      "short" : "Summary information on the medication recommended for the period after discharge, indicating whether the medication is changed or newly started. Compared to previous practices, the overview is supplemented with medication that has been discontinued.",
+      "definition" : "Summary information on the medication recommended for the period after discharge, indicating whether the medication is changed or newly started. Compared to previous practices, the overview is supplemented with medication that has been discontinued.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.medicationSummary.generatedNarrative",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.medicationSummary.generatedNarrative",
+      "short" : "Narrative, potentially formatted, content of the whole section.",
+      "definition" : "Narrative, potentially formatted, content of the whole section.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.medicationSummary.medicationUse",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.medicationSummary.medicationUse",
+      "short" : "Details about medication and dosage.",
+      "definition" : "Details about medication and dosage.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSMedicationUse"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.medicationSummary.note",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.medicationSummary.note",
+      "short" : "Free text notes by the health professional.",
+      "definition" : "Free text notes by the health professional.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.carePlan",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.carePlan",
+      "short" : "Section: Care plan and other recommendations after discharge.",
+      "definition" : "Section: Care plan and other recommendations after discharge.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.carePlan.generatedNarrative",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.carePlan.generatedNarrative",
+      "short" : "Narrative, potentially formatted, content of the whole section.",
+      "definition" : "Narrative, potentially formatted, content of the whole section.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Narrative"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.carePlan.structuredCarePlan",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.carePlan.structuredCarePlan",
+      "short" : "Structured care plan after discharge.",
+      "definition" : "Structured care plan after discharge.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSCarePlan"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.body.carePlan.otherRecommendations",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHOULD:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.body.carePlan.otherRecommendations",
+      "short" : "Other recommendations (advice) after discharge. E.g., recommendation to suggest hip replacement, reduce number of cigarettes, stop smoking, increase physical exercises, etc.",
+      "definition" : "Other recommendations (advice) after discharge. E.g., recommendation to suggest hip replacement, reduce number of cigarettes, stop smoking, increase physical exercises, etc.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSDischargeReport.attachment",
+      "extension" : [{
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-full"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      },
+      {
+        "extension" : [{
+          "url" : "code",
+          "valueCode" : "SHALL:process"
+        },
+        {
+          "url" : "actor",
+          "valueCanonical" : "https://ehds.eu/specifications/fhir/actor-basic"
+        }],
+        "url" : "http://hl7.org/fhir/StructureDefinition/obligation"
+      }],
+      "path" : "EHDSDischargeReport.attachment",
+      "short" : "Report attachment.",
+      "definition" : "Report attachment.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSAttachment"
+      }]
+    }]
+  }
+}
+
+```

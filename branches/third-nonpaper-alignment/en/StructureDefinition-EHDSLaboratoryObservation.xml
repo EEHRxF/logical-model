@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="EHDSLaboratoryObservation"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition EHDSLaboratoryObservation</b></p><table border="0" cellpadding="0" cellspacing="0" class="xhtTableBorder0"><tr class="xhtRowBorder1"><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th scope="col" style="; width: 100px" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th scope="col" style="" class="hierarchy xhtCellBorder0"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck1.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation" title="Model for observation performed by laboratory.">EHDSLaboratoryObservation</a><a name="EHDSLaboratoryObservation"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="" class="hierarchy xhtCellBorder0">Model for observation performed by laboratory<br/><br/>Elements defined in Ancestors:<a href="StructureDefinition-EHDSDataSet.html" title="Basic metadata for this information.">header</a>, <a href="StructureDefinition-EHDSObservation.html" title="Clinically relevant time or time period for the observation.">observationDate[x]</a>, <a href="StructureDefinition-EHDSObservation.html" title="Observation type that indicates what was observed.">type</a>, <a href="StructureDefinition-EHDSObservation.html" title="Original (conventional) name of the observation as used in the local laboratory or clinical system.">originalName</a>, <a href="StructureDefinition-EHDSObservation.html" title="Observation method (measurement principle) to obtain the result.">method</a>, <a href="StructureDefinition-EHDSObservation.html" title="Specimen used for this observation.">specimen</a>, <a href="StructureDefinition-EHDSObservation.html" title="Identifies order and order placer this observation belongs to.">order</a>, <a href="StructureDefinition-EHDSObservation.html" title="Performer of the observation.">performer[x]</a>, <a href="StructureDefinition-EHDSObservation.html" title="Anatomic location and laterality where the observation was performed.">bodySite</a>, <a href="StructureDefinition-EHDSObservation.html" title="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation.">result</a>, <a href="StructureDefinition-EHDSObservation.html" title="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result.">referenceRange</a>, <a href="StructureDefinition-EHDSObservation.html" title="Result interpretation, e.g. in comparison with reference ranges.">interpretation</a>, <a href="StructureDefinition-EHDSObservation.html" title="Free text notes by the health professional.">note</a>, <a href="StructureDefinition-EHDSObservation.html" title="Component in case the observation consists of multiple sub-observations (e.g. blood pressure).">component</a>, <a href="StructureDefinition-EHDSObservation.html" title="Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.">derivedFrom[x]</a>, <a href="StructureDefinition-EHDSObservation.html" title="Member of the observation group that this observation forms (e.g. in case of a battery, a panel of tests, a set of vital sign measurements).">hasMember[x]</a></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header">header</a><a name="EHDSLaboratoryObservation.header"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.header.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.header.directSubject[x]">directSubject[x]</a><a name="EHDSLaboratoryObservation.header.directSubject_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSPatient.html" class="xhtPieceDeEmphasized">EHDSPatient</a><span class="xhtPieceDeEmphasized">, </span><a href="StructureDefinition-EHDSLocation.html" class="xhtPieceDeEmphasized">EHDSLocation</a><span class="xhtPieceDeEmphasized">, </span><a href="StructureDefinition-EHDSDevice.html" class="xhtPieceDeEmphasized">EHDSDevice</a><span class="xhtPieceDeEmphasized">, </span><a href="StructureDefinition-EHDSProcedure.html" class="xhtPieceDeEmphasized">EHDSProcedure</a><span class="xhtPieceDeEmphasized">, </span><a href="http://hl7.org/fhir/R5/datatypes.html#string" class="xhtPieceDeEmphasized">string</a></td><td style="" class="hierarchy xhtCellBorder0">The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location, or another person.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.type">type</a><a name="EHDSLaboratoryObservation.type"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Observation type.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.result">result</a><a name="EHDSLaboratoryObservation.result"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.result.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.result.dataAbsentReason">dataAbsentReason</a><a name="EHDSLaboratoryObservation.result.dataAbsentReason"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Provides a reason why the expected value in the element LaboratoryObservation.result.value[x] is missing.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.referenceRange">referenceRange</a><a name="EHDSLaboratoryObservation.referenceRange"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.referenceRange.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.referenceRange.appliesTo">appliesTo</a><a name="EHDSLaboratoryObservation.referenceRange.appliesTo"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Codes to indicate the target population this reference range applies to.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.component">component</a><a name="EHDSLaboratoryObservation.component"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.component.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.component.type">type</a><a name="EHDSLaboratoryObservation.component.type"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0">Type of the component observation.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck11.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_choice.gif" alt="" style="background-color: white; background-color: inherit" title="Choice of Types" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.triggeredBy[x]" title="References to the observation that triggered the performance of this observation.">triggeredBy[x]</a><a name="EHDSLaboratoryObservation.triggeredBy_x_"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">References to the observation that triggered the performance of this observation.<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck110.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.triggeredBy[x].</span><span title="Model for observation performed by laboratory.">triggeredByEHDSLaboratoryObservation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSLaboratoryObservation.html">EHDSLaboratoryObservation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck100.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.triggeredBy[x].</span><span title="EHDSObservation means a structured set of data elements describing a clinical finding or measurement and its results. This includes simple observational findings (e.g., alcohol and tobacco use, blood pressure measurements) and complex medical test results (e.g., cardiopulmonary stress test, Holter monitor), supporting the grouping of related observations and the representation of multi-part results observed under shared or different conditions.">triggeredByEHDSObservation</span></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSObservation.html">EHDSObservation</a></td><td style="" class="hierarchy xhtCellBorder0"/></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.testKit" title="Laboratory test kit used during measurement.">testKit</a><a name="EHDSLaboratoryObservation.testKit"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSDevice.html">EHDSDevice</a></td><td style="" class="hierarchy xhtCellBorder0">Laboratory test kit used during measurement.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="" style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.calibrator" title="Information about which end-user calibrator the laboratory used for the measurement to indicate the metrological traceability chain.">calibrator</a><a name="EHDSLaboratoryObservation.calibrator"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="" class="hierarchy xhtCellBorder0">Information about which end-user calibrator the laboratory used for the measurement to indicate the metrological traceability chain.</td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.accreditationStatus" title="Accreditation status of the laboratory for the observation.">accreditationStatus</a><a name="EHDSLaboratoryObservation.accreditationStatus"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#boolean">boolean</a></td><td style="" class="hierarchy xhtCellBorder0">Accreditation status of the laboratory for the observation.</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="" style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.previousResults" title="Previous results of the same observation">previousResults</a><a name="EHDSLaboratoryObservation.previousResults"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..*</td><td style="" class="hierarchy xhtCellBorder0"><a href="StructureDefinition-EHDSLaboratoryObservation.html">EHDSLaboratoryObservation</a></td><td style="" class="hierarchy xhtCellBorder0">Previous results of the same observation<br/></td></tr>
+<tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck00.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">EHDSLaboratoryObservation.</span><a href="StructureDefinition-EHDSLaboratoryObservation-definitions.html#EHDSLaboratoryObservation.pointOfCareTest" title="Examination performed near or at the site of a patient.">pointOfCareTest</a><a name="EHDSLaboratoryObservation.pointOfCareTest"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R5/datatypes.html#boolean">boolean</a></td><td style="" class="hierarchy xhtCellBorder0">Examination performed near or at the site of a patient.</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+  <version value="0.3.0"/>
+  <name value="EHDSLaboratoryObservation"/>
+  <title value="Model for observation performed by laboratory"/>
+  <status value="draft"/>
+  <date value="2026-11-17T22:01:05+00:00"/>
+  <publisher value="EC"/>
+  <contact>
+    <name value="EC"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://commission.europa.eu/"/>
+    </telecom>
+  </contact>
+  <description value="Model for observation performed by laboratory."/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+  <baseDefinition value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="0.3.0"/>
+    </extension>
+    <element id="EHDSLaboratoryObservation">
+      <path value="EHDSLaboratoryObservation"/>
+      <short value="Model for observation performed by laboratory"/>
+      <definition value="Model for observation performed by laboratory."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="EHDSLaboratoryObservation.header">
+      <path value="EHDSLaboratoryObservation.header"/>
+      <short value="Basic metadata for this information."/>
+      <definition value="Basic metadata for this information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.header.subject">
+      <path value="EHDSLaboratoryObservation.header.subject"/>
+      <short value="Patient/subject information."/>
+      <definition value="Patient/subject information."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.subject"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.header.identifier">
+      <path value="EHDSLaboratoryObservation.header.identifier"/>
+      <short value="Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."/>
+      <definition value="Business identifier for the object, unique within its system. Supporting disambiguation between different contexts (systems/countries)."/>
+      <comment value="Business identifier is unique within the system that assigns them. The same entity may have different unique identifiers assigned by different systems. Therefore, the identifier is always expected to be a pair of a system and a value."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.identifier"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.header.author[x]">
+      <path value="EHDSLaboratoryObservation.header.author[x]"/>
+      <short value="Author of the resource."/>
+      <definition value="Author of the resource."/>
+      <comment value="Author(s) responsible for the provided information. The exact role of the responsible author varies across use cases and is specific to individual models."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSDataSet.header.author[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.header.date">
+      <path value="EHDSLaboratoryObservation.header.date"/>
+      <short value="Date and optionally time of authoring/issuing."/>
+      <definition value="Date and optionally time of authoring/issuing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.date"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.header.status">
+      <path value="EHDSLaboratoryObservation.header.status"/>
+      <short value="Status of the resource."/>
+      <definition value="Status of the resource."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Observation Status"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.header.language">
+      <path value="EHDSLaboratoryObservation.header.language"/>
+      <short value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <definition value="Language in which the resource is written. Language is expressed by the IETF language tag."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSDataSet.header.language"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="BCP 47"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.header.directSubject[x]">
+      <path value="EHDSLaboratoryObservation.header.directSubject[x]"/>
+      <short value="The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location, or another person."/>
+      <definition value="The direct subject of the observation if different from the patient (subject of care), e.g. an observation of an implanted device. Additional types of subject may be allowed in implementations."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.header.directSubject[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLocation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSProcedure"/>
+      </type>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.observationDate[x]">
+      <path value="EHDSLaboratoryObservation.observationDate[x]"/>
+      <short value="Clinically relevant time or time period for the observation."/>
+      <definition value="Clinically relevant time or time period for the observation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.observationDate[x]"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.type">
+      <path value="EHDSLaboratoryObservation.type"/>
+      <short value="Observation type."/>
+      <definition value="Observation type that indicates what was observed."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS, LOINC, NPU"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.originalName">
+      <path value="EHDSLaboratoryObservation.originalName"/>
+      <short value="Original (conventional) name of the observation as used in the local laboratory or clinical system."/>
+      <definition value="Original (conventional) name of the observation as used in the local laboratory or clinical system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.originalName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.method">
+      <path value="EHDSLaboratoryObservation.method"/>
+      <short value="Observation method (measurement principle) to obtain the result."/>
+      <definition value="Observation method (measurement principle) to obtain the result."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.method"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.specimen">
+      <path value="EHDSLaboratoryObservation.specimen"/>
+      <short value="Specimen used for this observation."/>
+      <definition value="Specimen used for this observation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.specimen"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSSpecimen"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.order">
+      <path value="EHDSLaboratoryObservation.order"/>
+      <short value="Identifies order and order placer this observation belongs to."/>
+      <definition value="Identifies order and order placer this observation belongs to."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.order"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSServiceRequest"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.performer[x]">
+      <path value="EHDSLaboratoryObservation.performer[x]"/>
+      <short value="Performer of the observation."/>
+      <definition value="Performer of the observation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.performer[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSRelatedPerson"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.bodySite">
+      <path value="EHDSLaboratoryObservation.bodySite"/>
+      <short value="Anatomic location and laterality where the observation was performed."/>
+      <definition value="Anatomic location and laterality where the observation was performed."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.bodySite"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSBodyStructure"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.result">
+      <path value="EHDSLaboratoryObservation.result"/>
+      <short value="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."/>
+      <definition value="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.result.value[x]">
+      <path value="EHDSLaboratoryObservation.result.value[x]"/>
+      <short value="Observation result value according to the type of observation."/>
+      <definition value="Observation result value according to the type of observation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="Range"/>
+      </type>
+      <type>
+        <code value="Ratio"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="UCUM for units, SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.result.uncertainty">
+      <path value="EHDSLaboratoryObservation.result.uncertainty"/>
+      <short value="Measurement uncertainty information type and interval if needed about the observation result."/>
+      <definition value="Measurement uncertainty information type and interval if needed about the observation result."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.uncertainty"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.result.uncertainty.value">
+      <path value="EHDSLaboratoryObservation.result.uncertainty.value"/>
+      <short value="The numerical value of the measurement uncertainty."/>
+      <definition value="The numerical value of the measurement uncertainty."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.uncertainty.value"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.result.uncertainty.type">
+      <path value="EHDSLaboratoryObservation.result.uncertainty.type"/>
+      <short value="Probability Distribution Type for uncertainty"/>
+      <definition value="Probability Distribution Type for uncertainty"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.uncertainty.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Probability Distribution Type"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.result.dataAbsentReason">
+      <path value="EHDSLaboratoryObservation.result.dataAbsentReason"/>
+      <short value="Provides a reason why the expected value in the element LaboratoryObservation.result.value[x] is missing."/>
+      <definition value="Provides a reason why the expected value in the element Observation.result.value[x] is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.result.dataAbsentReason"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Data Absent Reason"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.referenceRange">
+      <path value="EHDSLaboratoryObservation.referenceRange"/>
+      <short value="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."/>
+      <definition value="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.referenceRange"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.referenceRange.low">
+      <path value="EHDSLaboratoryObservation.referenceRange.low"/>
+      <short value="Low limit of the reference range."/>
+      <definition value="Low limit of the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.low"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.referenceRange.high">
+      <path value="EHDSLaboratoryObservation.referenceRange.high"/>
+      <short value="High limit of the reference range."/>
+      <definition value="High limit of the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.high"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.referenceRange.normalValue">
+      <path value="EHDSLaboratoryObservation.referenceRange.normalValue"/>
+      <short value="Normal value, if relevant for the reference range."/>
+      <definition value="Normal value, if relevant for the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.normalValue"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.referenceRange.type">
+      <path value="EHDSLaboratoryObservation.referenceRange.type"/>
+      <short value="Type of reference range."/>
+      <definition value="Type of reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Observation Reference Range Meaning Codes"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.referenceRange.appliesTo">
+      <path value="EHDSLaboratoryObservation.referenceRange.appliesTo"/>
+      <short value="Codes to indicate the target population this reference range applies to."/>
+      <definition value="Codes to indicate the target population (e.g., in case of particular sex or race) this reference range applies to."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.appliesTo"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.referenceRange.age">
+      <path value="EHDSLaboratoryObservation.referenceRange.age"/>
+      <short value="Age range to which this reference range applies if applicable."/>
+      <definition value="Age range to which this reference range applies if applicable."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.age"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Range"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.referenceRange.text">
+      <path value="EHDSLaboratoryObservation.referenceRange.text"/>
+      <short value="Text based reference range."/>
+      <definition value="Text based reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.referenceRange.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.interpretation">
+      <path value="EHDSLaboratoryObservation.interpretation"/>
+      <short value="Result interpretation, e.g. in comparison with reference ranges."/>
+      <definition value="Result interpretation, e.g. in comparison with reference ranges."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.interpretation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.note">
+      <path value="EHDSLaboratoryObservation.note"/>
+      <short value="Free text notes by the health professional."/>
+      <definition value="Free text notes by the health professional."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.note"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.component">
+      <path value="EHDSLaboratoryObservation.component"/>
+      <short value="Component in case the observation consists of multiple sub-observations (e.g. blood pressure)."/>
+      <definition value="Component in case the observation consists of multiple sub-observations (e.g. blood pressure)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.component"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.type">
+      <path value="EHDSLaboratoryObservation.component.type"/>
+      <short value="Type of the component observation."/>
+      <definition value="Type of the component observation"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.type"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS, LOINC, NPU"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.originalName">
+      <path value="EHDSLaboratoryObservation.component.originalName"/>
+      <short value="Original (user-friendly) name of the observation as used in the local laboratory or clinical system."/>
+      <definition value="Original (user-friendly) name of the observation as used in the local laboratory or clinical system."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.originalName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.result">
+      <path value="EHDSLaboratoryObservation.component.result"/>
+      <short value="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."/>
+      <definition value="Result of the observation including text, numeric, coded, and other types of results of the measurement and measurement uncertainty. Content of the observation result will vary according to the type of the observation."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.result.value[x]">
+      <path value="EHDSLaboratoryObservation.component.result.value[x]"/>
+      <short value="Observation result value according to the type of observation."/>
+      <definition value="Observation result value according to the type of observation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.value[x]"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <type>
+        <code value="Range"/>
+      </type>
+      <type>
+        <code value="Ratio"/>
+      </type>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="UCUM for units, SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.result.uncertainty">
+      <path value="EHDSLaboratoryObservation.component.result.uncertainty"/>
+      <short value="Measurement uncertainty information type and interval if needed about the observation result."/>
+      <definition value="Measurement uncertainty information type and interval if needed about the observation result."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.uncertainty"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.result.uncertainty.value">
+      <path value="EHDSLaboratoryObservation.component.result.uncertainty.value"/>
+      <short value="The numerical value of the measurement uncertainty."/>
+      <definition value="The numerical value of the measurement uncertainty."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.uncertainty.value"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.result.uncertainty.type">
+      <path value="EHDSLaboratoryObservation.component.result.uncertainty.type"/>
+      <short value="Probability distribution type for uncertainty"/>
+      <definition value="Probability distribution type for uncertainty"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.uncertainty.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Probability Distribution Type"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.result.dataAbsentReason">
+      <path value="EHDSLaboratoryObservation.component.result.dataAbsentReason"/>
+      <short value="Provides a reason why the expected value in the element component.result.value[x] is missing."/>
+      <definition value="Provides a reason why the expected value in the element component.result.value[x] is missing."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.result.dataAbsentReason"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Data Absent Reason"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.referenceRange">
+      <path value="EHDSLaboratoryObservation.component.referenceRange"/>
+      <short value="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."/>
+      <definition value="Reference range, multiple reference ranges of different types could be provided. Provides guide for interpretation of the result."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Base"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.referenceRange.low">
+      <path value="EHDSLaboratoryObservation.component.referenceRange.low"/>
+      <short value="Low limit of the reference range."/>
+      <definition value="Low limit of the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.low"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.referenceRange.high">
+      <path value="EHDSLaboratoryObservation.component.referenceRange.high"/>
+      <short value="High limit of the reference range."/>
+      <definition value="High limit of the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.high"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Quantity"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.referenceRange.normalValue">
+      <path value="EHDSLaboratoryObservation.component.referenceRange.normalValue"/>
+      <short value="Normal value, if relevant for the reference range."/>
+      <definition value="Normal value, if relevant for the reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.normalValue"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.referenceRange.type">
+      <path value="EHDSLaboratoryObservation.component.referenceRange.type"/>
+      <short value="Type of reference range."/>
+      <definition value="Type of reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.type"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="HL7 Observation Reference Range Meaning Codes"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.referenceRange.appliesTo">
+      <path value="EHDSLaboratoryObservation.component.referenceRange.appliesTo"/>
+      <short value="Codes to indicate the target population this reference range applies to."/>
+      <definition value="Codes to indicate the target population this reference range applies to."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.appliesTo"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.referenceRange.age">
+      <path value="EHDSLaboratoryObservation.component.referenceRange.age"/>
+      <short value="Age range to which this reference range applies if applicable."/>
+      <definition value="Age range to which this reference range applies if applicable."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.age"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Range"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="UCUM for units"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.referenceRange.text">
+      <path value="EHDSLaboratoryObservation.component.referenceRange.text"/>
+      <short value="Text based reference range."/>
+      <definition value="Text based reference range."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSObservation.component.referenceRange.text"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.interpretation">
+      <path value="EHDSLaboratoryObservation.component.interpretation"/>
+      <short value="Result interpretation, e.g. in comparison with reference ranges."/>
+      <definition value="Result interpretation, e.g. in comparison with reference ranges."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.component.interpretation"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <binding>
+        <strength value="required"/>
+        <description value="SNOMED GPS"/>
+      </binding>
+    </element>
+    <element id="EHDSLaboratoryObservation.derivedFrom[x]">
+      <path value="EHDSLaboratoryObservation.derivedFrom[x]"/>
+      <short value="Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image."/>
+      <definition value="Reference to the related resource from which the observation has been made. For example, a calculated anion gap or a fetal measurement based on an ultrasound image."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.derivedFrom[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSImagingStudy"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.hasMember[x]">
+      <path value="EHDSLaboratoryObservation.hasMember[x]"/>
+      <short value="Member of the observation group that this observation forms (e.g. in case of a battery, a panel of tests, a set of vital sign measurements)."/>
+      <definition value="Member of the observation group that this observation forms (e.g. in case of a battery, a panel of tests, a set of vital sign measurements)."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSObservation.hasMember[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.triggeredBy[x]">
+      <path value="EHDSLaboratoryObservation.triggeredBy[x]"/>
+      <short value="References to the observation that triggered the performance of this observation."/>
+      <definition value="References to the observation that triggered the performance of this observation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSLaboratoryObservation.triggeredBy[x]"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.testKit">
+      <path value="EHDSLaboratoryObservation.testKit"/>
+      <short value="Laboratory test kit used during measurement."/>
+      <definition value="Laboratory test kit used during measurement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSLaboratoryObservation.testKit"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.calibrator">
+      <path value="EHDSLaboratoryObservation.calibrator"/>
+      <short value="Information about which end-user calibrator the laboratory used for the measurement to indicate the metrological traceability chain."/>
+      <definition value="Information about which end-user calibrator the laboratory used for the measurement to indicate the metrological traceability chain."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSLaboratoryObservation.calibrator"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.accreditationStatus">
+      <path value="EHDSLaboratoryObservation.accreditationStatus"/>
+      <short value="Accreditation status of the laboratory for the observation."/>
+      <definition value="Accreditation status of the laboratory for the observation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSLaboratoryObservation.accreditationStatus"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.previousResults">
+      <path value="EHDSLaboratoryObservation.previousResults"/>
+      <short value="Previous results of the same observation"/>
+      <definition value="Previous results of the same observation"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="EHDSLaboratoryObservation.previousResults"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.pointOfCareTest">
+      <path value="EHDSLaboratoryObservation.pointOfCareTest"/>
+      <short value="Examination performed near or at the site of a patient."/>
+      <definition value="Examination performed near or at the site of a patient."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="EHDSLaboratoryObservation.pointOfCareTest"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="EHDSLaboratoryObservation">
+      <path value="EHDSLaboratoryObservation"/>
+      <short value="Model for observation performed by laboratory"/>
+      <definition value="Model for observation performed by laboratory."/>
+    </element>
+    <element id="EHDSLaboratoryObservation.header.directSubject[x]">
+      <path value="EHDSLaboratoryObservation.header.directSubject[x]"/>
+      <short value="The direct subject of the observation if different from the patient (subject of care), e.g. an implanted device, a location, or another person."/>
+    </element>
+    <element id="EHDSLaboratoryObservation.type">
+      <path value="EHDSLaboratoryObservation.type"/>
+      <short value="Observation type."/>
+    </element>
+    <element id="EHDSLaboratoryObservation.result.dataAbsentReason">
+      <path value="EHDSLaboratoryObservation.result.dataAbsentReason"/>
+      <short value="Provides a reason why the expected value in the element LaboratoryObservation.result.value[x] is missing."/>
+    </element>
+    <element id="EHDSLaboratoryObservation.referenceRange.appliesTo">
+      <path value="EHDSLaboratoryObservation.referenceRange.appliesTo"/>
+      <short value="Codes to indicate the target population this reference range applies to."/>
+    </element>
+    <element id="EHDSLaboratoryObservation.component.type">
+      <path value="EHDSLaboratoryObservation.component.type"/>
+      <short value="Type of the component observation."/>
+    </element>
+    <element id="EHDSLaboratoryObservation.triggeredBy[x]">
+      <path value="EHDSLaboratoryObservation.triggeredBy[x]"/>
+      <short value="References to the observation that triggered the performance of this observation."/>
+      <definition value="References to the observation that triggered the performance of this observation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSObservation"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.testKit">
+      <path value="EHDSLaboratoryObservation.testKit"/>
+      <short value="Laboratory test kit used during measurement."/>
+      <definition value="Laboratory test kit used during measurement."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.calibrator">
+      <path value="EHDSLaboratoryObservation.calibrator"/>
+      <short value="Information about which end-user calibrator the laboratory used for the measurement to indicate the metrological traceability chain."/>
+      <definition value="Information about which end-user calibrator the laboratory used for the measurement to indicate the metrological traceability chain."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.accreditationStatus">
+      <path value="EHDSLaboratoryObservation.accreditationStatus"/>
+      <short value="Accreditation status of the laboratory for the observation."/>
+      <definition value="Accreditation status of the laboratory for the observation."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.previousResults">
+      <path value="EHDSLaboratoryObservation.previousResults"/>
+      <short value="Previous results of the same observation"/>
+      <definition value="Previous results of the same observation"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://ehds.eu/fhir/models/StructureDefinition/EHDSLaboratoryObservation"/>
+      </type>
+    </element>
+    <element id="EHDSLaboratoryObservation.pointOfCareTest">
+      <path value="EHDSLaboratoryObservation.pointOfCareTest"/>
+      <short value="Examination performed near or at the site of a patient."/>
+      <definition value="Examination performed near or at the site of a patient."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="boolean"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

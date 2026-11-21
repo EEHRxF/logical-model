@@ -1,0 +1,433 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "EHDSSearchMetadata",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition EHDSSearchMetadata</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"xhtTableBorder0\"><tr class=\"xhtRowBorder1\"><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th scope=\"col\" style=\"; width: 100px\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th scope=\"col\" style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata\" title=\"Metadata for searching individual data groups, based on WP v5 Annex III and the final review instructions. This model is independent of the resource-content model EHDSDataSet.\">EHDSSearchMetadata</a><a name=\"EHDSSearchMetadata\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"><span class=\"xhtPieceDeEmphasized\">0</span><span class=\"xhtPieceDeEmphasized\">..</span><span class=\"xhtPieceDeEmphasized\">*</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/types.html#Base\">Base</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Data group search metadata model</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.subject\" title=\"Patient/subject information.\">subject</a><a name=\"EHDSSearchMetadata.subject\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSPatient.html\">EHDSPatient</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Patient/subject information.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.identifier\" title=\"Unique identifier of the resource.\">identifier</a><a name=\"EHDSSearchMetadata.identifier\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Unique identifier of the resource.<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.clinicalEventTime[x]\" title=\"Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).\">clinicalEventTime[x]</a><a name=\"EHDSSearchMetadata.clinicalEventTime_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.clinicalEventTime[x].</span><span title=\"dateTime Type: A date, date-time or partial date (e.g. just year or year + month).  If hours and minutes are specified, a UTC offset SHALL be populated. The format is a union of the schema types gYear, gYearMonth, date and dateTime. Seconds must be provided due to schema type constraints but may be zero-filled and may be ignored.                 Dates SHALL be valid dates.\">clinicalEventTimeDateTime</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.clinicalEventTime[x].</span><span title=\"Period Type: A time period defined by a start and end date and optionally time.\">clinicalEventTimePeriod</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Period\">Period</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.version\" title=\"Version of the resource.\">version</a><a name=\"EHDSSearchMetadata.version\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Version of the resource.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.author[x]\" title=\"Information describing who authored the resource.\">author[x]</a><a name=\"EHDSSearchMetadata.author_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">Information describing who authored the resource.<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.author[x].</span><span title=\"EHDSHealthProfessional means a structured set of data elements describing a health professional.\">authorEHDSHealthProfessional</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSHealthProfessional.html\">EHDSHealthProfessional</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.author[x].</span><span title=\"EHDSOrganisation means a structured set of data elements describing an organisation.\">authorEHDSOrganisation</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSOrganisation.html\">EHDSOrganisation</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.author[x].</span><span title=\"EHDSDevice means a structured set of data elements describing a medical device or implant.\">authorEHDSDevice</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSDevice.html\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.date\" title=\"Date of finalisation/issuance of the resource.\">date</a><a name=\"EHDSSearchMetadata.date\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Date of finalisation/issuance of the resource.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck11.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.attestation\" title=\"Resource attestation details.\">attestation</a><a name=\"EHDSSearchMetadata.attestation\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Base</td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Resource attestation details.<br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck111.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_choice.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Choice of Types\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.attestation.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.attestation.attester[x]\" title=\"Attester who validated the resource.\">attester[x]</a><a name=\"EHDSSearchMetadata.attestation.attester_x_\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">Attester who validated the resource.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck1110.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.attestation.attester[x].</span><span title=\"EHDSHealthProfessional means a structured set of data elements describing a health professional.\">attesterEHDSHealthProfessional</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSHealthProfessional.html\">EHDSHealthProfessional</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck1100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.attestation.attester[x].</span><span title=\"EHDSDevice means a structured set of data elements describing a medical device or implant.\">attesterEHDSDevice</span></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\"></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"StructureDefinition-EHDSDevice.html\">EHDSDevice</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck100.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.attestation.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.attestation.dateTime\" title=\"Date and time of the approval of the resource by the attester.\">dateTime</a><a name=\"EHDSSearchMetadata.attestation.dateTime\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Date and time of the approval of the resource by the attester.</td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.status\" title=\"Status of the resource.\">status</a><a name=\"EHDSSearchMetadata.status\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">1..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Status of the resource.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">In accordance with the status ‘binding’ in the corresponding data group</span></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowEven\"><td style=\"background-image: url(tbl_bck10.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\"\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.language\" title=\"Language in which the resource is written. Language is expressed by the IETF language tag.\">language</a><a name=\"EHDSSearchMetadata.language\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..*</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Language in which the resource is written. Language is expressed by the IETF language tag.<br class=\"binding\"/><span class=\"xhtPieceBold binding\">Binding Description: </span><span class=\"binding\"> (</span><a href=\"http://hl7.org/fhir/R5/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\" class=\"binding\">required</a><span class=\"binding\">)</span><span class=\"binding\"> </span><span title=\"This binding doesn't define a testable ValueSet\" class=\"xhtBindingNotTestable xhtPieceBold binding\">⚠</span><span class=\"binding\">: </span><span class=\"binding\">BCP 47</span><br/></td></tr>\r\n<tr class=\"xhtRowBorder0 xhtRowOdd\"><td style=\"background-image: url(tbl_bck00.png)\" class=\"hierarchy xhtCellBorder0 xhtCellNoWrap\"><img src=\"tbl_spacer.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\"\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\"\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <span style=\"position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0\" class=\"sr-only\">EHDSSearchMetadata.</span><a href=\"StructureDefinition-EHDSSearchMetadata-definitions.html#EHDSSearchMetadata.lastUpdate\" title=\"Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.\">lastUpdate</a><a name=\"EHDSSearchMetadata.lastUpdate\"> </a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\"/><td style=\"\" class=\"hierarchy xhtCellBorder0\">0..1</td><td style=\"\" class=\"hierarchy xhtCellBorder0\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"\" class=\"hierarchy xhtCellBorder0\">Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSSearchMetadata",
+  "version" : "0.3.0",
+  "name" : "EHDSSearchMetadata",
+  "title" : "Data group search metadata model",
+  "status" : "draft",
+  "date" : "2026-11-21T16:14:41+00:00",
+  "publisher" : "EC",
+  "contact" : [{
+    "name" : "EC",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://commission.europa.eu/"
+    }]
+  }],
+  "description" : "Metadata for searching individual data groups, based on WP v5 Annex III and the final review instructions. This model is independent of the resource-content model EHDSDataSet.",
+  "purpose" : "Search metadata is not a parent of resource-content models. Date is mandatory under final finding 6 and the user's explicit decision. Its availability when the source resource has no date is an open specification issue; no derivation or fallback rule has been agreed.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSSearchMetadata",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "5.0.0"
+    }],
+    "element" : [{
+      "id" : "EHDSSearchMetadata",
+      "path" : "EHDSSearchMetadata",
+      "short" : "Data group search metadata model",
+      "definition" : "Metadata for searching individual data groups, based on WP v5 Annex III and the final review instructions. This model is independent of the resource-content model EHDSDataSet.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.subject",
+      "path" : "EHDSSearchMetadata.subject",
+      "short" : "Patient/subject information.",
+      "definition" : "Patient/subject information.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSSearchMetadata.subject",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.identifier",
+      "path" : "EHDSSearchMetadata.identifier",
+      "short" : "Unique identifier of the resource.",
+      "definition" : "Unique identifier of the resource.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSSearchMetadata.identifier",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.clinicalEventTime[x]",
+      "path" : "EHDSSearchMetadata.clinicalEventTime[x]",
+      "short" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
+      "definition" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSSearchMetadata.clinicalEventTime[x]",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      },
+      {
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.version",
+      "path" : "EHDSSearchMetadata.version",
+      "short" : "Version of the resource.",
+      "definition" : "Version of the resource.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSSearchMetadata.version",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.author[x]",
+      "path" : "EHDSSearchMetadata.author[x]",
+      "short" : "Information describing who authored the resource.",
+      "definition" : "Information describing who authored the resource.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSSearchMetadata.author[x]",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.date",
+      "path" : "EHDSSearchMetadata.date",
+      "short" : "Date of finalisation/issuance of the resource.",
+      "definition" : "Date of finalisation/issuance of the resource.",
+      "comment" : "The user explicitly selected 1..1 in search metadata, whereas EHDSDataSet.header.date and some individual resource dates are 0..1. This unresolved mismatch requires clarification of the metadata requirement or a rule for obtaining the missing date. No fallback date is defined.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSSearchMetadata.date",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.attestation",
+      "path" : "EHDSSearchMetadata.attestation",
+      "short" : "Resource attestation details.",
+      "definition" : "Resource attestation details.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSSearchMetadata.attestation",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.attestation.attester[x]",
+      "path" : "EHDSSearchMetadata.attestation.attester[x]",
+      "short" : "Attester who validated the resource.",
+      "definition" : "Attester who validated the resource.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSSearchMetadata.attestation.attester[x]",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.attestation.dateTime",
+      "path" : "EHDSSearchMetadata.attestation.dateTime",
+      "short" : "Date and time of the approval of the resource by the attester.",
+      "definition" : "Date and time of the approval of the resource by the attester.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSSearchMetadata.attestation.dateTime",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.status",
+      "path" : "EHDSSearchMetadata.status",
+      "short" : "Status of the resource.",
+      "definition" : "Status of the resource.",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSSearchMetadata.status",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "In accordance with the status ‘binding’ in the corresponding data group"
+      }
+    },
+    {
+      "id" : "EHDSSearchMetadata.language",
+      "path" : "EHDSSearchMetadata.language",
+      "short" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "definition" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "EHDSSearchMetadata.language",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "BCP 47"
+      }
+    },
+    {
+      "id" : "EHDSSearchMetadata.lastUpdate",
+      "path" : "EHDSSearchMetadata.lastUpdate",
+      "short" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+      "definition" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "EHDSSearchMetadata.lastUpdate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "EHDSSearchMetadata",
+      "path" : "EHDSSearchMetadata",
+      "short" : "Data group search metadata model",
+      "definition" : "Metadata for searching individual data groups, based on WP v5 Annex III and the final review instructions. This model is independent of the resource-content model EHDSDataSet."
+    },
+    {
+      "id" : "EHDSSearchMetadata.subject",
+      "path" : "EHDSSearchMetadata.subject",
+      "short" : "Patient/subject information.",
+      "definition" : "Patient/subject information.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSPatient"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.identifier",
+      "path" : "EHDSSearchMetadata.identifier",
+      "short" : "Unique identifier of the resource.",
+      "definition" : "Unique identifier of the resource.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.clinicalEventTime[x]",
+      "path" : "EHDSSearchMetadata.clinicalEventTime[x]",
+      "short" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
+      "definition" : "Time or period the clinical content applies to (e.g. specimen collection time, onset of a condition, period a medication was taken).",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      },
+      {
+        "code" : "Period"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.version",
+      "path" : "EHDSSearchMetadata.version",
+      "short" : "Version of the resource.",
+      "definition" : "Version of the resource.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.author[x]",
+      "path" : "EHDSSearchMetadata.author[x]",
+      "short" : "Information describing who authored the resource.",
+      "definition" : "Information describing who authored the resource.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSOrganisation"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.date",
+      "path" : "EHDSSearchMetadata.date",
+      "short" : "Date of finalisation/issuance of the resource.",
+      "definition" : "Date of finalisation/issuance of the resource.",
+      "comment" : "The user explicitly selected 1..1 in search metadata, whereas EHDSDataSet.header.date and some individual resource dates are 0..1. This unresolved mismatch requires clarification of the metadata requirement or a rule for obtaining the missing date. No fallback date is defined.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.attestation",
+      "path" : "EHDSSearchMetadata.attestation",
+      "short" : "Resource attestation details.",
+      "definition" : "Resource attestation details.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Base"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.attestation.attester[x]",
+      "path" : "EHDSSearchMetadata.attestation.attester[x]",
+      "short" : "Attester who validated the resource.",
+      "definition" : "Attester who validated the resource.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSHealthProfessional"
+      },
+      {
+        "code" : "http://ehds.eu/fhir/models/StructureDefinition/EHDSDevice"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.attestation.dateTime",
+      "path" : "EHDSSearchMetadata.attestation.dateTime",
+      "short" : "Date and time of the approval of the resource by the attester.",
+      "definition" : "Date and time of the approval of the resource by the attester.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "EHDSSearchMetadata.status",
+      "path" : "EHDSSearchMetadata.status",
+      "short" : "Status of the resource.",
+      "definition" : "Status of the resource.",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "In accordance with the status ‘binding’ in the corresponding data group"
+      }
+    },
+    {
+      "id" : "EHDSSearchMetadata.language",
+      "path" : "EHDSSearchMetadata.language",
+      "short" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "definition" : "Language in which the resource is written. Language is expressed by the IETF language tag.",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "binding" : {
+        "strength" : "required",
+        "description" : "BCP 47"
+      }
+    },
+    {
+      "id" : "EHDSSearchMetadata.lastUpdate",
+      "path" : "EHDSSearchMetadata.lastUpdate",
+      "short" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+      "definition" : "Date and time of the last system-level update to this resource (system update instant). This is technical metadata and does not represent a clinical event time.",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    }]
+  }
+}
