@@ -40,5 +40,5 @@ Description: "Metadata for searching documents, based on WP v5 Annex III and the
   * ^binding.description = "SNOMED GPS"
   * ^binding.strength = #required
 * custodian 0..1 EHDSOrganisation "Organisation that is in charge of maintaining the document."
-
-* lastUpdate ^short = "Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."
+// Removed as requested by Aurora
+//* lastUpdate ^short = "Date and time of the last system-level update to this document (system update instant). This is technical metadata and does not represent a clinical event time."
